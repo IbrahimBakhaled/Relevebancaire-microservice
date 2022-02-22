@@ -1,0 +1,41 @@
+package cdg.releve.application.service.adapter;
+
+import cdg.releve.application.service.api.ReleveBancaireService;
+import cdg.releve.domain.domain.ReleveBancaire;
+import cdg.releve.domain.spi.ReleveBancairePersistencePort;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+
+public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
+
+    private ReleveBancairePersistencePort releveBancairePersistencePort;
+
+    @Autowired
+    public ReleveBancaireServiceAdapter(ReleveBancairePersistencePort releveBancairePersistencePort) {
+        this.releveBancairePersistencePort = releveBancairePersistencePort;
+    }
+
+
+    @Override
+    public void addReleveBancaire(ReleveBancaire releveBancaire) {
+        releveBancairePersistencePort.addReleveBancaire(releveBancaire);
+
+    }
+
+    @Override
+    public void removeReleveBancaire(ReleveBancaire releveBancaire) {
+        releveBancairePersistencePort.removeReleveBancaire(releveBancaire);
+
+    }
+
+    @Override
+    public List<ReleveBancaire> getReleveBancaires() {
+        return releveBancairePersistencePort.getReleveBancaires();
+    }
+
+    @Override
+    public ReleveBancaire getReleveBancaireById(Long releveBancaireId) {
+        return releveBancairePersistencePort.getReleveBancaireById(releveBancaireId);
+    }
+}
