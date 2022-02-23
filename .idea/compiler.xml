@@ -16,4 +16,14 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="adapter-persistence-spring-data-jpa" options="" />
+      <module name="adapter-persistence-spring-data-mongodb" options="" />
+      <module name="adapter-rest" options="" />
+      <module name="application" options="" />
+      <module name="bootloader" options="" />
+      <module name="domain" options="" />
+    </option>
+  </component>
 </project>

@@ -15,13 +15,14 @@ public class LigneReleve {
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
+    private OperationCredit operationCredit;
 
 
     public LigneReleve(){
         super();
     }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, OperationCredit operationCredit) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
@@ -32,6 +33,8 @@ public class LigneReleve {
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
+
+        this.operationCredit = operationCredit;
     }
 
 
@@ -113,5 +116,13 @@ public class LigneReleve {
 
     public void setModePaiment(String modePaiment) {
         this.modePaiment = modePaiment;
+    }
+
+    public OperationCredit getOperationCredit() {
+        return operationCredit;
+    }
+
+    public void setOperationCredit(OperationCredit operationCredit) {
+        this.operationCredit = operationCredit;
     }
 }

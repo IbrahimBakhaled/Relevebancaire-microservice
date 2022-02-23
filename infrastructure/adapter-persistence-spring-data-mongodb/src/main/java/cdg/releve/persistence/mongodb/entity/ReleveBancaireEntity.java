@@ -1,11 +1,13 @@
 package cdg.releve.persistence.mongodb.entity;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 
 @Getter
@@ -14,7 +16,7 @@ import java.util.Date;
 public class ReleveBancaireEntity {
 
 
-    @Id
+
     private Long releveBancaireId;
     private Date dateReception;
     private String label;
@@ -23,10 +25,10 @@ public class ReleveBancaireEntity {
     private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
-//    private List<LigneReleve> ligneReleve;
+    private List<LigneReleveEntity> lignereleve;
 
 
-    public ReleveBancaireEntity(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal) {
+    public ReleveBancaireEntity(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleveEntity> lignereleve) {
         this.releveBancaireId = releveBancaireId;
         this.dateReception = dateReception;
         this.label = label;
@@ -35,6 +37,7 @@ public class ReleveBancaireEntity {
         this.nbrOperationDebit = nbrOperationDebit;
         this.soldeInitial = soldeInitial;
         this.soleFinal = soleFinal;
+        this.lignereleve = lignereleve;
     }
 
     public ReleveBancaireEntity(){

@@ -3,10 +3,12 @@ package cdg.releve.domain.domain;
 public class Cheque {
 
     private int numerCheque;
+    private Acteur acteur ;
 
 
-    public Cheque(int numerCheque) {
+    public Cheque(int numerCheque, Acteur acteur) {
         this.numerCheque = numerCheque;
+        this.acteur = acteur;
     }
 
     public Cheque(){
@@ -19,5 +21,13 @@ public class Cheque {
 
     public void setNumerCheque(int numerCheque) {
         this.numerCheque = numerCheque;
+    }
+
+    public Acteur getActeur() {
+        return acteur;
+    }
+
+    public void setActeur(Acteur acteur) {
+        this.acteur = acteur;
     }
 }

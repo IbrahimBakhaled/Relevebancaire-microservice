@@ -15,13 +15,13 @@ public class ReleveBancaire {
     private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
-    private List<LigneReleve> ligneReleve;
+    private List<LigneReleve> lignereleve;    // ONE relevebancaire has MANY lignereleve (One to Many)
 
     public ReleveBancaire(){
         super();
     }
 
-    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleve> ligneReleve) {
+    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleve> lignereleve) {
         this.releveBancaireId = releveBancaireId;
         this.dateReception = dateReception;
         this.label = label;
@@ -30,7 +30,7 @@ public class ReleveBancaire {
         this.nbrOperationDebit = nbrOperationDebit;
         this.soldeInitial = soldeInitial;
         this.soleFinal = soleFinal;
-        this.ligneReleve = ligneReleve;
+        this.lignereleve = lignereleve;
     }
 
     public Long getReleveBancaireId() {
@@ -97,11 +97,11 @@ public class ReleveBancaire {
         this.soleFinal = soleFinal;
     }
 
-    public List<LigneReleve> getLigneReleve() {
-        return ligneReleve;
+    public List<LigneReleve> getLignereleve() {
+        return lignereleve;
     }
 
-    public void setLigneReleve(List<LigneReleve> ligneReleve) {
-        this.ligneReleve = ligneReleve;
+    public void setLignereleve(List<LigneReleve> lignereleve) {
+        this.lignereleve = lignereleve;
     }
 }

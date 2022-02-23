@@ -2,6 +2,7 @@ package cdg.releve.domain.domain;
 
 public class Acteur {
 
+
     private String nomActeur;
     private String prenomActeur;
 

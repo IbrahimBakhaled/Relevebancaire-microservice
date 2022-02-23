@@ -1,6 +1,7 @@
 package cdg.releve.infrastructure.rest.controller;
 
 import cdg.releve.domain.domain.ReleveBancaire;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
