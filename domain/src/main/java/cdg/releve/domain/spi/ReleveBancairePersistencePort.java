@@ -11,4 +11,6 @@ public interface ReleveBancairePersistencePort {
     List<ReleveBancaire> getReleveBancaires();
 
     ReleveBancaire getReleveBancaireById(Long releveBancaireId);
+
+    void deleteReleveBancaireById(Long releveBancaireId);
 }

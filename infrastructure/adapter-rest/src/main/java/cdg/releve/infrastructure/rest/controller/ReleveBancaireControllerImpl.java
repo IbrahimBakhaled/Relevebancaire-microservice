@@ -45,4 +45,14 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     public ResponseEntity<ReleveBancaire> getReleveBancaireById(Long relevebancaireId) {
         return new ResponseEntity<ReleveBancaire>(releveBancaireService.getReleveBancaireById(relevebancaireId), HttpStatus.OK);
     }
+
+    @Override
+    public ResponseEntity<Void> deleteReleveBancaireById(Long releveBancaireId) {
+
+        releveBancaireService.deleteById(releveBancaireId);
+        return new ResponseEntity<Void>(HttpStatus.OK);
+
+    }
+
+
 }

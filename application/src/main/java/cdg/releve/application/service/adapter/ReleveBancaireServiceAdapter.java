@@ -38,4 +38,9 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     public ReleveBancaire getReleveBancaireById(Long releveBancaireId) {
         return releveBancairePersistencePort.getReleveBancaireById(releveBancaireId);
     }
+
+    @Override
+    public void deleteById(Long releveBancaireId) {
+        releveBancairePersistencePort.deleteReleveBancaireById(releveBancaireId);
+    }
 }

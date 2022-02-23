@@ -11,4 +11,6 @@ public interface ReleveBancaireService {
     List<ReleveBancaire> getReleveBancaires();
 
     ReleveBancaire getReleveBancaireById(Long releveBancaireId);
+
+    void deleteById(Long releveBancaireId);
 }

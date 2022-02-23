@@ -1,7 +1,6 @@
 package cdg.releve.infrastructure.rest.controller;
 
 import cdg.releve.domain.domain.ReleveBancaire;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,5 +20,6 @@ public interface ReleveBancaireController {
     @GetMapping("/relevebancaire/{relevebancaireId}")
     ResponseEntity<ReleveBancaire> getReleveBancaireById(@PathVariable Long relevebancaireId);
 
-
+    @DeleteMapping("/relevebancaire/{releveBancaireId}")
+    ResponseEntity<Void> deleteReleveBancaireById(@PathVariable Long releveBancaireId);
 }

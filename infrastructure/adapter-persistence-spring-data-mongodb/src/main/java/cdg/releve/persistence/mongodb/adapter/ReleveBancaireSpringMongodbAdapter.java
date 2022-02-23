@@ -8,6 +8,7 @@ import org.springframework.beans.BeanUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class ReleveBancaireSpringMongodbAdapter implements ReleveBancairePersistencePort {
 
@@ -56,4 +57,19 @@ public class ReleveBancaireSpringMongodbAdapter implements ReleveBancairePersist
         BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
         return releveBancaire;
     }
+
+    @Override
+    public void deleteReleveBancaireById(Long releveBancaireId) {
+        ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
+        ReleveBancaire releveBancaire = new ReleveBancaire();
+        releveBancaireRepository.deleteById(releveBancaireId);
+        if (releveBancaireEntity == null){
+            System.out.println("ReleveBancaireById is not found");
+        }
+
+        BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+
+    }
+
+
 }
