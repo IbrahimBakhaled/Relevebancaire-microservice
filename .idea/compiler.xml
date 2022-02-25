@@ -7,12 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="adapter-persistence-spring-data-mongodb" />
         <module name="adapter-persistence-spring-data-jpa" />
         <module name="application" />
-        <module name="adapter-rest" />
-        <module name="bootloader" />
         <module name="domain" />
+        <module name="adapter-persistence-spring-data-mongodb" />
+        <module name="adapter-rest" />
       </profile>
     </annotationProcessing>
   </component>
