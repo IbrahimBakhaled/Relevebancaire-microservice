@@ -1,0 +1,32 @@
+version: '3'
+services:
+
+  # If you want to dockerize the spring-boot application uncomment below lines
+  # Here I'm dockerize the mongodb image and rung the application in my windows machine so HTTP requests are working fine
+  bootloader:
+    build: ./
+    container_name: releve-project
+    ports:
+      - "8080:8080"
+    volumes:
+      - /tmp/
+    # To make a connection between spring-boot container in Docker with local MongoDB installed on Windows you have to implement these lines:
+    # In docker-compose.yml     ==> environment: - SPRING_DATA_MONGODB_URI=mongodb://host.docker.internal:27017
+    # In Dockerfile             ==> ENTRYPOINT ["java","-Dspring.data.mongodb.uri=mongodb://host.docker.internal:27017/Releve-Bancaire-CDG", "-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+    # In application.properties ==> spring.data.mongodb.host=host.docker.internal
+
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://host.docker.internal:27017
+
+
+
+# For Mongodb Image
+#  mongo:
+#      image: mongo
+#      volumes:
+#        - ./database:/data
+#      ports:
+#        - "27017:27017"
+#      hostname: mongo
+#      container_name: docker_mongo
+
