@@ -8,9 +8,11 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 //(exclude = {MongoAutoConfiguration.class,MongoDataAutoConfiguration.class})
 @SpringBootApplication
+@EnableDiscoveryClient
 @OpenAPIDefinition(info = @Info(title = "Releve Bancaire API", version = "2.0", description = "Releve Bancaire Information"))
 public class BootloaderApplicationLauncher {
     public static void main(String[] args) {
