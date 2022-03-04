@@ -15,19 +15,16 @@ public class ProduitEntity {
     private Long produitId;
     private String produitCode;
     private String produitLabel;
-    private ProduitRecoreEntity produitRecore;
-    private ProduitRCAREntity produitRCAR;
+
 
 
     public ProduitEntity(){
         super();
     }
 
-    public ProduitEntity(Long produitId, String produitCode, String produitLabel, ProduitRecoreEntity produitRecore, ProduitRCAREntity produitRCAR) {
+    public ProduitEntity(Long produitId, String produitCode, String produitLabel) {
         this.produitId = produitId;
         this.produitCode = produitCode;
         this.produitLabel = produitLabel;
-        this.produitRecore = produitRecore;
-        this.produitRCAR = produitRCAR;
     }
 }

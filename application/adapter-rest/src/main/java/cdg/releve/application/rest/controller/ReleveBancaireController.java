@@ -1,2 +1,25 @@
-package cdg.releve.application.rest.controller;public interface ReleveBancaireController {
+package cdg.releve.application.rest.controller;
+
+import cdg.releve.domain.domain.ReleveBancaire;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+public interface ReleveBancaireController {
+
+    @GetMapping("/relevebancaire")
+    ResponseEntity<List<ReleveBancaire>> getReleveBancaires();
+
+    @PostMapping("/relevebancaire")
+    ResponseEntity<ReleveBancaire> addReleveBancaire(@RequestBody ReleveBancaire releveBancaire);
+
+    @DeleteMapping("/relevebancaire")
+    ResponseEntity<Void> removeReleveBancaire(@RequestBody ReleveBancaire releveBancaire);
+
+    @GetMapping("/relevebancaire/{relevebancaireId}")
+    ResponseEntity<ReleveBancaire> getReleveBancaireById(@PathVariable Long relevebancaireId);
+
+    @DeleteMapping("/relevebancaire/{releveBancaireId}")
+    ResponseEntity<Void> deleteReleveBancaireById(@PathVariable Long releveBancaireId);
 }

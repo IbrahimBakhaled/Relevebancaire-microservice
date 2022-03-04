@@ -19,7 +19,6 @@
     <modules>
         <module>adapter-persistence-spring-data-jpa</module>
         <module>adapter-persistence-spring-data-mongodb</module>
-        <module>adapter-rest</module>
     </modules>
 
 <!--    <properties>-->
