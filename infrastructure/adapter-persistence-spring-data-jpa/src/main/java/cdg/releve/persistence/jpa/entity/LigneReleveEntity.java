@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -29,6 +30,7 @@ public class LigneReleveEntity implements Serializable{
     @Column(nullable = false, updatable = false)
     private Long ligneReleveId;
     @CreatedDate
+    @CreationTimestamp
     private Date dateOperation;
     private String operationNature;
     private String rib;

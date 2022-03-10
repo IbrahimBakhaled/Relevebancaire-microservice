@@ -7,6 +7,7 @@ public class LigneReleveCreationRequestDomain {
 
     private String operationNature;
     private String rib;
+    private BigDecimal creditDebit;
     private LocalDate dateOperation;
     private int numCheck;
     private BigDecimal montant;
@@ -15,9 +16,10 @@ public class LigneReleveCreationRequestDomain {
     private String modePaiment;
     private Long releveBancaireId;
 
-    public LigneReleveCreationRequestDomain(String operationNature, String rib, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, Long releveBancaireId) {
+    public LigneReleveCreationRequestDomain(String operationNature, String rib, BigDecimal creditDebit, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, Long releveBancaireId) {
         this.operationNature = operationNature;
         this.rib = rib;
+        this.creditDebit = creditDebit;
         this.dateOperation = dateOperation;
         this.numCheck = numCheck;
         this.montant = montant;
@@ -44,6 +46,14 @@ public class LigneReleveCreationRequestDomain {
 
     public void setRib(String rib) {
         this.rib = rib;
+    }
+
+    public BigDecimal getCreditDebit() {
+        return creditDebit;
+    }
+
+    public void setCreditDebit(BigDecimal creditDebit) {
+        this.creditDebit = creditDebit;
     }
 
     public LocalDate getDateOperation() {

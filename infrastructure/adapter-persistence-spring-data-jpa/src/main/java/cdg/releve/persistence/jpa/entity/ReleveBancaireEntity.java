@@ -8,6 +8,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.core.serializer.Deserializer;
 
 
@@ -32,6 +33,7 @@ public class ReleveBancaireEntity{
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
     private Long releveBancaireId;
+    @CreationTimestamp
     private Date dateReception;
     private String label;
     private int nbrLignes;
