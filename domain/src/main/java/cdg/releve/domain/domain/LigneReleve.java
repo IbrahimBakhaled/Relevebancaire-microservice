@@ -1,9 +1,10 @@
 package cdg.releve.domain.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class LigneReleve {
+public class LigneReleve implements Serializable{
 
     private Long ligneReleveId;
     private Date dateOperation;
@@ -15,14 +16,14 @@ public class LigneReleve {
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-    private OperationCredit operationCredit;
+//    private C c;
+    private ReleveBancaire releveBancaire;
 
+    public LigneReleve() {
 
-    public LigneReleve(){
-        super();
     }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, OperationCredit operationCredit) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
@@ -33,10 +34,9 @@ public class LigneReleve {
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
-
-        this.operationCredit = operationCredit;
+//        this.c = c;
+        this.releveBancaire = releveBancaire;
     }
-
 
     public Long getLigneReleveId() {
         return ligneReleveId;
@@ -118,11 +118,21 @@ public class LigneReleve {
         this.modePaiment = modePaiment;
     }
 
-    public OperationCredit getOperationCredit() {
-        return operationCredit;
+//    public C getOperationCredit() {
+//        return c;
+//    }
+//
+//    public void setOperationCredit(C c) {
+//        this.c = c;
+//    }
+
+    public ReleveBancaire getReleveBancaire() {
+        return releveBancaire;
     }
 
-    public void setOperationCredit(OperationCredit operationCredit) {
-        this.operationCredit = operationCredit;
+    public void setReleveBancaire(ReleveBancaire releveBancaire) {
+        this.releveBancaire = releveBancaire;
     }
 }
+
+

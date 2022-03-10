@@ -2,20 +2,32 @@ package cdg.releve.domain.domain;
 
 public class CompteBancaire {
 
+    private int compteBancaireId;
     private String rib;
     private String codeSwift;
     private Banque banque;
     private Acteur acteur;
 
-    public CompteBancaire(String rib, String codeSwift, Banque banque, Acteur acteur) {
+
+
+    public CompteBancaire(){
+        super();
+    }
+
+    public CompteBancaire(int compteBancaireId, String rib, String codeSwift, Banque banque, Acteur acteur) {
+        this.compteBancaireId = compteBancaireId;
         this.rib = rib;
         this.codeSwift = codeSwift;
         this.banque = banque;
         this.acteur = acteur;
     }
 
-    public CompteBancaire(){
-        super();
+    public int getCompteBancaireId() {
+        return compteBancaireId;
+    }
+
+    public void setCompteBancaireId(int compteBancaireId) {
+        this.compteBancaireId = compteBancaireId;
     }
 
     public String getRib() {
@@ -49,4 +61,5 @@ public class CompteBancaire {
     public void setActeur(Acteur acteur) {
         this.acteur = acteur;
     }
+
 }

@@ -30,4 +30,5 @@ public class Cheque {
     public void setActeur(Acteur acteur) {
         this.acteur = acteur;
     }
+
 }

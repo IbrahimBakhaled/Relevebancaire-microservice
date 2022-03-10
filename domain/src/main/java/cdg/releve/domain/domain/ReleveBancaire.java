@@ -1,10 +1,10 @@
 package cdg.releve.domain.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-public class ReleveBancaire {
+public class ReleveBancaire implements Serializable{
 
 
     private Long releveBancaireId;
@@ -15,13 +15,14 @@ public class ReleveBancaire {
     private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
-    private List<LigneReleve> lignereleve;    // ONE relevebancaire has MANY lignereleve (One to Many)
+    private Set<LigneReleve> lignereleve;    // ONE relevebancaire has MANY lignereleve (One to Many)
 
-    public ReleveBancaire(){
-        super();
+    public ReleveBancaire() {
+
     }
 
-    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleve> lignereleve) {
+
+    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, Set<LigneReleve> lignereleve) {
         this.releveBancaireId = releveBancaireId;
         this.dateReception = dateReception;
         this.label = label;
@@ -97,11 +98,13 @@ public class ReleveBancaire {
         this.soleFinal = soleFinal;
     }
 
-    public List<LigneReleve> getLignereleve() {
+    public Set<LigneReleve> getLignereleve() {
         return lignereleve;
     }
 
-    public void setLignereleve(List<LigneReleve> lignereleve) {
+    public void setLignereleve(Set<LigneReleve> lignereleve) {
         this.lignereleve = lignereleve;
     }
 }
+
+

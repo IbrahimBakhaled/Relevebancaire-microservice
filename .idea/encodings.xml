@@ -13,10 +13,6 @@
     <file url="file://$PROJECT_DIR$/domain/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/infrastructure/adapter-rest/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/infrastructure/adapter-rest/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infrastructure/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infrastructure/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

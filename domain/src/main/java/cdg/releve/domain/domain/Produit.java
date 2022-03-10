@@ -13,13 +13,10 @@ public class Produit {
     }
 
     public Produit(Long produitId, String produitCode, String produitLabel) {
-
         this.produitId = produitId;
         this.produitCode = produitCode;
         this.produitLabel = produitLabel;
-
     }
-
 
     public Long getProduitId() {
         return produitId;

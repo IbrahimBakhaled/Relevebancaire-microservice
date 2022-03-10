@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0459ec50281aaa4d3e86bf20131fe1a86c591e1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4f46eefb78c3438f4c4fe4bce268a48081de7af" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/CEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bb83dd43ff74bd2017133cd9dea6897cfe43de3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33a009880d45a23cfb348f2ac1cce0954922d6ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/393b730036cc443764b7253a479e6f61bcae4088" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c754df4e3774712de16eeb5106b3f0aea62e450" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d9c070dfc2147fc8b72ff1f1d425d0663d91551" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43863e874078b1f3e5c56c1ad88cb781467d04c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/5306dbb8a903d1651761c0cf000cec92f200b050" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/572ad4120bebb25becc0fc349b97409f54257084" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/572ad4120bebb25becc0fc349b97409f54257084" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65cfa902f35ff977dbec129d904f4f9577f7263f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6dce19dbcdd81e5b6ca3030b0e76dafefcf616b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6dd3f58294999964a282872cba4e795999877a3b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75933e0b138ae69fb25f1b3a52ffd83606873b9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/759821717bac6aacaba145536f4a8e829d729e1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/87a72e7b97d13fdde45157028eb2a1953b73ed60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/884c7448de42cdcaab8d4e98a8cbd3bde6e93d3b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/8913252aa81ae6837e4aa80d95672b66f6764252" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89fe74bbf18ae07b3851838938219d932d5463cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/90b06e637e8034d3bf06b36530e629c3fab88162" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93bebc87a67181a2e7d9fac143d89e7731126f3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2dc8314f8a600aa77aa1c58cd66cdc199dbc10a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a635308ca1fb27f973ce49345f8dadbd9391a969" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/aefbd3aca1cf9c18997c01176ef2fb419f797e6a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8d0ac2576addd2f034790cb5b6024a0d8ce3a00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c27f557691b463f54da34ba0536c0f259a7dd2bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8e09e04d708c7173c1ba2685d2316cc2ad28f74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf6625a320e8569f869b1cac1abbe818505b15ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d5529496b2bb77c6d830e8ba063580f36964de3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/ddcf5edd6db6c53a9634a28e69d0705777a7bf99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e73fe195a60465e2383941ae66781ee3c81b160a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9722516bf52c4a50a76062d7274133994f5c490" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9722516bf52c4a50a76062d7274133994f5c490" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f97b16e497816e4e120c2586138e96f02b758463" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fae01320b53698ff478d2d7e3a0f08ccc23a3e00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/faec10fb9ded455a4db6ea11588fa0be6e2b80b5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/faec10fb9ded455a4db6ea11588fa0be6e2b80b5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/adapter-rest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireController.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/application-configuration.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/bootloader.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/cdg/releve/BootloaderApplicationLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/classes/cdg/releve/BootloaderApplicationLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Acteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Acteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Banque.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Banque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Cheque.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Cheque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/CompteBancaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/CompteBancaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/Acteur.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/Acteur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/Banque.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/Banque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/CompteBancaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/CompteBancaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/LigneReleve.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/LigneReleve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/OperationCredit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/Produit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/ReleveBancaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/ReleveBancaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/spi/ReleveBancairePersistencePort.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/spi/ReleveBancairePersistencePort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/adapter-persistence-spring-data-jpa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/adapter-persistence-spring-data-mongodb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/adapter/ReleveBancaireSpringMongodbAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/config/SpringDataMongodbAdapterConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/ActeurEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ActeurEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/BanqueEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/BanqueEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/ChequeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ChequeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/CompteBancaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/CompteBancaireEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/LigneReleveEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/OperationChequeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationChequeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/OperationCreditEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/OperationEspecesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/OperationVirementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/ProduitEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ProduitEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/entity/ReleveBancaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/java/cdg/releve/persistence/mongodb/repository/ReleveBancaireRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/adapter/ReleveBancaireSpringMongodbAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/config/SpringDataMongodbAdapterConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/ActeurEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/BanqueEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/ChequeEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/CompteBancaireEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/LigneReleveEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/OperationChequeEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/OperationCreditEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/OperationEspecesEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/OperationVirementEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/ProduitEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/entity/ReleveBancaireEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-mongodb/target/classes/cdg/releve/persistence/mongodb/repository/ReleveBancaireRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="26A15iBuGUOaRxdlqEgorMJc8AH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Online Bank Project" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BootloaderApplicationLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bootloader" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.BootloaderApplicationLauncher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="" />
+      <created>1646851396615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646851396615</updated>
+      <workItem from="1646851398742" duration="6132000" />
+      <workItem from="1646871543867" duration="3018000" />
+      <workItem from="1646874664641" duration="356000" />
+      <workItem from="1646940066175" duration="147000" />
+      <workItem from="1646940262810" duration="7429000" />
+      <workItem from="1646953883068" duration="309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

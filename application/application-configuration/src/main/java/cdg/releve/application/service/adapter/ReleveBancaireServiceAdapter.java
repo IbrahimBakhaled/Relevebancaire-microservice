@@ -2,6 +2,8 @@ package cdg.releve.application.service.adapter;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
+import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -42,5 +44,16 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     @Override
     public void deleteById(Long releveBancaireId) {
         releveBancairePersistencePort.deleteReleveBancaireById(releveBancaireId);
+    }
+
+    @Override
+    public void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve) {
+        releveBancairePersistencePort.createLigneReleve(ligneReleve);
+    }
+
+    @Override
+    public void createReleveBancaire(ReleveBancaireCreationRequestDomain request) {
+        releveBancairePersistencePort.createReleveBancaire(request);
+
     }
 }

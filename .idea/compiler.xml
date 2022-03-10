@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="adapter-persistence-spring-data-mongodb" />
         <module name="application-configuration" />
         <module name="adapter-persistence-spring-data-jpa" />
         <module name="adapter-rest" />
@@ -15,15 +14,5 @@
         <module name="domain" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="adapter-persistence-spring-data-jpa" options="" />
-      <module name="adapter-persistence-spring-data-mongodb" options="" />
-      <module name="adapter-rest" options="" />
-      <module name="application" options="" />
-      <module name="bootloader" options="" />
-      <module name="domain" options="" />
-    </option>
   </component>
 </project>

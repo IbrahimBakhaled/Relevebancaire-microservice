@@ -1,6 +1,8 @@
 package cdg.releve.domain.spi;
 
 import cdg.releve.domain.domain.ReleveBancaire;
+import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 
 import java.util.List;
 
@@ -13,4 +15,8 @@ public interface ReleveBancairePersistencePort {
     ReleveBancaire getReleveBancaireById(Long releveBancaireId);
 
     void deleteReleveBancaireById(Long releveBancaireId);
+
+    void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve);
+
+    void createReleveBancaire(ReleveBancaireCreationRequestDomain request);
 }

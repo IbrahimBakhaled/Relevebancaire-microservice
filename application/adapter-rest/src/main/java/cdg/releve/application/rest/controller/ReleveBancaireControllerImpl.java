@@ -2,6 +2,10 @@ package cdg.releve.application.rest.controller;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
+import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
+import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
+import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -51,5 +55,17 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
         releveBancaireService.deleteById(releveBancaireId);
         return new ResponseEntity<Void>(HttpStatus.OK);
 
+    }
+
+    @Override
+    public ResponseEntity<Void> createLigneReleve(LigneReleveCreationRequestDomain request) {
+        releveBancaireService.createLigneReleve(request);
+        return new ResponseEntity<Void>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> createReleveBancaire(ReleveBancaireCreationRequestDomain request) {
+        releveBancaireService.createReleveBancaire(request);
+        return new ResponseEntity<Void>(HttpStatus.OK);
     }
 }
