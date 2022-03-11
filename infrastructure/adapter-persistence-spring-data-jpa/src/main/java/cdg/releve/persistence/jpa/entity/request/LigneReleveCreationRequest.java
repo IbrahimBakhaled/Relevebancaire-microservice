@@ -23,4 +23,5 @@ public class LigneReleveCreationRequest implements Serializable {
     private int refPaiment;
     private String modePaiment;
     private Long releveBancaireId;
+    private Long operationCreditId;
 }

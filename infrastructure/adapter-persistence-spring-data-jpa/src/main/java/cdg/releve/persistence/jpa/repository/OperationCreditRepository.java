@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Date;
 
-public interface OperationCreditRepository extends JpaRepository<CEntity, Date> {
+public interface OperationCreditRepository extends JpaRepository<CEntity, Long> {
 }

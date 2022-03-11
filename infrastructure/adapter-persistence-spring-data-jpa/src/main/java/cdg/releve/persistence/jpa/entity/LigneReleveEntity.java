@@ -41,12 +41,12 @@ public class LigneReleveEntity implements Serializable{
     private int refPaiment;
     private String modePaiment;
 
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "operation_credit_joinedcolumn")
-//    private CEntity operationCredit;
+    @OneToOne(cascade = CascadeType.ALL, optional = false)
+    @JoinColumn(name = "FK_operationCredit")
+    private CEntity operationCredit;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ReleveBancaireEntity.class)
-    @JoinColumn(name = "releveBancaireId")
+    @JoinColumn(name = "FK_releveBancaire")
     private ReleveBancaireEntity releveBancaire;
 
 

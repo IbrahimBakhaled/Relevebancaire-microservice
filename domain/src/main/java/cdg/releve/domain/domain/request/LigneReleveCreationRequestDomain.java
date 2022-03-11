@@ -15,8 +15,9 @@ public class LigneReleveCreationRequestDomain {
     private int refPaiment;
     private String modePaiment;
     private Long releveBancaireId;
+    private Long operationCreditId;
 
-    public LigneReleveCreationRequestDomain(String operationNature, String rib, BigDecimal creditDebit, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, Long releveBancaireId) {
+    public LigneReleveCreationRequestDomain(String operationNature, String rib, BigDecimal creditDebit, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment,Long operationCreditId, Long releveBancaireId) {
         this.operationNature = operationNature;
         this.rib = rib;
         this.creditDebit = creditDebit;
@@ -27,6 +28,7 @@ public class LigneReleveCreationRequestDomain {
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
         this.releveBancaireId = releveBancaireId;
+        this.operationCreditId = operationCreditId;
     }
 
     public LigneReleveCreationRequestDomain() {
@@ -110,5 +112,13 @@ public class LigneReleveCreationRequestDomain {
 
     public void setReleveBancaireId(Long releveBancaireId) {
         this.releveBancaireId = releveBancaireId;
+    }
+
+    public Long getOperationCreditId() {
+        return operationCreditId;
+    }
+
+    public void setOperationCreditId(Long operationCreditId) {
+        this.operationCreditId = operationCreditId;
     }
 }

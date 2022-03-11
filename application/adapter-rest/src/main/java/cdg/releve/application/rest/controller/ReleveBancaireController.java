@@ -30,7 +30,7 @@ public interface ReleveBancaireController {
     @PostMapping("/createlignereleve")
     ResponseEntity<Void> createLigneReleve(@RequestBody LigneReleveCreationRequestDomain request);
 
-    @PostMapping("/createReleveBancaire")
+    @PostMapping("/createrelevebancaire")
     ResponseEntity<Void> createReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain request);
 
 }

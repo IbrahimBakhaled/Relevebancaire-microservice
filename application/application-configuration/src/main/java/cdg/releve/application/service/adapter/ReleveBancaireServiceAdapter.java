@@ -5,6 +5,8 @@ import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
+import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
+import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

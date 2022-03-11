@@ -44,9 +44,10 @@ public class ReleveBancaireEntity{
 
 //    @OneToMany(cascade = CascadeType.ALL, mappedBy = "releveBancaire", targetEntity = LigneReleveEntity.class, fetch = FetchType.LAZY)
 //    private List<LigneReleveEntity> lignereleve;
-    @OneToMany(mappedBy = "releveBancaire", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    @JacksonXmlProperty(localName = "lignereleve")
-    @JacksonXmlElementWrapper(useWrapping = false)
+    @OneToMany(mappedBy = "releveBancaire")
+//    @JacksonXmlProperty(localName = "lignereleve")
+//    @JacksonXmlElementWrapper(useWrapping = false)
+    @JsonIgnore
     private Set<LigneReleveEntity> lignereleve;
 
 

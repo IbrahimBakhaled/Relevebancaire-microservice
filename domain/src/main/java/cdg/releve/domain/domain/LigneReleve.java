@@ -16,14 +16,14 @@ public class LigneReleve implements Serializable{
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-//    private C c;
+    private C c;
     private ReleveBancaire releveBancaire;
 
     public LigneReleve() {
 
     }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment,C c, ReleveBancaire releveBancaire) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
@@ -34,7 +34,7 @@ public class LigneReleve implements Serializable{
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
-//        this.c = c;
+        this.c = c;
         this.releveBancaire = releveBancaire;
     }
 
@@ -118,13 +118,13 @@ public class LigneReleve implements Serializable{
         this.modePaiment = modePaiment;
     }
 
-//    public C getOperationCredit() {
-//        return c;
-//    }
-//
-//    public void setOperationCredit(C c) {
-//        this.c = c;
-//    }
+    public C getOperationCredit() {
+        return c;
+    }
+
+    public void setOperationCredit(C c) {
+        this.c = c;
+    }
 
     public ReleveBancaire getReleveBancaire() {
         return releveBancaire;
