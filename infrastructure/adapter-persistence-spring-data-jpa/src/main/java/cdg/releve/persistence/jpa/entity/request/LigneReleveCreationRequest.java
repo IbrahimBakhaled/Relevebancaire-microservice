@@ -1,11 +1,15 @@
 package cdg.releve.persistence.jpa.entity.request;
 
+import cdg.releve.persistence.jpa.entity.OperationEspecesEntity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
+import javax.persistence.CascadeType;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;

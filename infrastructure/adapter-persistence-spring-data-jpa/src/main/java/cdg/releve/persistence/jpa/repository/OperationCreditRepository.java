@@ -1,9 +1,7 @@
 package cdg.releve.persistence.jpa.repository;
 
-import cdg.releve.persistence.jpa.entity.CEntity;
+import cdg.releve.persistence.jpa.entity.OperationCreditEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Date;
-
-public interface OperationCreditRepository extends JpaRepository<CEntity, Long> {
+public interface OperationCreditRepository extends JpaRepository<OperationCreditEntity, Long> {
 }

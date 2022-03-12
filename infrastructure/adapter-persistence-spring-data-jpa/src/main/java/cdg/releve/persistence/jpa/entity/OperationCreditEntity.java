@@ -9,7 +9,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Date;
 
 
@@ -21,7 +20,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CEntity {
+public class OperationCreditEntity {
 
 
     @Id
@@ -37,22 +36,22 @@ public class CEntity {
 
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "operationCheque_joinedcolumn")
+    @JoinColumn(name = "FK_operation_cheque")
     private OperationChequeEntity operationCheque;
 
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "operationEspeces_joinedcolumn")
+    @JoinColumn(name = "FK_operation_especes")
     private OperationEspecesEntity operationEspeces;
 
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "operationVirement_joinedcolumn")
+    @JoinColumn(name = "FK_operation_virement")
     private OperationVirementEntity operationVirement;
 
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "porduit_joinedcolumn")
+    @JoinColumn(name = "FK_produit")
     private ProduitEntity produit;
 
 

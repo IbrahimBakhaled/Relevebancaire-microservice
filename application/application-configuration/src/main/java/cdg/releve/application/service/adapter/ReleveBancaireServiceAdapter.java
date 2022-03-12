@@ -3,6 +3,7 @@ package cdg.releve.application.service.adapter;
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
 import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
@@ -57,5 +58,10 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     public void createReleveBancaire(ReleveBancaireCreationRequestDomain request) {
         releveBancairePersistencePort.createReleveBancaire(request);
 
+    }
+
+    @Override
+    public void createOperationEspece(OperationCreditCreationRequestDomain operationCreditCreationRequestDomain) {
+        releveBancairePersistencePort.createOperationEspece(operationCreditCreationRequestDomain);
     }
 }

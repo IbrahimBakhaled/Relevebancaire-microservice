@@ -14,7 +14,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @DiscriminatorValue("OperationVirementEntity")
-public class OperationVirementEntity extends CEntity {
+public class OperationVirementEntity extends OperationCreditEntity {
 
 
 

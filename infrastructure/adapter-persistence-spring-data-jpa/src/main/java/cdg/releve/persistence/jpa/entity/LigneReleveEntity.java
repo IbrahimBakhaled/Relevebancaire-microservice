@@ -1,9 +1,7 @@
 package cdg.releve.persistence.jpa.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
-import lombok.extern.jackson.Jacksonized;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -43,7 +41,7 @@ public class LigneReleveEntity implements Serializable{
 
     @OneToOne(cascade = CascadeType.ALL, optional = false)
     @JoinColumn(name = "FK_operationCredit")
-    private CEntity operationCredit;
+    private OperationCreditEntity operationCredit;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ReleveBancaireEntity.class)
     @JoinColumn(name = "FK_releveBancaire")

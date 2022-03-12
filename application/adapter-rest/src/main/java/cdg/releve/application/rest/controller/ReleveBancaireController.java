@@ -2,6 +2,7 @@ package cdg.releve.application.rest.controller;
 
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
 import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
@@ -32,5 +33,8 @@ public interface ReleveBancaireController {
 
     @PostMapping("/createrelevebancaire")
     ResponseEntity<Void> createReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain request);
+
+    @PostMapping("/createoperationespece")
+    ResponseEntity<Void> createOperationEspece(@RequestBody OperationCreditCreationRequestDomain operationCreditCreationRequestDomain);
 
 }

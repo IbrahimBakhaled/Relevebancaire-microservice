@@ -2,7 +2,7 @@ package cdg.releve.domain.domain;
 
 import java.util.Date;
 
-public class C {
+public class OperationCredit {
 
     private Long operationCreditId;
     private Date operationDate;
@@ -12,7 +12,7 @@ public class C {
     private Produit produit;
 
 
-    public C(Long operationCreditId, Date operationDate, OperationCheque operationCheque, OperationEspeces operationEspeces, OperationVirement operationVirement, Produit produit) {
+    public OperationCredit(Long operationCreditId, Date operationDate, OperationCheque operationCheque, OperationEspeces operationEspeces, OperationVirement operationVirement, Produit produit) {
         this.operationCreditId = operationCreditId;
         this.operationDate = operationDate;
         this.operationCheque = operationCheque;
@@ -21,7 +21,7 @@ public class C {
         this.produit = produit;
     }
 
-    public C(){
+    public OperationCredit(){
         super();
     }
 

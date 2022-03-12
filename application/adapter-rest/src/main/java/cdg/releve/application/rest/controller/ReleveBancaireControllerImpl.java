@@ -3,6 +3,7 @@ package cdg.releve.application.rest.controller;
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
 import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
@@ -68,4 +69,12 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
         releveBancaireService.createReleveBancaire(request);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
+
+    @Override
+    public ResponseEntity<Void> createOperationEspece(OperationCreditCreationRequestDomain operationCreditCreationRequestDomain) {
+        releveBancaireService.createOperationEspece(operationCreditCreationRequestDomain);
+        return new ResponseEntity<Void>(HttpStatus.OK);
+    }
+
+
 }

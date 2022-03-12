@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class LigneReleve implements Serializable{
+public class LigneReleve{
 
     private Long ligneReleveId;
     private Date dateOperation;
@@ -16,14 +16,14 @@ public class LigneReleve implements Serializable{
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-    private C c;
+    private OperationCredit operationCredit;
     private ReleveBancaire releveBancaire;
 
     public LigneReleve() {
 
     }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment,C c, ReleveBancaire releveBancaire) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, OperationCredit operationCredit, ReleveBancaire releveBancaire) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
@@ -34,7 +34,7 @@ public class LigneReleve implements Serializable{
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
-        this.c = c;
+        this.operationCredit = operationCredit;
         this.releveBancaire = releveBancaire;
     }
 
@@ -118,12 +118,12 @@ public class LigneReleve implements Serializable{
         this.modePaiment = modePaiment;
     }
 
-    public C getOperationCredit() {
-        return c;
+    public OperationCredit getOperationCredit() {
+        return operationCredit;
     }
 
-    public void setOperationCredit(C c) {
-        this.c = c;
+    public void setOperationCredit(OperationCredit operationCredit) {
+        this.operationCredit = operationCredit;
     }
 
     public ReleveBancaire getReleveBancaire() {
@@ -133,6 +133,7 @@ public class LigneReleve implements Serializable{
     public void setReleveBancaire(ReleveBancaire releveBancaire) {
         this.releveBancaire = releveBancaire;
     }
+
 }
 
 

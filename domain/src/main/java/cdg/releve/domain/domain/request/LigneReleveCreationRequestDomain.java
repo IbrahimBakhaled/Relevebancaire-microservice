@@ -1,5 +1,7 @@
 package cdg.releve.domain.domain.request;
 
+import cdg.releve.domain.domain.OperationEspeces;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -16,8 +18,7 @@ public class LigneReleveCreationRequestDomain {
     private String modePaiment;
     private Long releveBancaireId;
     private Long operationCreditId;
-
-    public LigneReleveCreationRequestDomain(String operationNature, String rib, BigDecimal creditDebit, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment,Long operationCreditId, Long releveBancaireId) {
+    public LigneReleveCreationRequestDomain(String operationNature, String rib, BigDecimal creditDebit, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, Long releveBancaireId, Long operationCreditId) {
         this.operationNature = operationNature;
         this.rib = rib;
         this.creditDebit = creditDebit;

@@ -1,7 +1,9 @@
 package cdg.releve.persistence.jpa.entity;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -10,8 +12,10 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @DiscriminatorValue("OperationEspecesEntity")
-public class OperationEspecesEntity extends CEntity {
+public class OperationEspecesEntity extends OperationCreditEntity {
 
 
     private String cin;
@@ -19,15 +23,6 @@ public class OperationEspecesEntity extends CEntity {
     private String prenomEmetteur;
 
 
-    public OperationEspecesEntity(String cin, String nomEmetteur, String prenomEmetteur) {
-        this.cin = cin;
-        this.nomEmetteur = nomEmetteur;
-        this.prenomEmetteur = prenomEmetteur;
-    }
-
-    public OperationEspecesEntity(){
-
-    }
 
 
 

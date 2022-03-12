@@ -27,8 +27,6 @@ Adomain/src/main/java/cdg/releve/domain/domain/CompteBancaire.java,6\d\6dd3f582
 Åinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/LigneReleveRepository.java,c\0\c0459ec50281aaa4d3e86bf20131fe1a86c591e1
 ∂
 Öinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationChequeRepository.java,6\d\6d38f7e5c2c4f8ee7a885876c0c68c6d08cf2c9e
-∑
-Üinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationEspecesRepository.java,2\7\272beb6eb7c373c58b08f805dd9e528cfffda3dd
 ∏
 áinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationVirementRepository.java,4\b\4b6a2475ad7827a7fc3edb981ad21960b7da9724
 P
@@ -49,5 +47,3 @@ q
 Adomain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java,5\7\572ad4120bebb25becc0fc349b97409f54257084
 é
 ^domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java,3\c\3c19a3c40d1e823337827cbdad11d93df88f2300
-æ
-çinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.java,3\d\3d5006f05323d9fee02607343796411d292d818d
