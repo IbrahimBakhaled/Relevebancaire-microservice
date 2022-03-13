@@ -21,8 +21,9 @@ public class SpringDataJpaAdapterConfiguration {
             ActeurRepository acteurRepository,
             BanqueRepository banqueRepository,
             CompteBancaireRepository compteBancaireRepository,
-            OperationVirementRepository operationVirementRepository){
-        return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository, operationChequeRepository, acteurRepository, banqueRepository, compteBancaireRepository, operationVirementRepository);
+            OperationVirementRepository operationVirementRepository,
+            ProduitRepository produitRepository){
+        return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository, operationChequeRepository, acteurRepository, banqueRepository, compteBancaireRepository, operationVirementRepository, produitRepository);
     }
 
 }

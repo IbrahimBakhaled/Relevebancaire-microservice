@@ -24,7 +24,8 @@ public class OperationVirementEntity extends OperationCreditEntity {
     @JoinColumn(name = "FK_compteBancaire")
     private CompteBancaireEntity compteBancaire;
 
-    @OneToOne(mappedBy = "operationCredit")
+//    @OneToOne(mappedBy = "operationCredit")
+    @OneToOne
     private LigneReleveEntity ligneReleveEntity;
 
 

@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories
 @EnableDiscoveryClient
-@OpenAPIDefinition(info = @Info(title = "Releve Bancaire API", version = "2.0", description = "Releve Bancaire Information"))
+@OpenAPIDefinition(info = @Info(title = "Releve Bancaire API", version = "3.0", description = "Releve Bancaire Information"))
 public class BootloaderApplicationLauncher {
     public static void main(String[] args) {
         SpringApplication.run(BootloaderApplicationLauncher.class, args);

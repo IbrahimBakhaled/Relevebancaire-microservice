@@ -102,5 +102,11 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @Override
+    public ResponseEntity<Void> createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
+        releveBancaireService.createproduit(produitCreationRequestDomain);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 
 }

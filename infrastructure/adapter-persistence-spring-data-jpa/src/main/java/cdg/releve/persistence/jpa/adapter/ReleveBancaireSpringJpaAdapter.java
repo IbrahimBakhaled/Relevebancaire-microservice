@@ -8,6 +8,7 @@ import cdg.releve.persistence.jpa.repository.*;
 import org.springframework.beans.BeanUtils;
 
 import javax.persistence.EntityNotFoundException;
+import java.beans.beancontext.BeanContext;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -23,9 +24,10 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     private BanqueRepository banqueRepository;
     private CompteBancaireRepository compteBancaireRepository;
     private OperationVirementRepository operationVirementRepository;
+    private ProduitRepository produitRepository;
 
 
-    public ReleveBancaireSpringJpaAdapter(ReleveBancaireRepository releveBancaireRepository, LigneReleveRepository ligneReleveRepository, OperationCreditRepository operationCreditRepository, OperationEspecesRepository operationEspecesRepository, OperationChequeRepository operationChequeRepository, ActeurRepository acteurRepository, BanqueRepository banqueRepository, CompteBancaireRepository compteBancaireRepository, OperationVirementRepository operationVirementRepository) {
+    public ReleveBancaireSpringJpaAdapter(ReleveBancaireRepository releveBancaireRepository, LigneReleveRepository ligneReleveRepository, OperationCreditRepository operationCreditRepository, OperationEspecesRepository operationEspecesRepository, OperationChequeRepository operationChequeRepository, ActeurRepository acteurRepository, BanqueRepository banqueRepository, CompteBancaireRepository compteBancaireRepository, OperationVirementRepository operationVirementRepository, ProduitRepository produitRepository) {
         this.releveBancaireRepository = releveBancaireRepository;
         this.ligneReleveRepository = ligneReleveRepository;
         this.operationCreditRepository = operationCreditRepository;
@@ -35,6 +37,7 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         this.banqueRepository = banqueRepository;
         this.compteBancaireRepository = compteBancaireRepository;
         this.operationVirementRepository = operationVirementRepository;
+        this.produitRepository = produitRepository;
     }
 
 
@@ -63,11 +66,16 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     @Override
     public List<ReleveBancaire> getReleveBancaires() {
 
+
         List<ReleveBancaire> releveBancaireList = new ArrayList<ReleveBancaire>();
         List<ReleveBancaireEntity> releveBancaireEntityList = releveBancaireRepository.findAll();
+        List<LigneReleveEntity> ligneReleveList = ligneReleveRepository.findAll();
+        List<OperationCreditEntity> operationCreditList = operationCreditRepository.findAll();
         for (ReleveBancaireEntity releveBancaireEntity : releveBancaireEntityList){
             ReleveBancaire releveBancaire = new ReleveBancaire();
             BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+            BeanUtils.copyProperties(ligneReleveList, releveBancaire);
+            BeanUtils.copyProperties(operationCreditList, releveBancaire);
             releveBancaireList.add(releveBancaire);
         }
         return releveBancaireList;
@@ -97,6 +105,30 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
 
     }
+
+
+
+
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+// ===================================================================================================
+
+
+
+
+
+
+
 
     @Override
     public void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve) {
@@ -227,6 +259,20 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         BeanUtils.copyProperties(operationVirementEntity, compteBancaire);
 
         operationVirementRepository.save(operationVirementEntity);
+
+    }
+    @Override
+    public void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
+
+        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(produitCreationRequestDomain.getLigneReleveId());
+
+        if (!ligneReleveEntity.isPresent()){
+            throw new EntityNotFoundException("ligneReleve is not presented in database create lignereleve first and then come back to create produit");
+        }
+
+        ProduitEntity produitEntity = new ProduitEntity();
+        BeanUtils.copyProperties(produitCreationRequestDomain, produitEntity);
+        produitRepository.save(produitEntity);
 
     }
 

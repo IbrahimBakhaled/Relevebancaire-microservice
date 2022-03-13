@@ -85,4 +85,9 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     public void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain) {
         releveBancairePersistencePort.createoperationvirement(operationVirementCreationRequestDomain);
     }
+
+    @Override
+    public void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
+        releveBancairePersistencePort.createproduit(produitCreationRequestDomain);
+    }
 }

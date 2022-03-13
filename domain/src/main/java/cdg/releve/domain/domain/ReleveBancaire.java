@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.*;
 
-public class ReleveBancaire implements Serializable{
+public class ReleveBancaire{
 
 
     private Long releveBancaireId;

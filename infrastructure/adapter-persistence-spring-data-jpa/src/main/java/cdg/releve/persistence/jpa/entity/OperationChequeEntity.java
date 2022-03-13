@@ -23,7 +23,8 @@ public class OperationChequeEntity extends OperationCreditEntity {
     private ActeurEntity acteur;
 
 
-    @OneToOne(mappedBy = "operationCredit")
+//    @OneToOne(mappedBy = "operationCredit")
+    @OneToOne
     private LigneReleveEntity ligneReleveEntity;
 
 

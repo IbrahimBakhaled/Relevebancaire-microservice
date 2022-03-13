@@ -39,7 +39,7 @@ public class LigneReleveEntity implements Serializable{
     private int refPaiment;
     private String modePaiment;
 
-    @OneToOne(cascade = CascadeType.ALL, optional = false)
+    @OneToOne(cascade = CascadeType.MERGE, optional = false)
     @JoinColumn(name = "FK_operationCredit")
     private OperationCreditEntity operationCredit;
 

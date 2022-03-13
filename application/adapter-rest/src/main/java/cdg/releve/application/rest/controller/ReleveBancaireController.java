@@ -47,4 +47,7 @@ public interface ReleveBancaireController {
 
     @PostMapping("/createoperationvirement")
     ResponseEntity<Void> createoperationvirement(@RequestBody OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
+
+    @PostMapping("/createproduit")
+    ResponseEntity<Void> createproduit(@RequestBody ProduitCreationRequestDomain produitCreationRequestDomain);
 }

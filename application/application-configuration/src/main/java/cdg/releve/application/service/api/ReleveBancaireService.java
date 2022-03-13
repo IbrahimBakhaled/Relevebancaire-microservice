@@ -30,4 +30,6 @@ public interface ReleveBancaireService {
     void createcomptebancaire(CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain);
 
     void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
+
+    void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain);
 }

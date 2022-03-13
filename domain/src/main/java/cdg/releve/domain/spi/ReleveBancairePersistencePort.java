@@ -1,5 +1,6 @@
 package cdg.releve.domain.spi;
 
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 
@@ -30,6 +31,8 @@ public interface ReleveBancairePersistencePort {
     void createcomptebancaire(CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain);
 
     void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
+
+    void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain);
 
 
 }
