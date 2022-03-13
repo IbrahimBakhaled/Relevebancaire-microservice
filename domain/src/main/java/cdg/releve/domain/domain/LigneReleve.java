@@ -9,7 +9,6 @@ public class LigneReleve{
     private Long ligneReleveId;
     private Date dateOperation;
     private String operationNature;
-    private String rib;
     private int numCheck;
     private BigDecimal montant;
     private BigDecimal creditDebit;
@@ -18,16 +17,16 @@ public class LigneReleve{
     private String modePaiment;
     private OperationCredit operationCredit;
     private ReleveBancaire releveBancaire;
+    private OperationEspeces operationEspeces;
 
     public LigneReleve() {
 
     }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, String rib, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, OperationCredit operationCredit, ReleveBancaire releveBancaire) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, OperationCredit operationCredit, ReleveBancaire releveBancaire, OperationEspeces operationEspeces) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
-        this.rib = rib;
         this.numCheck = numCheck;
         this.montant = montant;
         this.creditDebit = creditDebit;
@@ -36,6 +35,7 @@ public class LigneReleve{
         this.modePaiment = modePaiment;
         this.operationCredit = operationCredit;
         this.releveBancaire = releveBancaire;
+        this.operationEspeces = operationEspeces;
     }
 
     public Long getLigneReleveId() {
@@ -60,14 +60,6 @@ public class LigneReleve{
 
     public void setOperationNature(String operationNature) {
         this.operationNature = operationNature;
-    }
-
-    public String getRib() {
-        return rib;
-    }
-
-    public void setRib(String rib) {
-        this.rib = rib;
     }
 
     public int getNumCheck() {
@@ -134,6 +126,13 @@ public class LigneReleve{
         this.releveBancaire = releveBancaire;
     }
 
+    public OperationEspeces getOperationEspeces() {
+        return operationEspeces;
+    }
+
+    public void setOperationEspeces(OperationEspeces operationEspeces) {
+        this.operationEspeces = operationEspeces;
+    }
 }
 
 

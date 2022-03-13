@@ -144,12 +144,12 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         BeanUtils.copyProperties(ligneReleveToCreate, ligneReleveFromDomain);
 
         // Creat OperationCredit
-        OperationCreditEntity operationCreditEntity1 = new OperationCreditEntity();
-        operationCreditEntity1.setOperationCreditId(ligneReleve.getOperationCreditId());
+//        OperationCreditEntity operationCreditEntity1 = new OperationCreditEntity();
+//        operationCreditEntity1.setOperationCreditId(ligneReleve.getOperationCreditId());
 
-        operationCreditRepository.save(operationCreditEntity1);
-        ligneReleveToCreate.setOperationCredit(operationCreditEntity1);
-        BeanUtils.copyProperties(ligneReleveToCreate, operationCreditEntity1);
+//        operationCreditRepository.save(operationCreditEntity1);
+//        ligneReleveToCreate.setOperationCredit(operationCreditEntity1);
+//        BeanUtils.copyProperties(ligneReleveToCreate, operationCreditEntity1);
         ligneReleveRepository.save(ligneReleveToCreate);
     }
 

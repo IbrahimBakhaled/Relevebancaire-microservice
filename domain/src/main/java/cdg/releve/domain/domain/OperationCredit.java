@@ -6,19 +6,18 @@ public class OperationCredit {
 
     private Long operationCreditId;
     private Date operationDate;
-    private OperationCheque operationCheque;
-    private OperationEspeces operationEspeces;
-    private OperationVirement operationVirement;
+//    private OperationCheque operationCheque;
+//    private OperationEspeces operationEspeces;
+//    private OperationVirement operationVirement;
     private Produit produit;
+    private LigneReleve ligneReleve;
 
 
-    public OperationCredit(Long operationCreditId, Date operationDate, OperationCheque operationCheque, OperationEspeces operationEspeces, OperationVirement operationVirement, Produit produit) {
+    public OperationCredit(Long operationCreditId, Date operationDate, Produit produit, LigneReleve ligneReleve) {
         this.operationCreditId = operationCreditId;
         this.operationDate = operationDate;
-        this.operationCheque = operationCheque;
-        this.operationEspeces = operationEspeces;
-        this.operationVirement = operationVirement;
         this.produit = produit;
+        this.ligneReleve = ligneReleve;
     }
 
     public OperationCredit(){
@@ -41,29 +40,29 @@ public class OperationCredit {
         this.operationDate = operationDate;
     }
 
-    public OperationCheque getOperationCheque() {
-        return operationCheque;
-    }
-
-    public void setOperationCheque(OperationCheque operationCheque) {
-        this.operationCheque = operationCheque;
-    }
-
-    public OperationEspeces getOperationEspeces() {
-        return operationEspeces;
-    }
-
-    public void setOperationEspeces(OperationEspeces operationEspeces) {
-        this.operationEspeces = operationEspeces;
-    }
-
-    public OperationVirement getOperationVirement() {
-        return operationVirement;
-    }
-
-    public void setOperationVirement(OperationVirement operationVirement) {
-        this.operationVirement = operationVirement;
-    }
+//    public OperationCheque getOperationCheque() {
+//        return operationCheque;
+//    }
+//
+//    public void setOperationCheque(OperationCheque operationCheque) {
+//        this.operationCheque = operationCheque;
+//    }
+//
+//    public OperationEspeces getOperationEspeces() {
+//        return operationEspeces;
+//    }
+//
+//    public void setOperationEspeces(OperationEspeces operationEspeces) {
+//        this.operationEspeces = operationEspeces;
+//    }
+//
+//    public OperationVirement getOperationVirement() {
+//        return operationVirement;
+//    }
+//
+//    public void setOperationVirement(OperationVirement operationVirement) {
+//        this.operationVirement = operationVirement;
+//    }
 
     public Produit getProduit() {
         return produit;
@@ -73,4 +72,12 @@ public class OperationCredit {
         this.produit = produit;
     }
 
+
+    public LigneReleve getLigneReleve() {
+        return ligneReleve;
+    }
+
+    public void setLigneReleve(LigneReleve ligneReleve) {
+        this.ligneReleve = ligneReleve;
+    }
 }

@@ -20,6 +20,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor(force = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class LigneReleveEntity implements Serializable{
 
 
@@ -31,7 +32,6 @@ public class LigneReleveEntity implements Serializable{
     @CreationTimestamp
     private Date dateOperation;
     private String operationNature;
-    private String rib;
     private int numCheck;
     private BigDecimal montant;
     private BigDecimal creditDebit;
@@ -39,13 +39,21 @@ public class LigneReleveEntity implements Serializable{
     private int refPaiment;
     private String modePaiment;
 
-    @OneToOne(cascade = CascadeType.MERGE, optional = false)
-    @JoinColumn(name = "FK_operationCredit")
-    private OperationCreditEntity operationCredit;
+//    @OneToOne(cascade = CascadeType.MERGE, optional = false)
+//    @JoinColumn(name = "FK_operationCredit")
+//    private OperationCreditEntity operationCredit;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ReleveBancaireEntity.class)
     @JoinColumn(name = "FK_releveBancaire")
     private ReleveBancaireEntity releveBancaire;
 
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "ligneReleveEntity")
+    private OperationEspecesEntity operationEspecesEntity;
+
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "ligneReleveEntity")
+    private OperationVirementEntity operationVirementEntity;
+
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "ligneReleveEntity")
+    private OperationChequeEntity operationChequeEntity;
 
 }

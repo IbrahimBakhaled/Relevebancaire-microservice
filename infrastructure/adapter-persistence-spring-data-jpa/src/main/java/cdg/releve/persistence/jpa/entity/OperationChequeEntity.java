@@ -13,8 +13,8 @@ import javax.persistence.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@DiscriminatorValue("OperationChequeEntity")
-public class OperationChequeEntity extends OperationCreditEntity {
+@DiscriminatorValue("Operation_Cheque")
+public class OperationChequeEntity extends LigneReleveEntity {
 
 
     private int numeroCheque;
@@ -24,7 +24,7 @@ public class OperationChequeEntity extends OperationCreditEntity {
 
 
 //    @OneToOne(mappedBy = "operationCredit")
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private LigneReleveEntity ligneReleveEntity;
 
 

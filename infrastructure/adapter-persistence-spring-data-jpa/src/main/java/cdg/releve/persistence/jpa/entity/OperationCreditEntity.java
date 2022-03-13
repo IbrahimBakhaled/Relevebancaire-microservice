@@ -16,10 +16,9 @@ import java.util.Date;
 @Setter
 @Table(name = "OPERATIONCREDIT")
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class OperationCreditEntity {
 
 
@@ -35,19 +34,23 @@ public class OperationCreditEntity {
     private Date operationDate;
 
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_operation_cheque")
-    private OperationChequeEntity operationCheque;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "FK_operation_cheque")
+//    private OperationChequeEntity operationCheque;
+//
+//
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "FK_operation_especes")
+//    private OperationEspecesEntity operationEspeces;
+//
+//
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "FK_operation_virement")
+//    private OperationVirementEntity operationVirement;
 
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_operation_especes")
-    private OperationEspecesEntity operationEspeces;
-
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_operation_virement")
-    private OperationVirementEntity operationVirement;
+//    @OneToOne
+//    private LigneReleveEntity ligneReleve;
 
 
     @OneToOne(cascade = CascadeType.ALL)
