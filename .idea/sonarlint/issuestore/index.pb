@@ -3,12 +3,8 @@
 domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
 §
 wapplication/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java,8\2\82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4
-i
-9domain/src/main/java/cdg/releve/domain/domain/Acteur.java,b\8\b8d0ac2576addd2f034790cb5b6024a0d8ce3a00
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ActeurRepository.java,4\e\4ec1c1359ef614a1635a847a7acfc3408df1ee22
-i
-9domain/src/main/java/cdg/releve/domain/domain/Banque.java,f\9\f97b16e497816e4e120c2586138e96f02b758463
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/BanqueRepository.java,5\a\5a5dba2971ae3d22de069f129428697b6500ded1
 v
@@ -17,8 +13,6 @@ i
 9domain/src/main/java/cdg/releve/domain/domain/Cheque.java,3\c\3c754df4e3774712de16eeb5106b3f0aea62e450
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ChequeRepository.java,8\d\8d1539f6fcb584a988501034f749ed7c65a9f8ee
-q
-Adomain/src/main/java/cdg/releve/domain/domain/CompteBancaire.java,6\d\6dd3f58294999964a282872cba4e795999877a3b
 µ
 „infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/CompteBancaireRepository.java,4\2\42c4ca5ec8904d4d6ccb76bea93494ac447748a1
 ³
@@ -39,8 +33,6 @@ j
 :infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
-j
-:domain/src/main/java/cdg/releve/domain/domain/Produit.java,e\7\e73fe195a60465e2383941ae66781ee3c81b160a
 ­
 }infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ProduitRepository.java,c\f\cfea3dcb21239024e1fbc10139461adc83cc718e
 q

@@ -1,24 +1,11 @@
 package cdg.releve.persistence.jpa.adapter;
 
-import cdg.releve.domain.domain.OperationCredit;
-import cdg.releve.domain.domain.LigneReleve;
-import cdg.releve.domain.domain.OperationEspeces;
-import cdg.releve.domain.domain.ReleveBancaire;
-import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
-import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
-import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
+import cdg.releve.domain.domain.*;
+import cdg.releve.domain.domain.request.*;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
-import cdg.releve.persistence.jpa.entity.OperationCreditEntity;
-import cdg.releve.persistence.jpa.entity.LigneReleveEntity;
-import cdg.releve.persistence.jpa.entity.OperationEspecesEntity;
-import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
-import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
-import cdg.releve.persistence.jpa.repository.LigneReleveRepository;
-import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
-import cdg.releve.persistence.jpa.repository.OperationEspecesRepository;
-import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
+import cdg.releve.persistence.jpa.entity.*;
+import cdg.releve.persistence.jpa.repository.*;
 import org.springframework.beans.BeanUtils;
-import org.springframework.context.annotation.Bean;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
@@ -31,13 +18,23 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     private LigneReleveRepository ligneReleveRepository;
     private OperationCreditRepository operationCreditRepository;
     private OperationEspecesRepository operationEspecesRepository;
+    private OperationChequeRepository operationChequeRepository;
+    private ActeurRepository acteurRepository;
+    private BanqueRepository banqueRepository;
+    private CompteBancaireRepository compteBancaireRepository;
+    private OperationVirementRepository operationVirementRepository;
 
 
-    public ReleveBancaireSpringJpaAdapter(ReleveBancaireRepository releveBancaireRepository, LigneReleveRepository ligneReleveRepository, OperationCreditRepository operationCreditRepository, OperationEspecesRepository operationEspecesRepository) {
+    public ReleveBancaireSpringJpaAdapter(ReleveBancaireRepository releveBancaireRepository, LigneReleveRepository ligneReleveRepository, OperationCreditRepository operationCreditRepository, OperationEspecesRepository operationEspecesRepository, OperationChequeRepository operationChequeRepository, ActeurRepository acteurRepository, BanqueRepository banqueRepository, CompteBancaireRepository compteBancaireRepository, OperationVirementRepository operationVirementRepository) {
         this.releveBancaireRepository = releveBancaireRepository;
         this.ligneReleveRepository = ligneReleveRepository;
         this.operationCreditRepository = operationCreditRepository;
         this.operationEspecesRepository = operationEspecesRepository;
+        this.operationChequeRepository = operationChequeRepository;
+        this.acteurRepository = acteurRepository;
+        this.banqueRepository = banqueRepository;
+        this.compteBancaireRepository = compteBancaireRepository;
+        this.operationVirementRepository = operationVirementRepository;
     }
 
 
@@ -121,22 +118,6 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         operationCreditRepository.save(operationCreditEntity1);
         ligneReleveToCreate.setOperationCredit(operationCreditEntity1);
         BeanUtils.copyProperties(ligneReleveToCreate, operationCreditEntity1);
-
-        //Creat OperationEspece
-//        OperationEspecesEntity operationEspecesEntity = new OperationEspecesEntity();
-//        operationEspecesEntity.setOperationEspeces(operationEspecesEntity);
-//        operationCreditEntity1.setOperationEspeces(operationEspecesEntity);
-//        operationEspecesRepository.save(operationEspecesEntity);
-////        BeanUtils.copyProperties(ligneReleveToCreate, operationCreditEntity1);
-
-
-
-//        OperationCredit operationCreditEspece = new OperationCredit();
-//        operationCreditEspece.setOperationEspeces(ligneReleve.getOperationEspeces());
-//        OperationEspeces operationEspeces = new OperationEspeces();
-//        BeanUtils.copyProperties(operationEspeces,operationCreditEspece);
-//        ligneReleve.setOperationEspeces(operationEspeces);
-//        BeanUtils.copyProperties(ligneReleve, operationCreditEspece);
         ligneReleveRepository.save(ligneReleveToCreate);
     }
 
@@ -149,10 +130,104 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     }
 
     @Override
-    public void createOperationEspece(OperationCreditCreationRequestDomain operationCreditCreationRequestDomain) {
+    public void createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain) {
+        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationEspeceCreationRequestDomain.getLigneReleveId());
+
+        if (!ligneReleveEntity.isPresent()){
+            throw  new EntityNotFoundException("ligneReleveId is not presented in database fill ReleveBancaire Table first and then come here to post operationEspece");
+        }
+
         OperationEspecesEntity operationEspecesEntity = new OperationEspecesEntity();
-        BeanUtils.copyProperties(operationCreditCreationRequestDomain, operationEspecesEntity);
+        BeanUtils.copyProperties(operationEspeceCreationRequestDomain, operationEspecesEntity);
+        operationEspecesEntity.setLigneReleveEntity(ligneReleveEntity.get());
+        LigneReleve ligneReleve = new LigneReleve();
+        BeanUtils.copyProperties(operationEspecesEntity, ligneReleve);
         operationEspecesRepository.save(operationEspecesEntity);
+    }
+
+    @Override
+    public void createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain) {
+
+        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(operationChequeCreationRequestDomain.getActeurId());
+        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationChequeCreationRequestDomain.getLigneReleveId());
+        if (!acteurEntity.isPresent() && !ligneReleveEntity.isPresent()){
+            throw new EntityNotFoundException("You have to make sure that the acteurId and ligneReleveId are presented in database fill the two database and then come to post operationCheque");
+        }
+
+        OperationChequeEntity operationChequeEntity = new OperationChequeEntity();
+        BeanUtils.copyProperties(operationChequeCreationRequestDomain, operationChequeEntity);
+        operationChequeEntity.setLigneReleveEntity(ligneReleveEntity.get());
+        operationChequeEntity.setActeur(acteurEntity.get());
+        LigneReleve ligneReleve = new LigneReleve();
+        Acteur acteur = new Acteur();
+        BeanUtils.copyProperties(operationChequeEntity, ligneReleve);
+        BeanUtils.copyProperties(operationChequeEntity, acteur);
+        operationChequeRepository.save(operationChequeEntity);
+
+    }
+
+    @Override
+    public void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
+
+        ActeurEntity acteurEntity = new ActeurEntity();
+        BeanUtils.copyProperties(acteurCreationRequestDomain, acteurEntity);
+        acteurRepository.save(acteurEntity);
+
+
+
+    }
+
+    @Override
+    public void createbanque(BanqueCreationRequestDomain banqueCreationRequestDomain) {
+        BanqueEntity banqueEntity = new BanqueEntity();
+        BeanUtils.copyProperties(banqueCreationRequestDomain, banqueEntity);
+        banqueRepository.save(banqueEntity);
+
+
+    }
+
+    @Override
+    public void createcomptebancaire(CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain) {
+        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(compteBancaireCreationRequestDomain.getActeurId());
+        Optional<BanqueEntity> banqueEntity = banqueRepository.findById(compteBancaireCreationRequestDomain.getBanqueId());
+
+        if (!acteurEntity.isPresent() && !banqueEntity.isPresent()){
+            throw new EntityNotFoundException("You have to make sure that the acteurId and banqueId are presented in database fill the two database and then come to post creationcomptebancaire");
+        }
+
+        CompteBancaireEntity compteBancaireEntity = new CompteBancaireEntity();
+        BeanUtils.copyProperties(compteBancaireCreationRequestDomain, compteBancaireEntity);
+        compteBancaireEntity.setBanqueEntity(banqueEntity.get());
+        compteBancaireEntity.setActeurEntity(acteurEntity.get());
+        Acteur acteur = new Acteur();
+        Banque banque = new Banque();
+        BeanUtils.copyProperties(compteBancaireEntity, acteur);
+        BeanUtils.copyProperties(compteBancaireEntity, banque);
+
+        compteBancaireRepository.save(compteBancaireEntity);
+    }
+
+    @Override
+    public void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain) {
+
+        Optional<CompteBancaireEntity> compteBancaireEntity = compteBancaireRepository.findById(operationVirementCreationRequestDomain.getCompteBancaireId());
+        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationVirementCreationRequestDomain.getLigneReleveId());
+
+        if (!compteBancaireEntity.isPresent() && !ligneReleveEntity.isPresent()){
+            throw new EntityNotFoundException("CompteBancaireId or ligneReleveId are not presented in database go create compteBancaire and ligneReleve with their Ids and come back and create OperationVirement");
+        }
+
+        OperationVirementEntity operationVirementEntity = new OperationVirementEntity();
+        BeanUtils.copyProperties(operationVirementCreationRequestDomain, operationVirementEntity);
+        operationVirementEntity.setCompteBancaire(compteBancaireEntity.get());
+        operationVirementEntity.setLigneReleveEntity(ligneReleveEntity.get());
+        CompteBancaire compteBancaire = new CompteBancaire();
+        LigneReleve ligneReleve = new LigneReleve();
+        BeanUtils.copyProperties(operationVirementEntity, ligneReleve);
+        BeanUtils.copyProperties(operationVirementEntity, compteBancaire);
+
+        operationVirementRepository.save(operationVirementEntity);
+
     }
 
 

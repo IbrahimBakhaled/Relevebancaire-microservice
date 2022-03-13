@@ -18,6 +18,7 @@ public class BanqueEntity {
 
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int banqueId;
     private String nomBanque;
 

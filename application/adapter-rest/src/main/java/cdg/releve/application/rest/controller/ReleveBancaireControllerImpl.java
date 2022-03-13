@@ -2,11 +2,7 @@ package cdg.releve.application.rest.controller;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
-import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
-import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
-import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
-import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
-import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
+import cdg.releve.domain.domain.request.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -71,9 +67,39 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     }
 
     @Override
-    public ResponseEntity<Void> createOperationEspece(OperationCreditCreationRequestDomain operationCreditCreationRequestDomain) {
-        releveBancaireService.createOperationEspece(operationCreditCreationRequestDomain);
+    public ResponseEntity<Void> createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain) {
+        releveBancaireService.createOperationEspece(operationEspeceCreationRequestDomain);
         return new ResponseEntity<Void>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain) {
+        releveBancaireService.createoperationcheque((operationChequeCreationRequestDomain));
+        return new ResponseEntity<Void>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
+        releveBancaireService.createacteur(acteurCreationRequestDomain);
+        return new ResponseEntity<Void>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> createbanque(BanqueCreationRequestDomain banqueCreationRequestDomain) {
+        releveBancaireService.createbanque(banqueCreationRequestDomain);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> createcomptebancaire(CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain) {
+        releveBancaireService.createcomptebancaire(compteBancaireCreationRequestDomain);
+        return  new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain) {
+        releveBancaireService.createoperationvirement(operationVirementCreationRequestDomain);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 

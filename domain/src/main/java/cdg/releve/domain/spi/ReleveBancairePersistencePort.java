@@ -1,9 +1,7 @@
 package cdg.releve.domain.spi;
 
 import cdg.releve.domain.domain.ReleveBancaire;
-import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
-import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
-import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
+import cdg.releve.domain.domain.request.*;
 
 import java.util.List;
 
@@ -21,5 +19,17 @@ public interface ReleveBancairePersistencePort {
 
     void createReleveBancaire(ReleveBancaireCreationRequestDomain request);
 
-    void createOperationEspece(OperationCreditCreationRequestDomain operationCreditCreationRequestDomain);
+    void createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain);
+
+    void createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain);
+
+    void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain);
+
+    void createbanque(BanqueCreationRequestDomain banqueCreationRequestDomain);
+
+    void createcomptebancaire(CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain);
+
+    void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
+
+
 }

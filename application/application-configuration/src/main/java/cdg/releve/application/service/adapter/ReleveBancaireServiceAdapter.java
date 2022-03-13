@@ -2,12 +2,8 @@ package cdg.releve.application.service.adapter;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
-import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
-import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
-import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
+import cdg.releve.domain.domain.request.*;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
-import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
-import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -61,7 +57,32 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     }
 
     @Override
-    public void createOperationEspece(OperationCreditCreationRequestDomain operationCreditCreationRequestDomain) {
-        releveBancairePersistencePort.createOperationEspece(operationCreditCreationRequestDomain);
+    public void createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain) {
+        releveBancairePersistencePort.createOperationEspece(operationEspeceCreationRequestDomain);
+    }
+
+    @Override
+    public void createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain) {
+        releveBancairePersistencePort.createoperationcheque(operationChequeCreationRequestDomain);
+    }
+
+    @Override
+    public void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
+        releveBancairePersistencePort.createacteur(acteurCreationRequestDomain);
+    }
+
+    @Override
+    public void createbanque(BanqueCreationRequestDomain banqueCreationRequestDomain) {
+        releveBancairePersistencePort.createbanque(banqueCreationRequestDomain);
+    }
+
+    @Override
+    public void createcomptebancaire(CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain) {
+        releveBancairePersistencePort.createcomptebancaire(compteBancaireCreationRequestDomain);
+    }
+
+    @Override
+    public void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain) {
+        releveBancairePersistencePort.createoperationvirement(operationVirementCreationRequestDomain);
     }
 }

@@ -19,7 +19,12 @@ public class OperationChequeEntity extends OperationCreditEntity {
 
     private int numeroCheque;
     @OneToOne
-    private ChequeEntity chequeEntity;
+    @JoinColumn(name = "Fk_Acteur")
+    private ActeurEntity acteur;
+
+
+    @OneToOne(mappedBy = "operationCredit")
+    private LigneReleveEntity ligneReleveEntity;
 
 
 }

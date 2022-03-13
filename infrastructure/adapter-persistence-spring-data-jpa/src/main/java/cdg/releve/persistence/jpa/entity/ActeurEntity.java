@@ -17,6 +17,7 @@ import javax.persistence.*;
 public class ActeurEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int acteurId;
     private String nomActeur;
     private String prenomActeur;

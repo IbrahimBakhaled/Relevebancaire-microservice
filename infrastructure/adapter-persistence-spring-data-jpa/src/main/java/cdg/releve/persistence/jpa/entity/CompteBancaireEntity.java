@@ -26,10 +26,12 @@ public class CompteBancaireEntity {
     private String codeSwift;
 
     @OneToOne
+    @JoinColumn(name = "FK_Acteur")
     private ActeurEntity acteurEntity;
 
     @OneToOne
-    private BanqueEntity banque;
+    @JoinColumn(name = "Fk_Banque")
+    private BanqueEntity banqueEntity;
 
 
 

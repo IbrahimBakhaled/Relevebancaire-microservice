@@ -1,11 +1,7 @@
 package cdg.releve.application.rest.controller;
 
 import cdg.releve.domain.domain.ReleveBancaire;
-import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
-import cdg.releve.domain.domain.request.OperationCreditCreationRequestDomain;
-import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
-import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
-import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
+import cdg.releve.domain.domain.request.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,6 +31,20 @@ public interface ReleveBancaireController {
     ResponseEntity<Void> createReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain request);
 
     @PostMapping("/createoperationespece")
-    ResponseEntity<Void> createOperationEspece(@RequestBody OperationCreditCreationRequestDomain operationCreditCreationRequestDomain);
+    ResponseEntity<Void> createOperationEspece(@RequestBody OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain);
 
+    @PostMapping("createoperationcheque")
+    ResponseEntity<Void> createoperationcheque(@RequestBody OperationChequeCreationRequestDomain operationChequeCreationRequestDomain);
+
+    @PostMapping("createacteur")
+    ResponseEntity<Void> createacteur(@RequestBody ActeurCreationRequestDomain acteurCreationRequestDomain);
+
+    @PostMapping("/createbanque")
+    ResponseEntity<Void> createbanque(@RequestBody BanqueCreationRequestDomain banqueCreationRequestDomain);
+
+    @PostMapping("/createcomptebancaire")
+    ResponseEntity<Void> createcomptebancaire(@RequestBody CompteBancaireCreationRequestDomain compteBancaireCreationRequestDomain);
+
+    @PostMapping("/createoperationvirement")
+    ResponseEntity<Void> createoperationvirement(@RequestBody OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
 }

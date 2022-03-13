@@ -22,6 +22,9 @@ public class OperationEspecesEntity extends OperationCreditEntity {
     private String nomEmetteur;
     private String prenomEmetteur;
 
+    @OneToOne(mappedBy = "operationCredit")
+    private LigneReleveEntity ligneReleveEntity;
+
 
 
 

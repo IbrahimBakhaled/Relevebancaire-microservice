@@ -3,10 +3,7 @@ package cdg.releve.persistence.jpa.config;
 
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
 import cdg.releve.persistence.jpa.adapter.ReleveBancaireSpringJpaAdapter;
-import cdg.releve.persistence.jpa.repository.LigneReleveRepository;
-import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
-import cdg.releve.persistence.jpa.repository.OperationEspecesRepository;
-import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
+import cdg.releve.persistence.jpa.repository.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,8 +16,13 @@ public class SpringDataJpaAdapterConfiguration {
             OperationCreditRepository operationCreditRepository,
             LigneReleveRepository ligneReleveRepository,
             ReleveBancaireRepository releveBancaireRepository,
-            OperationEspecesRepository operationEspecesRepository){
-        return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository);
+            OperationEspecesRepository operationEspecesRepository,
+            OperationChequeRepository operationChequeRepository,
+            ActeurRepository acteurRepository,
+            BanqueRepository banqueRepository,
+            CompteBancaireRepository compteBancaireRepository,
+            OperationVirementRepository operationVirementRepository){
+        return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository, operationChequeRepository, acteurRepository, banqueRepository, compteBancaireRepository, operationVirementRepository);
     }
 
 }
