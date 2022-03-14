@@ -133,23 +133,23 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     @Override
     public void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve) {
         Optional<ReleveBancaireEntity> releveBancaireEntity = releveBancaireRepository.findById(ligneReleve.getReleveBancaireId());
-        if (!releveBancaireEntity.isPresent()){
-            throw new EntityNotFoundException("Releve Bancaire not found or ReleveBancaire is not presented in database");
+        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(ligneReleve.getActeurId());
+        Optional<BanqueEntity> banqueEntity = banqueRepository.findById(ligneReleve.getBanqueId());
+        Optional<CompteBancaireEntity> compteBancaireEntity = compteBancaireRepository.findById(ligneReleve.getCompteBancaireId());
+        Optional<ProduitEntity> produitEntity = produitRepository.findById(ligneReleve.getProduitId());
+        if (!releveBancaireEntity.isPresent() && !acteurEntity.isPresent() && !banqueEntity.isPresent() && !compteBancaireEntity.isPresent() && !produitEntity.isPresent()){
+            throw new EntityNotFoundException("ReleveBancaire || Acteur || Banque || CompteBancaire || Produit = are not presented in database");
         }
 
         LigneReleveEntity ligneReleveToCreate = new LigneReleveEntity();
         BeanUtils.copyProperties(ligneReleve, ligneReleveToCreate);
         ligneReleveToCreate.setReleveBancaire(releveBancaireEntity.get());
+        ligneReleveToCreate.setActeurEntity(acteurEntity.get());
+        ligneReleveToCreate.setBanqueEntity(banqueEntity.get());
+        ligneReleveToCreate.setCompteBancaireEntity(compteBancaireEntity.get());
+        ligneReleveToCreate.setProduitEntity(produitEntity.get());
         LigneReleve ligneReleveFromDomain = new LigneReleve();
         BeanUtils.copyProperties(ligneReleveToCreate, ligneReleveFromDomain);
-
-        // Creat OperationCredit
-//        OperationCreditEntity operationCreditEntity1 = new OperationCreditEntity();
-//        operationCreditEntity1.setOperationCreditId(ligneReleve.getOperationCreditId());
-
-//        operationCreditRepository.save(operationCreditEntity1);
-//        ligneReleveToCreate.setOperationCredit(operationCreditEntity1);
-//        BeanUtils.copyProperties(ligneReleveToCreate, operationCreditEntity1);
         ligneReleveRepository.save(ligneReleveToCreate);
     }
 
@@ -163,40 +163,50 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
     @Override
     public void createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain) {
-        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationEspeceCreationRequestDomain.getLigneReleveId());
 
-        if (!ligneReleveEntity.isPresent()){
-            throw  new EntityNotFoundException("ligneReleveId is not presented in database fill ReleveBancaire Table first and then come here to post operationEspece");
-        }
-
-        OperationEspecesEntity operationEspecesEntity = new OperationEspecesEntity();
-        BeanUtils.copyProperties(operationEspeceCreationRequestDomain, operationEspecesEntity);
-        operationEspecesEntity.setLigneReleveEntity(ligneReleveEntity.get());
-        LigneReleve ligneReleve = new LigneReleve();
-        BeanUtils.copyProperties(operationEspecesEntity, ligneReleve);
-        operationEspecesRepository.save(operationEspecesEntity);
     }
+
+//    @Override
+//    public void createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain) {
+//        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationEspeceCreationRequestDomain.getLigneReleveId());
+//
+//        if (!ligneReleveEntity.isPresent()){
+//            throw  new EntityNotFoundException("ligneReleveId is not presented in database fill ReleveBancaire Table first and then come here to post operationEspece");
+//        }
+//
+//        OperationEspecesEntity operationEspecesEntity = new OperationEspecesEntity();
+//        BeanUtils.copyProperties(operationEspeceCreationRequestDomain, operationEspecesEntity);
+//        operationEspecesEntity.setLigneReleveEntity(ligneReleveEntity.get());
+//        LigneReleve ligneReleve = new LigneReleve();
+//        BeanUtils.copyProperties(operationEspecesEntity, ligneReleve);
+//        operationEspecesRepository.save(operationEspecesEntity);
+//    }
 
     @Override
     public void createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain) {
 
-        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(operationChequeCreationRequestDomain.getActeurId());
-        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationChequeCreationRequestDomain.getLigneReleveId());
-        if (!acteurEntity.isPresent() && !ligneReleveEntity.isPresent()){
-            throw new EntityNotFoundException("You have to make sure that the acteurId and ligneReleveId are presented in database fill the two database and then come to post operationCheque");
-        }
-
-        OperationChequeEntity operationChequeEntity = new OperationChequeEntity();
-        BeanUtils.copyProperties(operationChequeCreationRequestDomain, operationChequeEntity);
-        operationChequeEntity.setLigneReleveEntity(ligneReleveEntity.get());
-        operationChequeEntity.setActeur(acteurEntity.get());
-        LigneReleve ligneReleve = new LigneReleve();
-        Acteur acteur = new Acteur();
-        BeanUtils.copyProperties(operationChequeEntity, ligneReleve);
-        BeanUtils.copyProperties(operationChequeEntity, acteur);
-        operationChequeRepository.save(operationChequeEntity);
-
     }
+
+//    @Override
+//    public void createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain) {
+//
+//        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(operationChequeCreationRequestDomain.getActeurId());
+//        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationChequeCreationRequestDomain.getLigneReleveId());
+//        if (!acteurEntity.isPresent() && !ligneReleveEntity.isPresent()){
+//            throw new EntityNotFoundException("You have to make sure that the acteurId and ligneReleveId are presented in database fill the two database and then come to post operationCheque");
+//        }
+//
+//        OperationChequeEntity operationChequeEntity = new OperationChequeEntity();
+//        BeanUtils.copyProperties(operationChequeCreationRequestDomain, operationChequeEntity);
+//        operationChequeEntity.setLigneReleveEntity(ligneReleveEntity.get());
+//        operationChequeEntity.setActeur(acteurEntity.get());
+//        LigneReleve ligneReleve = new LigneReleve();
+//        Acteur acteur = new Acteur();
+//        BeanUtils.copyProperties(operationChequeEntity, ligneReleve);
+//        BeanUtils.copyProperties(operationChequeEntity, acteur);
+//        operationChequeRepository.save(operationChequeEntity);
+//
+//    }
 
     @Override
     public void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
@@ -242,33 +252,38 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     @Override
     public void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain) {
 
-        Optional<CompteBancaireEntity> compteBancaireEntity = compteBancaireRepository.findById(operationVirementCreationRequestDomain.getCompteBancaireId());
-        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationVirementCreationRequestDomain.getLigneReleveId());
-
-        if (!compteBancaireEntity.isPresent() && !ligneReleveEntity.isPresent()){
-            throw new EntityNotFoundException("CompteBancaireId or ligneReleveId are not presented in database go create compteBancaire and ligneReleve with their Ids and come back and create OperationVirement");
-        }
-
-        OperationVirementEntity operationVirementEntity = new OperationVirementEntity();
-        BeanUtils.copyProperties(operationVirementCreationRequestDomain, operationVirementEntity);
-        operationVirementEntity.setCompteBancaire(compteBancaireEntity.get());
-        operationVirementEntity.setLigneReleveEntity(ligneReleveEntity.get());
-        CompteBancaire compteBancaire = new CompteBancaire();
-        LigneReleve ligneReleve = new LigneReleve();
-        BeanUtils.copyProperties(operationVirementEntity, ligneReleve);
-        BeanUtils.copyProperties(operationVirementEntity, compteBancaire);
-
-        operationVirementRepository.save(operationVirementEntity);
-
     }
+
+    //    @Override
+//    public void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain) {
+//
+//        Optional<CompteBancaireEntity> compteBancaireEntity = compteBancaireRepository.findById(operationVirementCreationRequestDomain.getCompteBancaireId());
+//        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(operationVirementCreationRequestDomain.getLigneReleveId());
+//
+//        if (!compteBancaireEntity.isPresent() && !ligneReleveEntity.isPresent()){
+//            throw new EntityNotFoundException("CompteBancaireId or ligneReleveId are not presented in database go create compteBancaire and ligneReleve with their Ids and come back and create OperationVirement");
+//        }
+//
+//        OperationVirementEntity operationVirementEntity = new OperationVirementEntity();
+//        BeanUtils.copyProperties(operationVirementCreationRequestDomain, operationVirementEntity);
+//        operationVirementEntity.setCompteBancaire(compteBancaireEntity.get());
+//        operationVirementEntity.setLigneReleveEntity(ligneReleveEntity.get());
+//        CompteBancaire compteBancaire = new CompteBancaire();
+//        LigneReleve ligneReleve = new LigneReleve();
+//        BeanUtils.copyProperties(operationVirementEntity, ligneReleve);
+//        BeanUtils.copyProperties(operationVirementEntity, compteBancaire);
+//
+//        operationVirementRepository.save(operationVirementEntity);
+//
+//    }
     @Override
     public void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
 
-        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(produitCreationRequestDomain.getLigneReleveId());
-
-        if (!ligneReleveEntity.isPresent()){
-            throw new EntityNotFoundException("ligneReleve is not presented in database create lignereleve first and then come back to create produit");
-        }
+//        Optional<LigneReleveEntity> ligneReleveEntity = ligneReleveRepository.findById(produitCreationRequestDomain.getLigneReleveId());
+//
+//        if (!ligneReleveEntity.isPresent()){
+//            throw new EntityNotFoundException("ligneReleve is not presented in database create lignereleve first and then come back to create produit");
+//        }
 
         ProduitEntity produitEntity = new ProduitEntity();
         BeanUtils.copyProperties(produitCreationRequestDomain, produitEntity);

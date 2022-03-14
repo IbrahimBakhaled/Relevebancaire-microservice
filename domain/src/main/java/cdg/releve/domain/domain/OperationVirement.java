@@ -3,13 +3,13 @@ package cdg.releve.domain.domain;
 public class OperationVirement {
 
     private String rib;
-    private CompteBancaire compteBancaire;
+//    private CompteBancaire compteBancaire;
 
 
 
-    public OperationVirement(String rib, CompteBancaire compteBancaire) {
+    public OperationVirement(String rib) {
         this.rib = rib;
-        this.compteBancaire = compteBancaire;
+//        this.compteBancaire = compteBancaire;
     }
 
 
@@ -26,11 +26,11 @@ public class OperationVirement {
         this.rib = rib;
     }
 
-    public CompteBancaire getCompteBancaire() {
-        return compteBancaire;
-    }
-
-    public void setCompteBancaire(CompteBancaire compteBancaire) {
-        this.compteBancaire = compteBancaire;
-    }
+//    public CompteBancaire getCompteBancaire() {
+//        return compteBancaire;
+//    }
+//
+//    public void setCompteBancaire(CompteBancaire compteBancaire) {
+//        this.compteBancaire = compteBancaire;
+//    }
 }

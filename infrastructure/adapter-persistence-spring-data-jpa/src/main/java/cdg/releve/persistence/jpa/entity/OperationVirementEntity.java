@@ -12,21 +12,21 @@ import javax.persistence.*;
 @Setter
 @Entity
 @AllArgsConstructor
-@NoArgsConstructor
+//@NoArgsConstructor
 @DiscriminatorValue("Operation_Virement")
-public class OperationVirementEntity extends LigneReleveEntity {
+public class OperationVirementEntity extends OperationCreditEntity {
 
 
 
-    private String rib;
+//    private String rib;
 
-    @OneToOne
-    @JoinColumn(name = "FK_compteBancaire")
-    private CompteBancaireEntity compteBancaire;
+//    @OneToOne
+//    @JoinColumn(name = "FK_compteBancaire")
+//    private CompteBancaireEntity compteBancaire;
 
 //    @OneToOne(mappedBy = "operationCredit")
-    @OneToOne(cascade = CascadeType.ALL)
-    private LigneReleveEntity ligneReleveEntity;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    private LigneReleveEntity ligneReleveEntity;
 
 
 

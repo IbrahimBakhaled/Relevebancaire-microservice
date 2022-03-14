@@ -16,16 +16,19 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @DiscriminatorValue("Operation_Especes")
-public class OperationEspecesEntity extends LigneReleveEntity {
+public class OperationEspecesEntity extends OperationCreditEntity {
 
 
     private String cin;
     private String nomEmetteur;
     private String prenomEmetteur;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JsonIgnore
-    private LigneReleveEntity ligneReleveEntity;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JsonIgnore
+//    private LigneReleveEntity ligneReleveEntity;
+//
+//    @OneToOne
+//    private ReleveBancaireEntity releveBancaireEntity;
 
 
 

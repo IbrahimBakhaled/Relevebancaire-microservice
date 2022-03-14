@@ -25,7 +25,7 @@ import java.util.*;
 @Table(name = "RELEVEBANCAIRE")
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ReleveBancaireEntity{
+public class ReleveBancaireEntity implements Serializable{
 
 
 

@@ -16,6 +16,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @OpenAPIDefinition(info = @Info(title = "Releve Bancaire API", version = "3.0", description = "Releve Bancaire Information"))
 public class BootloaderApplicationLauncher {
     public static void main(String[] args) {
+
         SpringApplication.run(BootloaderApplicationLauncher.class, args);
+        System.out.println(org.hibernate.Version.getVersionString());
     }
 }

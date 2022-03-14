@@ -52,11 +52,11 @@ Adomain/src/main/java/cdg/releve/domain/domain/CompteBancaire.java,6\d\6dd3f582
 Vdomain/src/main/java/cdg/releve/domain/domain/request/ActeurCreationRequestDomain.java,b\8\b8f21b4a7fa39b3cde2bee07dfe1b0d92138fbb0
 †
 Vdomain/src/main/java/cdg/releve/domain/domain/request/BanqueCreationRequestDomain.java,d\5\d58943cee0d542f1226a858e5a0c7d777a88aaf9
-Ž
-^domain/src/main/java/cdg/releve/domain/domain/request/CompteBancaireCreationRequestDomain.java,5\6\56ec48e57e56e461938fa70741eb25c02cc155d7
 ¿
 Žinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/OpeartionCreditCreationRequest.java,9\c\9ccf2d5899760bef80fb8020c7f820c5fb90108f
 ¿
 Žinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/OperationChequeCreationRequest.java,6\d\6de8ca01053d8c068dcef8610f333e5630e58109
 ·
 †infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationEspecesRepository.java,2\7\272beb6eb7c373c58b08f805dd9e528cfffda3dd
+j
+:domain/src/main/java/cdg/releve/domain/domain/Produit.java,e\7\e73fe195a60465e2383941ae66781ee3c81b160a

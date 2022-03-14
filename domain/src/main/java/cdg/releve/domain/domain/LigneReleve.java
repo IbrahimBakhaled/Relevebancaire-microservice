@@ -15,15 +15,20 @@ public class LigneReleve{
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-    private OperationCredit operationCredit;
     private ReleveBancaire releveBancaire;
-    private OperationEspeces operationEspeces;
+    private String cin;
+    private String nomEmetteur;
+    private String prenomEmetteur;
+    private Acteur acteur;
+    private CompteBancaire compteBancaire;
+    private Banque banque;
+    private Produit produit;
 
     public LigneReleve() {
 
     }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, OperationCredit operationCredit, ReleveBancaire releveBancaire, OperationEspeces operationEspeces) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire, String cin, String nomEmetteur, String prenomEmetteur, Acteur acteur, CompteBancaire compteBancaire, Banque banque, Produit produit) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
@@ -33,9 +38,14 @@ public class LigneReleve{
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
-        this.operationCredit = operationCredit;
         this.releveBancaire = releveBancaire;
-        this.operationEspeces = operationEspeces;
+        this.cin = cin;
+        this.nomEmetteur = nomEmetteur;
+        this.prenomEmetteur = prenomEmetteur;
+        this.acteur = acteur;
+        this.compteBancaire = compteBancaire;
+        this.banque = banque;
+        this.produit = produit;
     }
 
     public Long getLigneReleveId() {
@@ -110,14 +120,6 @@ public class LigneReleve{
         this.modePaiment = modePaiment;
     }
 
-    public OperationCredit getOperationCredit() {
-        return operationCredit;
-    }
-
-    public void setOperationCredit(OperationCredit operationCredit) {
-        this.operationCredit = operationCredit;
-    }
-
     public ReleveBancaire getReleveBancaire() {
         return releveBancaire;
     }
@@ -126,12 +128,60 @@ public class LigneReleve{
         this.releveBancaire = releveBancaire;
     }
 
-    public OperationEspeces getOperationEspeces() {
-        return operationEspeces;
+    public String getCin() {
+        return cin;
     }
 
-    public void setOperationEspeces(OperationEspeces operationEspeces) {
-        this.operationEspeces = operationEspeces;
+    public void setCin(String cin) {
+        this.cin = cin;
+    }
+
+    public String getNomEmetteur() {
+        return nomEmetteur;
+    }
+
+    public void setNomEmetteur(String nomEmetteur) {
+        this.nomEmetteur = nomEmetteur;
+    }
+
+    public String getPrenomEmetteur() {
+        return prenomEmetteur;
+    }
+
+    public void setPrenomEmetteur(String prenomEmetteur) {
+        this.prenomEmetteur = prenomEmetteur;
+    }
+
+    public Acteur getActeur() {
+        return acteur;
+    }
+
+    public void setActeur(Acteur acteur) {
+        this.acteur = acteur;
+    }
+
+    public CompteBancaire getCompteBancaire() {
+        return compteBancaire;
+    }
+
+    public void setCompteBancaire(CompteBancaire compteBancaire) {
+        this.compteBancaire = compteBancaire;
+    }
+
+    public Banque getBanque() {
+        return banque;
+    }
+
+    public void setBanque(Banque banque) {
+        this.banque = banque;
+    }
+
+    public Produit getProduit() {
+        return produit;
+    }
+
+    public void setProduit(Produit produit) {
+        this.produit = produit;
     }
 }
 
