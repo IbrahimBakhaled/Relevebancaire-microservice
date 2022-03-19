@@ -2,6 +2,7 @@ package cdg.releve.domain.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Date;
 
 public class LigneReleve{
@@ -9,43 +10,24 @@ public class LigneReleve{
     private Long ligneReleveId;
     private Date dateOperation;
     private String operationNature;
-    private int numCheck;
     private BigDecimal montant;
     private BigDecimal creditDebit;
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
     private ReleveBancaire releveBancaire;
-    private String cin;
-    private String nomEmetteur;
-    private String prenomEmetteur;
-    private Acteur acteur;
-    private CompteBancaire compteBancaire;
-    private Banque banque;
-    private Produit produit;
+    public LigneReleve() {}
 
-    public LigneReleve() {
-
-    }
-
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, int numCheck, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire, String cin, String nomEmetteur, String prenomEmetteur, Acteur acteur, CompteBancaire compteBancaire, Banque banque, Produit produit) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
-        this.numCheck = numCheck;
         this.montant = montant;
         this.creditDebit = creditDebit;
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
         this.modePaiment = modePaiment;
         this.releveBancaire = releveBancaire;
-        this.cin = cin;
-        this.nomEmetteur = nomEmetteur;
-        this.prenomEmetteur = prenomEmetteur;
-        this.acteur = acteur;
-        this.compteBancaire = compteBancaire;
-        this.banque = banque;
-        this.produit = produit;
     }
 
     public Long getLigneReleveId() {
@@ -70,14 +52,6 @@ public class LigneReleve{
 
     public void setOperationNature(String operationNature) {
         this.operationNature = operationNature;
-    }
-
-    public int getNumCheck() {
-        return numCheck;
-    }
-
-    public void setNumCheck(int numCheck) {
-        this.numCheck = numCheck;
     }
 
     public BigDecimal getMontant() {
@@ -126,62 +100,6 @@ public class LigneReleve{
 
     public void setReleveBancaire(ReleveBancaire releveBancaire) {
         this.releveBancaire = releveBancaire;
-    }
-
-    public String getCin() {
-        return cin;
-    }
-
-    public void setCin(String cin) {
-        this.cin = cin;
-    }
-
-    public String getNomEmetteur() {
-        return nomEmetteur;
-    }
-
-    public void setNomEmetteur(String nomEmetteur) {
-        this.nomEmetteur = nomEmetteur;
-    }
-
-    public String getPrenomEmetteur() {
-        return prenomEmetteur;
-    }
-
-    public void setPrenomEmetteur(String prenomEmetteur) {
-        this.prenomEmetteur = prenomEmetteur;
-    }
-
-    public Acteur getActeur() {
-        return acteur;
-    }
-
-    public void setActeur(Acteur acteur) {
-        this.acteur = acteur;
-    }
-
-    public CompteBancaire getCompteBancaire() {
-        return compteBancaire;
-    }
-
-    public void setCompteBancaire(CompteBancaire compteBancaire) {
-        this.compteBancaire = compteBancaire;
-    }
-
-    public Banque getBanque() {
-        return banque;
-    }
-
-    public void setBanque(Banque banque) {
-        this.banque = banque;
-    }
-
-    public Produit getProduit() {
-        return produit;
-    }
-
-    public void setProduit(Produit produit) {
-        this.produit = produit;
     }
 }
 

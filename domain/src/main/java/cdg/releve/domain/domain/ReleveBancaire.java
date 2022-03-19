@@ -15,14 +15,12 @@ public class ReleveBancaire{
     private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
-    private Set<LigneReleve> lignereleve;    // ONE relevebancaire has MANY lignereleve (One to Many)
+    private List<LigneReleve> lignereleve = new ArrayList<>();    // ONE relevebancaire has MANY lignereleve (One to Many)
 
     public ReleveBancaire() {
-
     }
 
-
-    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, Set<LigneReleve> lignereleve) {
+    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleve> lignereleve) {
         this.releveBancaireId = releveBancaireId;
         this.dateReception = dateReception;
         this.label = label;
@@ -32,6 +30,10 @@ public class ReleveBancaire{
         this.soldeInitial = soldeInitial;
         this.soleFinal = soleFinal;
         this.lignereleve = lignereleve;
+    }
+
+    public ReleveBancaire(String releveBancaire) {
+        // handle url
     }
 
     public Long getReleveBancaireId() {
@@ -98,11 +100,15 @@ public class ReleveBancaire{
         this.soleFinal = soleFinal;
     }
 
-    public Set<LigneReleve> getLignereleve() {
+    public List<LigneReleve> getLignereleve() {
         return lignereleve;
     }
 
-    public void setLignereleve(Set<LigneReleve> lignereleve) {
+    public void setLignereleve(List<LigneReleve> lignereleve) {
+        if (this.getLignereleve() == null){
+            throw new IllegalArgumentException("cette exception vient du setterLigneReleve du class ReleveBancaire [Domain]");
+
+        }
         this.lignereleve = lignereleve;
     }
 }

@@ -6,12 +6,13 @@ import cdg.releve.domain.spi.ReleveBancairePersistencePort;
 import cdg.releve.persistence.jpa.entity.*;
 import cdg.releve.persistence.jpa.repository.*;
 import org.springframework.beans.BeanUtils;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-import java.beans.beancontext.BeanContext;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+
+
 
 public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistencePort {
 
@@ -41,18 +42,46 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     }
 
 
+//    public Employee addEmployee(Employee employee) {
+//        Department dept = departmentRepository.findById(employee.getDepartment().getId()).orElse(null);
+//        if (null == dept) {
+//            dept = new Department();
+//        }
+//        dept.setDeptName(employee.getDepartment().getDeptName());
+//        employee.setDepartment(dept);
+//        return employeeRepository.save(employee);
+//    }
+//
+
+
     @Override
     public void addReleveBancaire(ReleveBancaire releveBancaire) {
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
-        BeanUtils.copyProperties(releveBancaire, releveBancaireEntity);
-//        List<LigneReleveEntity> listCollection =
-//        releveBancaireEntity.getLignereleve().stream().map(l -> {
-//            LigneReleveEntity ligneReleveEntity = new LigneReleveEntity();
-//            BeanUtils.copyProperties(l,ligneReleveEntity);
-//            return ligneReleveEntity;
-//        }).collect(Collectors.toList());
-//        releveBancaireEntity.setLignereleve(listCollection);
-//        releveBancaireEntity.setterOfList();
+
+
+        releveBancaireEntity.setLabel(releveBancaire.getLabel());
+        releveBancaireEntity.setSoleFinal(releveBancaire.getSoleFinal());
+        releveBancaireEntity.setSoldeInitial(releveBancaire.getSoldeInitial());
+        releveBancaireEntity.setNbrOperationCredit(releveBancaire.getNbrOperationCredit());
+        releveBancaireEntity.setNbrOperationDebit(releveBancaire.getNbrOperationDebit());
+        releveBancaireEntity.setDateReception(releveBancaire.getDateReception());
+        releveBancaireEntity.setNbrLignes(releveBancaire.getNbrLignes());
+
+        List<LigneReleveEntity> ligneReleveEntity = new ArrayList<>();
+        releveBancaire.getLignereleve().stream().forEach( l -> {
+            LigneReleveEntity ligneReleve = new LigneReleveEntity();
+            ligneReleve.setCreditDebit(l.getCreditDebit());
+            ligneReleve.setDateOperation(l.getDateOperation());
+            ligneReleve.setMontant(l.getMontant());
+            ligneReleve.setRefCdg(l.getRefCdg());
+            ligneReleve.setModePaiment(l.getModePaiment());
+            ligneReleve.setOperationNature(l.getOperationNature());
+            ligneReleve.setRefPaiment(l.getRefPaiment());
+            ligneReleve.setReleveBancaire(releveBancaireEntity);
+            ligneReleveEntity.add(ligneReleve);
+        });
+        releveBancaireEntity.setLignereleve(ligneReleveEntity);
+
         releveBancaireRepository.save(releveBancaireEntity);
     }
 
@@ -60,6 +89,7 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     public void removeReleveBancaire(ReleveBancaire releveBancaire) {
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
         BeanUtils.copyProperties(releveBancaire, releveBancaireEntity);
+
         releveBancaireRepository.delete(releveBancaireEntity);
     }
 
@@ -130,28 +160,67 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
 
 
+//    @Override
+//    public void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve) {
+//        Optional<ReleveBancaireEntity> releveBancaireEntity = releveBancaireRepository.findById(ligneReleve.getReleveBancaireId());
+//        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(ligneReleve.getActeurId());
+//        Optional<BanqueEntity> banqueEntity = banqueRepository.findById(ligneReleve.getBanqueId());
+//        Optional<CompteBancaireEntity> compteBancaireEntity = compteBancaireRepository.findById(ligneReleve.getCompteBancaireId());
+//        Optional<ProduitEntity> produitEntity = produitRepository.findById(ligneReleve.getProduitId());
+//        if (!releveBancaireEntity.isPresent()
+////                &&
+////                !acteurEntity.isPresent() &&
+////                !banqueEntity.isPresent() &&
+////                !compteBancaireEntity.isPresent() &&
+////                !produitEntity.isPresent()
+//        ){
+//            throw new EntityNotFoundException("ReleveBancaire || Acteur || Banque || CompteBancaire || Produit = are not presented in database");
+//        }
+//
+//        LigneReleveEntity ligneReleveToCreate = new LigneReleveEntity();
+//        BeanUtils.copyProperties(ligneReleve, ligneReleveToCreate);
+////        ligneReleveToCreate.setReleveBancaire(releveBancaireEntity.get());
+////        ligneReleveToCreate.setActeurEntity(acteurEntity.get());
+////        ligneReleveToCreate.setBanqueEntity(banqueEntity.get());
+////        ligneReleveToCreate.setCompteBancaireEntity(compteBancaireEntity.get());
+////        ligneReleveToCreate.setProduitEntity(produitEntity.get());
+//        LigneReleve ligneReleveFromDomain = new LigneReleve();
+//        BeanUtils.copyProperties(ligneReleveToCreate, ligneReleveFromDomain);
+//        ligneReleveRepository.save(ligneReleveToCreate);
+//    }
+
+
+
+
+
+
     @Override
     public void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve) {
-        Optional<ReleveBancaireEntity> releveBancaireEntity = releveBancaireRepository.findById(ligneReleve.getReleveBancaireId());
-        Optional<ActeurEntity> acteurEntity = acteurRepository.findById(ligneReleve.getActeurId());
-        Optional<BanqueEntity> banqueEntity = banqueRepository.findById(ligneReleve.getBanqueId());
-        Optional<CompteBancaireEntity> compteBancaireEntity = compteBancaireRepository.findById(ligneReleve.getCompteBancaireId());
-        Optional<ProduitEntity> produitEntity = produitRepository.findById(ligneReleve.getProduitId());
-        if (!releveBancaireEntity.isPresent() && !acteurEntity.isPresent() && !banqueEntity.isPresent() && !compteBancaireEntity.isPresent() && !produitEntity.isPresent()){
-            throw new EntityNotFoundException("ReleveBancaire || Acteur || Banque || CompteBancaire || Produit = are not presented in database");
+        ReleveBancaireEntity releveBancaireEntity = releveBancaireRepository.findById(ligneReleve.getReleveBancaire().getReleveBancaireId()).orElse(null);
+        if (null == releveBancaireEntity){
+            releveBancaireEntity = new ReleveBancaireEntity();
         }
-
-        LigneReleveEntity ligneReleveToCreate = new LigneReleveEntity();
-        BeanUtils.copyProperties(ligneReleve, ligneReleveToCreate);
-        ligneReleveToCreate.setReleveBancaire(releveBancaireEntity.get());
-        ligneReleveToCreate.setActeurEntity(acteurEntity.get());
-        ligneReleveToCreate.setBanqueEntity(banqueEntity.get());
-        ligneReleveToCreate.setCompteBancaireEntity(compteBancaireEntity.get());
-        ligneReleveToCreate.setProduitEntity(produitEntity.get());
+        releveBancaireEntity.setLabel(ligneReleve.getReleveBancaire().getLabel());
+        releveBancaireEntity.setNbrLignes(ligneReleve.getReleveBancaire().getNbrLignes());
+        releveBancaireEntity.setSoldeInitial(ligneReleve.getReleveBancaire().getSoldeInitial());
+        releveBancaireEntity.setSoleFinal(ligneReleve.getReleveBancaire().getSoleFinal());
+        releveBancaireEntity.setDateReception(ligneReleve.getReleveBancaire().getDateReception());
+        releveBancaireEntity.setNbrOperationDebit(ligneReleve.getReleveBancaire().getNbrOperationDebit());
+        releveBancaireEntity.setNbrOperationCredit(ligneReleve.getReleveBancaire().getNbrOperationCredit());
         LigneReleve ligneReleveFromDomain = new LigneReleve();
-        BeanUtils.copyProperties(ligneReleveToCreate, ligneReleveFromDomain);
-        ligneReleveRepository.save(ligneReleveToCreate);
+        ReleveBancaire releveBancaire = new ReleveBancaire();
+        BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+
+        ligneReleveFromDomain.setReleveBancaire(releveBancaire);
+        LigneReleveEntity ligneReleveEntity = new LigneReleveEntity();
+        BeanUtils.copyProperties(releveBancaire, ligneReleveEntity);
+
+        ligneReleveRepository.save(ligneReleveEntity);
+
+
     }
+
+
 
     @Override
     public void createReleveBancaire(ReleveBancaireCreationRequestDomain request) {

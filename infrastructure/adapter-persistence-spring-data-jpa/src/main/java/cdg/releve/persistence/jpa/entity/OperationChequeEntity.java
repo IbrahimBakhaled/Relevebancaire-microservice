@@ -12,13 +12,13 @@ import javax.persistence.*;
 @Setter
 @Entity
 @AllArgsConstructor
-//@NoArgsConstructor
+@NoArgsConstructor
 @DiscriminatorValue("Operation_Cheque")
 public class OperationChequeEntity extends OperationCreditEntity{
 
 
-//    @Id
-//    private int numeroCheque;
+
+    private int numeroCheque;
 //    @OneToOne
 //    @JoinColumn(name = "Fk_Acteur")
 //    private ActeurEntity acteur;

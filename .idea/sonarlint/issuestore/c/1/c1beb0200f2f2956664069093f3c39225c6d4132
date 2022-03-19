@@ -1,22 +1,0 @@
-
-w
-java:S1128"URemove this unused import 'cdg.releve.persistence.jpa.entity.OperationEspecesEntity'.(Ä¯‚Šúÿÿÿÿ8Àóšÿ÷/
-j
-java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonFormat'.(ıÙè‹øÿÿÿÿ8Áóšÿ÷/
-v
-java:S1128"TRemove this unused import 'com.fasterxml.jackson.databind.annotation.JsonSerialize'.(ÖÎèöúÿÿÿÿ8Áóšÿ÷/
-j
-java:S1128"HRemove this unused import 'org.hibernate.annotations.CreationTimestamp'.(¡œøÀúÿÿÿÿ8Äóšÿ÷/
-n
-java:S1128"LRemove this unused import 'org.springframework.data.annotation.CreatedDate'.(Éå¥°ÿÿÿÿÿ8Åóšÿ÷/
-W
-java:S1128
-":Remove this unused import 'javax.persistence.CascadeType'.( ì¤Ê8Åóšÿ÷/
-V
-java:S1128"9Remove this unused import 'javax.persistence.JoinColumn'.(´Å¼á8Åóšÿ÷/
-T
-java:S1128"7Remove this unused import 'javax.persistence.OneToOne'.(Ø½ïâ8Çóšÿ÷/
-R
-java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8Çóšÿ÷/
-H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8Èóšÿ÷/

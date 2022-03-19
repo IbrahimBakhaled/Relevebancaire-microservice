@@ -4,39 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed especes&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/272beb6eb7c373c58b08f805dd9e528cfffda3dd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d5006f05323d9fee02607343796411d292d818d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6dd3f58294999964a282872cba4e795999877a3b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6de8ca01053d8c068dcef8610f333e5630e58109" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9ccf2d5899760bef80fb8020c7f820c5fb90108f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8d0ac2576addd2f034790cb5b6024a0d8ce3a00" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8f21b4a7fa39b3cde2bee07dfe1b0d92138fbb0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1beb0200f2f2956664069093f3c39225c6d4132" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c35ef608f040276c213fca38412d938a4020432f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d58943cee0d542f1226a858e5a0c7d777a88aaf9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4f46eefb78c3438f4c4fe4bce268a48081de7af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f97b16e497816e4e120c2586138e96f02b758463" afterDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed jsonIgnore rest is working properly&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c19a3c40d1e823337827cbdad11d93df88f2300" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c19a3c40d1e823337827cbdad11d93df88f2300" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b11330a6810846535e4b5ba2024ccfcee112862" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b11330a6810846535e4b5ba2024ccfcee112862" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0459ec50281aaa4d3e86bf20131fe1a86c591e1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0459ec50281aaa4d3e86bf20131fe1a86c591e1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1beb0200f2f2956664069093f3c39225c6d4132" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1beb0200f2f2956664069093f3c39225c6d4132" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationCheque.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationCheque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationVirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/ProduitCreationRequestDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/ProduitCreationRequestDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/BanqueEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/BanqueEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/CompteBancaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/CompteBancaireEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationChequeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationChequeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ProduitEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ProduitEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/LigneReleveRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/LigneReleveRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +45,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTTP Public Environment File" />
+        <option value="HTTP Private Environment File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -82,16 +90,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.data.extractors.current.export.id" value="Tab-separated (TSV)_id" />
+    <property name="database.data.extractors.current.id" value="CSV-Groovy.csv.groovy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../testingOneTomany" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="relevebancaire-endpoints | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/relevebancaire-endpoints.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="relevebancaire-endpoints_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/relevebancaire-endpoints_1.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="BootloaderApplicationLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bootloader" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.BootloaderApplicationLauncher" />
@@ -99,6 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.relevebancaire-endpoints_1 | #1" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.relevebancaire-endpoints | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,7 +141,14 @@
       <workItem from="1646999372564" duration="52882000" />
       <workItem from="1647183297273" duration="30333000" />
       <workItem from="1647224395430" duration="4287000" />
-      <workItem from="1647269909318" duration="1574000" />
+      <workItem from="1647269909318" duration="7847000" />
+      <workItem from="1647360858397" duration="8329000" />
+      <workItem from="1647386076214" duration="413000" />
+      <workItem from="1647421366404" duration="4382000" />
+      <workItem from="1647459230549" duration="9656000" />
+      <workItem from="1647517196334" duration="30177000" />
+      <workItem from="1647560366516" duration="19491000" />
+      <workItem from="1647692648365" duration="7668000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -168,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647210232810</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&quot;fixed jsonIgnore rest is working properly&quot;">
+      <created>1647271657533</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647271657533</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +234,8 @@
     <MESSAGE value="&quot;added all post method with all their exceptions still produit haven't been touched till tomorrow&quot;" />
     <MESSAGE value="&quot; added creating produit&quot;" />
     <MESSAGE value="&quot;fixed especes&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;fixed especes&quot;" />
+    <MESSAGE value="&quot;fixed jsonIgnore rest is working properly&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;fixed jsonIgnore rest is working properly&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

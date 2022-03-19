@@ -31,6 +31,7 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 
     @Override
     public ResponseEntity<ReleveBancaire> addReleveBancaire(ReleveBancaire releveBancaire) {
+
         releveBancaireService.addReleveBancaire(releveBancaire);
         return new ResponseEntity<ReleveBancaire>(HttpStatus.OK);
     }

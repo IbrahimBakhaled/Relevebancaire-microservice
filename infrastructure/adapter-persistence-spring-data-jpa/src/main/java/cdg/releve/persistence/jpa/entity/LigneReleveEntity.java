@@ -1,13 +1,11 @@
 package cdg.releve.persistence.jpa.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import cdg.releve.domain.domain.ReleveBancaire;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -18,61 +16,53 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor(force = true)
-//@JsonIgnoreProperties(ignoreUnknown = true)
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class LigneReleveEntity implements Serializable{
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
+@ToString
+public class LigneReleveEntity{
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false, updatable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long ligneReleveId;
     @CreatedDate
-    @CreationTimestamp
+//    @CreationTimestamp
     private Date dateOperation;
     private String operationNature;
-    private int numCheck;
     private BigDecimal montant;
     private BigDecimal creditDebit;
     private int refCdg;
     private int refPaiment;
-    private String rib;
     private String modePaiment;
-    private String cin;
-    private String nomEmetteur;
-    private String prenomEmetteur;
-//    @OneToOne(cascade = CascadeType.MERGE, optional = false)
-//    @JoinColumn(name = "FK_operationCredit")
-//    private OperationCreditEntity operationCredit;
-
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ReleveBancaireEntity.class)
-    @JoinColumn(name = "FK_releveBancaire")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "FK_releveBancaire", referencedColumnName = "releveBancaireId")
+    @JsonIgnoreProperties("lignereleve")
     private ReleveBancaireEntity releveBancaire;
 
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = CompteBancaireEntity.class)
-    @JoinColumn(name = "FK_compteBancaire")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private CompteBancaireEntity compteBancaireEntity;
 
-
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ActeurEntity.class)
-    @JoinColumn(name = "Fk_Acteur")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private ActeurEntity acteurEntity;
-
-
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = BanqueEntity.class)
-    @JoinColumn(name = "FK_Banque")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private BanqueEntity banqueEntity;
-
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ProduitEntity.class)
-    @JoinColumn(name = "FK_Produit")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private ProduitEntity produitEntity;
+    //    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = CompteBancaireEntity.class)
+//    @JoinColumn(name = "FK_compteBancaire")
+//    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//    private CompteBancaireEntity compteBancaireEntity;
+//
+//
+//    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ActeurEntity.class)
+//    @JoinColumn(name = "Fk_Acteur")
+//    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//    private ActeurEntity acteurEntity;
+//
+//
+//    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = BanqueEntity.class)
+//    @JoinColumn(name = "FK_Banque")
+//    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//    private BanqueEntity banqueEntity;
+//
+//    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = ProduitEntity.class)
+//    @JoinColumn(name = "FK_Produit")
+//    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//    private ProduitEntity produitEntity;
 
 
 //    @OneToOne(cascade = CascadeType.ALL, mappedBy = "ligneReleveEntity")

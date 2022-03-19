@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -16,7 +15,7 @@ import java.util.Date;
 @Setter
 @Table(name = "OPERATIONCREDIT")
 @Entity
-//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @AllArgsConstructor
 @NoArgsConstructor
 public class OperationCreditEntity {
@@ -30,7 +29,7 @@ public class OperationCreditEntity {
 
 
     @CreatedDate
-    @CreationTimestamp
+//    @CreationTimestamp
     private Date operationDate;
 
 
@@ -49,11 +48,11 @@ public class OperationCreditEntity {
 //    private OperationVirementEntity operationVirement;
 
 
-//    @OneToOne
-//    private LigneReleveEntity ligneReleve;
+    @OneToOne
+    private LigneReleveEntity ligneReleve;
 
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "FK_produit")
     private ProduitEntity produit;
 
