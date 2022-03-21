@@ -30,7 +30,7 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     }
 
     @Override
-    public ResponseEntity<ReleveBancaire> addReleveBancaire(ReleveBancaire releveBancaire) {
+    public ResponseEntity<ReleveBancaire> addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
 
         releveBancaireService.addReleveBancaire(releveBancaire);
         return new ResponseEntity<ReleveBancaire>(HttpStatus.OK);

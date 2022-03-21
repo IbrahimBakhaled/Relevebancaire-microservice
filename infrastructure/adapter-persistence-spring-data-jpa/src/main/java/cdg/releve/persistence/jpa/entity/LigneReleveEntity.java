@@ -1,15 +1,16 @@
 package cdg.releve.persistence.jpa.entity;
 
-import cdg.releve.domain.domain.ReleveBancaire;
+
+import cdg.releve.persistence.jpa.entity.request.TimeDeserializer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
-
-
 
 
 @Table(name = "LIGNERELEVE")
@@ -26,8 +27,8 @@ public class LigneReleveEntity{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long ligneReleveId;
-    @CreatedDate
-//    @CreationTimestamp
+    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     private Date dateOperation;
     private String operationNature;
     private BigDecimal montant;

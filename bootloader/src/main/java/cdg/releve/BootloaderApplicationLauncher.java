@@ -10,6 +10,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import javax.annotation.PostConstruct;
+import java.util.Date;
+import java.util.TimeZone;
+
 //(exclude = {MongoAutoConfiguration.class,MongoDataAutoConfiguration.class})
 @SpringBootApplication
 @EnableJpaRepositories

@@ -1,8 +1,6 @@
 package cdg.releve.domain.domain.request;
 
-import cdg.releve.domain.domain.OperationCheque;
-import cdg.releve.domain.domain.OperationEspeces;
-import cdg.releve.domain.domain.OperationVirement;
+
 import cdg.releve.domain.domain.ReleveBancaire;
 
 import java.math.BigDecimal;
@@ -12,19 +10,15 @@ public class LigneReleveCreationRequestDomain {
 
     private String operationNature;
     private BigDecimal creditDebit;
-    private LocalDate dateOperation;
-    private int numCheck;
     private BigDecimal montant;
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-    private ReleveBancaire releveBancaire;
+    private ReleveBancaireCreationRequestDomain releveBancaire;
 
-    public LigneReleveCreationRequestDomain(String operationNature, BigDecimal creditDebit, LocalDate dateOperation, int numCheck, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
+    public LigneReleveCreationRequestDomain(String operationNature, BigDecimal creditDebit, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, ReleveBancaireCreationRequestDomain releveBancaire) {
         this.operationNature = operationNature;
         this.creditDebit = creditDebit;
-        this.dateOperation = dateOperation;
-        this.numCheck = numCheck;
         this.montant = montant;
         this.refCdg = refCdg;
         this.refPaiment = refPaiment;
@@ -34,6 +28,7 @@ public class LigneReleveCreationRequestDomain {
 
     public LigneReleveCreationRequestDomain() {
     }
+
 
     public String getOperationNature() {
         return operationNature;
@@ -49,22 +44,6 @@ public class LigneReleveCreationRequestDomain {
 
     public void setCreditDebit(BigDecimal creditDebit) {
         this.creditDebit = creditDebit;
-    }
-
-    public LocalDate getDateOperation() {
-        return dateOperation;
-    }
-
-    public void setDateOperation(LocalDate dateOperation) {
-        this.dateOperation = dateOperation;
-    }
-
-    public int getNumCheck() {
-        return numCheck;
-    }
-
-    public void setNumCheck(int numCheck) {
-        this.numCheck = numCheck;
     }
 
     public BigDecimal getMontant() {
@@ -99,11 +78,11 @@ public class LigneReleveCreationRequestDomain {
         this.modePaiment = modePaiment;
     }
 
-    public ReleveBancaire getReleveBancaire() {
+    public ReleveBancaireCreationRequestDomain getReleveBancaire() {
         return releveBancaire;
     }
 
-    public void setReleveBancaire(ReleveBancaire releveBancaire) {
+    public void setReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
         this.releveBancaire = releveBancaire;
     }
 }

@@ -12,23 +12,21 @@ public class ReleveBancaireCreationRequestDomain {
     private String label;
     private int nbrLignes;
     private int nbrOperationCredit;
-    private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
-    private List<LigneReleve> lignereleve = new ArrayList<>();
+    private List<LigneReleveCreationRequestDomain> lignereleve = new ArrayList<>();
 
 
-    public ReleveBancaireCreationRequestDomain(String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleve> lignereleve) {
+    public ReleveBancaireCreationRequestDomain() {
+    }
+
+    public ReleveBancaireCreationRequestDomain(String label, int nbrLignes, int nbrOperationCredit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleveCreationRequestDomain> lignereleve) {
         this.label = label;
         this.nbrLignes = nbrLignes;
         this.nbrOperationCredit = nbrOperationCredit;
-        this.nbrOperationDebit = nbrOperationDebit;
         this.soldeInitial = soldeInitial;
         this.soleFinal = soleFinal;
         this.lignereleve = lignereleve;
-    }
-
-    public ReleveBancaireCreationRequestDomain() {
     }
 
 
@@ -56,14 +54,6 @@ public class ReleveBancaireCreationRequestDomain {
         this.nbrOperationCredit = nbrOperationCredit;
     }
 
-    public int getNbrOperationDebit() {
-        return nbrOperationDebit;
-    }
-
-    public void setNbrOperationDebit(int nbrOperationDebit) {
-        this.nbrOperationDebit = nbrOperationDebit;
-    }
-
     public BigDecimal getSoldeInitial() {
         return soldeInitial;
     }
@@ -80,11 +70,11 @@ public class ReleveBancaireCreationRequestDomain {
         this.soleFinal = soleFinal;
     }
 
-    public List<LigneReleve> getLignereleve() {
+    public List<LigneReleveCreationRequestDomain> getLignereleve() {
         return lignereleve;
     }
 
-    public void setLignereleve(List<LigneReleve> lignereleve) {
+    public void setLignereleve(List<LigneReleveCreationRequestDomain> lignereleve) {
         this.lignereleve = lignereleve;
     }
 }

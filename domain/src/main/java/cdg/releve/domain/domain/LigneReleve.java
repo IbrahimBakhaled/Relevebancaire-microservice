@@ -16,6 +16,8 @@ public class LigneReleve{
     private int refPaiment;
     private String modePaiment;
     private ReleveBancaire releveBancaire;
+
+
     public LigneReleve() {}
 
     public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {

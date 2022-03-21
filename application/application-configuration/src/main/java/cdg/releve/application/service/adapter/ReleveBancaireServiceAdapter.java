@@ -19,7 +19,7 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
 
 
     @Override
-    public void addReleveBancaire(ReleveBancaire releveBancaire) {
+    public void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
         releveBancairePersistencePort.addReleveBancaire(releveBancaire);
 
     }

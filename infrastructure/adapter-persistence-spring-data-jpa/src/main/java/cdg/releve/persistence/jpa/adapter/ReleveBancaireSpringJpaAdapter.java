@@ -55,23 +55,19 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
 
     @Override
-    public void addReleveBancaire(ReleveBancaire releveBancaire) {
+    public void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
-
 
         releveBancaireEntity.setLabel(releveBancaire.getLabel());
         releveBancaireEntity.setSoleFinal(releveBancaire.getSoleFinal());
         releveBancaireEntity.setSoldeInitial(releveBancaire.getSoldeInitial());
         releveBancaireEntity.setNbrOperationCredit(releveBancaire.getNbrOperationCredit());
-        releveBancaireEntity.setNbrOperationDebit(releveBancaire.getNbrOperationDebit());
-        releveBancaireEntity.setDateReception(releveBancaire.getDateReception());
         releveBancaireEntity.setNbrLignes(releveBancaire.getNbrLignes());
 
         List<LigneReleveEntity> ligneReleveEntity = new ArrayList<>();
-        releveBancaire.getLignereleve().stream().forEach( l -> {
+        releveBancaire.getLignereleve().forEach(l -> {
             LigneReleveEntity ligneReleve = new LigneReleveEntity();
             ligneReleve.setCreditDebit(l.getCreditDebit());
-            ligneReleve.setDateOperation(l.getDateOperation());
             ligneReleve.setMontant(l.getMontant());
             ligneReleve.setRefCdg(l.getRefCdg());
             ligneReleve.setModePaiment(l.getModePaiment());
@@ -196,26 +192,24 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
     @Override
     public void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve) {
-        ReleveBancaireEntity releveBancaireEntity = releveBancaireRepository.findById(ligneReleve.getReleveBancaire().getReleveBancaireId()).orElse(null);
-        if (null == releveBancaireEntity){
-            releveBancaireEntity = new ReleveBancaireEntity();
-        }
-        releveBancaireEntity.setLabel(ligneReleve.getReleveBancaire().getLabel());
-        releveBancaireEntity.setNbrLignes(ligneReleve.getReleveBancaire().getNbrLignes());
-        releveBancaireEntity.setSoldeInitial(ligneReleve.getReleveBancaire().getSoldeInitial());
-        releveBancaireEntity.setSoleFinal(ligneReleve.getReleveBancaire().getSoleFinal());
-        releveBancaireEntity.setDateReception(ligneReleve.getReleveBancaire().getDateReception());
-        releveBancaireEntity.setNbrOperationDebit(ligneReleve.getReleveBancaire().getNbrOperationDebit());
-        releveBancaireEntity.setNbrOperationCredit(ligneReleve.getReleveBancaire().getNbrOperationCredit());
-        LigneReleve ligneReleveFromDomain = new LigneReleve();
-        ReleveBancaire releveBancaire = new ReleveBancaire();
-        BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
-
-        ligneReleveFromDomain.setReleveBancaire(releveBancaire);
-        LigneReleveEntity ligneReleveEntity = new LigneReleveEntity();
-        BeanUtils.copyProperties(releveBancaire, ligneReleveEntity);
-
-        ligneReleveRepository.save(ligneReleveEntity);
+//        ReleveBancaireEntity releveBancaireEntity = releveBancaireRepository.findById(ligneReleve.getReleveBancaire().getReleveBancaireId()).orElse(null);
+//        if (null == releveBancaireEntity){
+//            releveBancaireEntity = new ReleveBancaireEntity();
+//        }
+//        releveBancaireEntity.setLabel(ligneReleve.getReleveBancaire().getLabel());
+//        releveBancaireEntity.setNbrLignes(ligneReleve.getReleveBancaire().getNbrLignes());
+//        releveBancaireEntity.setSoldeInitial(ligneReleve.getReleveBancaire().getSoldeInitial());
+//        releveBancaireEntity.setSoleFinal(ligneReleve.getReleveBancaire().getSoleFinal());
+//        releveBancaireEntity.setNbrOperationCredit(ligneReleve.getReleveBancaire().getNbrOperationCredit());
+//        LigneReleve ligneReleveFromDomain = new LigneReleve();
+//        ReleveBancaire releveBancaire = new ReleveBancaire();
+//        BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+//
+//        ligneReleveFromDomain.setReleveBancaire(releveBancaire);
+//        LigneReleveEntity ligneReleveEntity = new LigneReleveEntity();
+//        BeanUtils.copyProperties(releveBancaire, ligneReleveEntity);
+//
+//        ligneReleveRepository.save(ligneReleveEntity);
 
 
     }

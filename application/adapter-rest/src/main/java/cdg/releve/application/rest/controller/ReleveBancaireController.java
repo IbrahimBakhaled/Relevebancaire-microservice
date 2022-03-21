@@ -13,7 +13,7 @@ public interface ReleveBancaireController {
     ResponseEntity<List<ReleveBancaire>> getReleveBancaires();
 
     @PostMapping("/relevebancaire")
-    ResponseEntity<ReleveBancaire> addReleveBancaire(@RequestBody ReleveBancaire releveBancaire);
+    ResponseEntity<ReleveBancaire> addReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain releveBancaire);
 
     @DeleteMapping("/relevebancaire")
     ResponseEntity<Void> removeReleveBancaire(@RequestBody ReleveBancaire releveBancaire);
