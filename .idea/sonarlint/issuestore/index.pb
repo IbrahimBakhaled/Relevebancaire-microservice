@@ -44,8 +44,6 @@ Vdomain/src/main/java/cdg/releve/domain/domain/request/BanqueCreationRequestDoma
 „infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java,f\4\f4f46eefb78c3438f4c4fe4bce268a48081de7af
 C
 application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
-P
- application/adapter-rest/pom.xml,6\e\6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5
 »
 Šinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java,c\1\c1beb0200f2f2956664069093f3c39225c6d4132
 ²
@@ -66,5 +64,3 @@ j
 :infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

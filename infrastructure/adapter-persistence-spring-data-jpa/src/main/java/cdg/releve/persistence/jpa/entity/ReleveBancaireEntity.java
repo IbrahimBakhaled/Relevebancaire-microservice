@@ -3,6 +3,7 @@ package cdg.releve.persistence.jpa.entity;
 
 import cdg.releve.domain.domain.LigneReleve;
 import cdg.releve.domain.domain.ReleveBancaire;
+import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.persistence.jpa.entity.request.TimeDeserializer;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -56,6 +57,35 @@ public class ReleveBancaireEntity{
                 l.setReleveBancaire(this);
             });
         }
+    }
+
+    /**
+     *
+     * this method is for adding a new relevebancaire with lignereleve.
+     * @param releveBancaireCreationRequestDomain
+     * @return ReleveBancaireEntity
+     */
+
+    public ReleveBancaireEntity fromReleveBancaireTo(ReleveBancaireCreationRequestDomain releveBancaireCreationRequestDomain){
+        this.setLabel(releveBancaireCreationRequestDomain.getLabel());
+        this.setSoleFinal(releveBancaireCreationRequestDomain.getSoleFinal());
+        this.setSoldeInitial(releveBancaireCreationRequestDomain.getSoldeInitial());
+        this.setNbrOperationCredit(releveBancaireCreationRequestDomain.getNbrOperationCredit());
+        this.setNbrLignes(releveBancaireCreationRequestDomain.getNbrLignes());
+        releveBancaireCreationRequestDomain.getLignereleve().forEach(l -> {
+            LigneReleveEntity ligneReleveEntity = new LigneReleveEntity();
+            ligneReleveEntity.setCreditDebit(l.getCreditDebit());
+            ligneReleveEntity.setMontant(l.getMontant());
+            ligneReleveEntity.setRefCdg(l.getRefCdg());
+            ligneReleveEntity.setModePaiment(l.getModePaiment());
+            ligneReleveEntity.setOperationNature(l.getOperationNature());
+            ligneReleveEntity.setRefPaiment(l.getRefPaiment());
+            ligneReleveEntity.setReleveBancaire(this);
+            lignereleve.add(ligneReleveEntity);
+        });
+        this.setLignereleve(lignereleve);
+        return this;
+
     }
 
 

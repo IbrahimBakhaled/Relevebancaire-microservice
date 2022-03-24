@@ -57,27 +57,7 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     @Override
     public void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
-
-        releveBancaireEntity.setLabel(releveBancaire.getLabel());
-        releveBancaireEntity.setSoleFinal(releveBancaire.getSoleFinal());
-        releveBancaireEntity.setSoldeInitial(releveBancaire.getSoldeInitial());
-        releveBancaireEntity.setNbrOperationCredit(releveBancaire.getNbrOperationCredit());
-        releveBancaireEntity.setNbrLignes(releveBancaire.getNbrLignes());
-
-        List<LigneReleveEntity> ligneReleveEntity = new ArrayList<>();
-        releveBancaire.getLignereleve().forEach(l -> {
-            LigneReleveEntity ligneReleve = new LigneReleveEntity();
-            ligneReleve.setCreditDebit(l.getCreditDebit());
-            ligneReleve.setMontant(l.getMontant());
-            ligneReleve.setRefCdg(l.getRefCdg());
-            ligneReleve.setModePaiment(l.getModePaiment());
-            ligneReleve.setOperationNature(l.getOperationNature());
-            ligneReleve.setRefPaiment(l.getRefPaiment());
-            ligneReleve.setReleveBancaire(releveBancaireEntity);
-            ligneReleveEntity.add(ligneReleve);
-        });
-        releveBancaireEntity.setLignereleve(ligneReleveEntity);
-
+        releveBancaireEntity.fromReleveBancaireTo(releveBancaire);
         releveBancaireRepository.save(releveBancaireEntity);
     }
 
@@ -91,19 +71,12 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
     @Override
     public List<ReleveBancaire> getReleveBancaires() {
-
-
-        List<ReleveBancaire> releveBancaireList = new ArrayList<ReleveBancaire>();
+        List<ReleveBancaire> releveBancaireList = new ArrayList<>();
         List<ReleveBancaireEntity> releveBancaireEntityList = releveBancaireRepository.findAll();
-        List<LigneReleveEntity> ligneReleveList = ligneReleveRepository.findAll();
-        List<OperationCreditEntity> operationCreditList = operationCreditRepository.findAll();
-        for (ReleveBancaireEntity releveBancaireEntity : releveBancaireEntityList){
+        releveBancaireEntityList.forEach(r -> {
             ReleveBancaire releveBancaire = new ReleveBancaire();
-            BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
-            BeanUtils.copyProperties(ligneReleveList, releveBancaire);
-            BeanUtils.copyProperties(operationCreditList, releveBancaire);
-            releveBancaireList.add(releveBancaire);
-        }
+            BeanUtils.copyProperties(r, releveBancaire);
+            releveBancaireList.add(releveBancaire);});
         return releveBancaireList;
     }
 
