@@ -1,6 +1,4 @@
 
-§
-wapplication/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java,8\2\82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ActeurRepository.java,4\e\4ec1c1359ef614a1635a847a7acfc3408df1ee22
 ¬
@@ -40,8 +38,6 @@ Vdomain/src/main/java/cdg/releve/domain/domain/request/ActeurCreationRequestDoma
 Vdomain/src/main/java/cdg/releve/domain/domain/request/BanqueCreationRequestDomain.java,d\5\d58943cee0d542f1226a858e5a0c7d777a88aaf9
 ®
 ~infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java,f\5\f568b19c2e41553a9c73002bded6cd55d29c1e21
-µ
-„infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java,f\4\f4f46eefb78c3438f4c4fe4bce268a48081de7af
 C
 application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
 »
@@ -56,11 +52,13 @@ C
 infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java,b\c\bc2518c9df1637268a09669fcb5ad0cb9ea47ae9
 ]
 -application/application-configuration/pom.xml,2\a\2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49
-B
-bootloader/pom.xml,3\4\34cbd04eb1a084d949880b5d247e9f33752d3b5c
 >
 domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
-j
-:infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
+©
+yinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java,5\0\50cb141d1c2c8d7f7b9e1423517b467bc506a282
+µ
+„infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java,f\4\f4f46eefb78c3438f4c4fe4bce268a48081de7af
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

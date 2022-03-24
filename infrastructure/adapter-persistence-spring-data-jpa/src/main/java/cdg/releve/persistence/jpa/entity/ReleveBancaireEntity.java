@@ -28,6 +28,7 @@ import java.util.stream.Collectors;
 @Table(name = "RELEVEBANCAIRE")
 @Entity
 @ToString
+@Builder
 public class ReleveBancaireEntity{
 
 

@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed datetime in mysql_columns&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5" beforeDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added unit testing with Junit 5 &amp; Mockito&quot;">
+      <change afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/test/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/34cbd04eb1a084d949880b5d247e9f33752d3b5c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c27f557691b463f54da34ba0536c0f259a7dd2bf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTTP Public Environment File" />
         <option value="HTTP Private Environment File" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,6 +78,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="database.data.extractors.current.export.id" value="Tab-separated (TSV)_id" />
     <property name="database.data.extractors.current.id" value="CSV-Groovy.csv.groovy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -77,15 +90,77 @@
     <property name="project.structure.side.proportion" value="0.38965517" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cdg.releve" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cdg.releve.application.rest.controller" />
+      <recent name="cdg.releve.persistence.jpa.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire (1)">
+    <configuration name="ReleveBancaireControllerImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adapter-rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdg.releve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cdg.releve" />
+      <option name="MAIN_CLASS_NAME" value="cdg.releve.ReleveBancaireControllerImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="relevebancaire-endpoints | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/relevebancaire-endpoints.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReleveBancaireControllerImplTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootloader" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="relevebancaire-endpoints_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/relevebancaire-endpoints_1.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReleveBancaireControllerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adapter-rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdg.releve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cdg.releve" />
+      <option name="MAIN_CLASS_NAME" value="cdg.releve.ReleveBancaireControllerImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReleveBancaireControllerImplTest.saveReleveBancaire (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootloader" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
+      <option name="METHOD_NAME" value="saveReleveBancaire" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReleveBancaireControllerImplTest.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootloader" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
+      <option name="METHOD_NAME" value="setUp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="BootloaderApplicationLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bootloader" />
@@ -96,9 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.relevebancaire-endpoints_1 | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="HTTP Request.relevebancaire-endpoints | #1" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire (1)" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest (2)" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.setUp" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +207,8 @@
       <workItem from="1647733876800" duration="1211000" />
       <workItem from="1647735165860" duration="345000" />
       <workItem from="1647780565436" duration="7760000" />
-      <workItem from="1648079711542" duration="1028000" />
+      <workItem from="1648079711542" duration="15436000" />
+      <workItem from="1648149058616" duration="1960000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -195,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647727665828</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot; moved copy method to ReleveBancaireEntity&quot;">
+      <created>1648080884738</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648080884738</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +311,9 @@
     <MESSAGE value="&quot;fixed jsonIgnore rest is working properly&quot;" />
     <MESSAGE value="&quot; fixed: OneToMany relationship between ReleveBancaire and LigneReleve now it is working fine &#10;  fixed this error : JSON parse error: Cannot construct instance of ....&quot;" />
     <MESSAGE value="&quot;fixed datetime in mysql_columns&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;fixed datetime in mysql_columns&quot;" />
+    <MESSAGE value="&quot; moved copy method to ReleveBancaireEntity&quot;" />
+    <MESSAGE value="&quot;added unit testing with Junit 5 &amp; Mockito&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;added unit testing with Junit 5 &amp; Mockito&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

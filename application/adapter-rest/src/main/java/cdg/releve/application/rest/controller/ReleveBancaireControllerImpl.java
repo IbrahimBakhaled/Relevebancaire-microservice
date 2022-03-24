@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -107,6 +108,10 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     public ResponseEntity<Void> createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
         releveBancaireService.createproduit(produitCreationRequestDomain);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+    @ExceptionHandler(RuntimeException.class)
+    public final ResponseEntity<Exception> handleAllExceptions(RuntimeException ex) {
+        return new ResponseEntity<Exception>(ex, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 

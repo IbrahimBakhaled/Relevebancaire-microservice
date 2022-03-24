@@ -7,13 +7,16 @@ import cdg.releve.persistence.jpa.entity.*;
 import cdg.releve.persistence.jpa.repository.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.*;
 
 
-
+@Primary
+@Component
 public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistencePort {
 
     private ReleveBancaireRepository releveBancaireRepository;

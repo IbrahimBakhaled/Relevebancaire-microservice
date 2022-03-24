@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 //(exclude = {MongoAutoConfiguration.class,MongoDataAutoConfiguration.class})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "cdg.releve")
 @EnableJpaRepositories
 @EnableDiscoveryClient
 @EntityScan(basePackages = {"cdg.releve.domain", "cdg.releve"})
