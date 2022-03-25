@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;made changes on GitHub build phase&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c27f557691b463f54da34ba0536c0f259a7dd2bf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/test-classes/ReleveBancaireControllerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/test-classes/ReleveBancaireControllerImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/test-classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/test-classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +192,7 @@
       <workItem from="1648149058616" duration="3651000" />
       <workItem from="1648170498029" duration="127000" />
       <workItem from="1648213718606" duration="62000" />
-      <workItem from="1648233946456" duration="10664000" />
+      <workItem from="1648233946456" duration="12083000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -366,7 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648242116769</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648245995922</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1648245995922</updated>
+    </task>
+    <task id="LOCAL-00025" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648246031111</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1648246031111</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +405,8 @@
     <MESSAGE value="&quot;✔ added unit testing with Junit 5 &amp; Mockito&quot;" />
     <MESSAGE value="&quot;✔ added SonarCLoud for code quality&quot;" />
     <MESSAGE value="&quot;made changes on GitHub build phase&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;made changes on GitHub build phase&quot;" />
+    <MESSAGE value="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
