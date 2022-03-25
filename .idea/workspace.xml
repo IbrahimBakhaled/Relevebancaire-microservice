@@ -198,7 +198,7 @@
       <workItem from="1648149058616" duration="3651000" />
       <workItem from="1648170498029" duration="127000" />
       <workItem from="1648213718606" duration="62000" />
-      <workItem from="1648233946456" duration="963000" />
+      <workItem from="1648233946456" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648234903780</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="&quot;✔ added SonarCLoud for code quality&quot;">
+      <created>1648235228064</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648235228064</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
