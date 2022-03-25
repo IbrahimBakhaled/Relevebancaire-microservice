@@ -38,8 +38,6 @@ Vdomain/src/main/java/cdg/releve/domain/domain/request/ActeurCreationRequestDoma
 Vdomain/src/main/java/cdg/releve/domain/domain/request/BanqueCreationRequestDomain.java,d\5\d58943cee0d542f1226a858e5a0c7d777a88aaf9
 ®
 ~infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java,f\5\f568b19c2e41553a9c73002bded6cd55d29c1e21
-C
-application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
 »
 Šinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java,c\1\c1beb0200f2f2956664069093f3c39225c6d4132
 ²
@@ -50,10 +48,6 @@ C
 }infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java,1\e\1e4e8a327a34296b04953e84d6e99f0cc82f02df
 ¯
 infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java,b\c\bc2518c9df1637268a09669fcb5ad0cb9ea47ae9
-]
--application/application-configuration/pom.xml,2\a\2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49
->
-domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
 ©
