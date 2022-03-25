@@ -36,7 +36,7 @@ import static org.junit.jupiter.api.Assertions.*;
 //@WebMvcTest(controllers = cdg.releve.application.rest.controller.ReleveBancaireControllerImpl.class)
 @SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-class ReleveBancaireControllerImplTest {
+public class ReleveBancaireControllerImplTest {
 
     @Autowired
     private MockMvc mockMvc;
