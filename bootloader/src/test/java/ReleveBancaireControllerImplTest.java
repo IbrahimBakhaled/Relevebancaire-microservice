@@ -7,9 +7,9 @@ import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
 import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.runner.RunWith;
+//import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -20,6 +20,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -32,7 +33,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@RunWith(SpringRunner.class)
+//@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 //@WebMvcTest(controllers = cdg.releve.application.rest.controller.ReleveBancaireControllerImpl.class)
 @SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc

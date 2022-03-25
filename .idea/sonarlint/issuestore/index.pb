@@ -68,10 +68,6 @@ Mdomain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java,
 ^domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java,3\c\3c19a3c40d1e823337827cbdad11d93df88f2300
 v
 Fbootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java,c\5\c53b69c6e09022da81c4088ce357fa9e058b64d7
-P
- application/adapter-rest/pom.xml,6\e\6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5
-j
-:infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java,c\4\c4b00919095d27e78b695f0e71bfbb2d98c92db2
 ¹
