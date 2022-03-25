@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;✔ added unit testing with Junit 5 &amp; Mockito&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;✔ added SonarCLoud for code quality&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <recent name="cdg.releve.persistence.jpa.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire (1)">
+  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
     <configuration name="ReleveBancaireControllerImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adapter-rest" />
       <extension name="coverage">
@@ -198,6 +198,7 @@
       <workItem from="1648149058616" duration="3651000" />
       <workItem from="1648170498029" duration="127000" />
       <workItem from="1648213718606" duration="62000" />
+      <workItem from="1648233946456" duration="651000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -276,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648151103332</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="&quot;✔ added SonarCLoud for code quality&quot;">
+      <created>1648234191193</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648234191193</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +318,8 @@
     <MESSAGE value="&quot; moved copy method to ReleveBancaireEntity&quot;" />
     <MESSAGE value="&quot;added unit testing with Junit 5 &amp; Mockito&quot;" />
     <MESSAGE value="&quot;✔ added unit testing with Junit 5 &amp; Mockito&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;✔ added unit testing with Junit 5 &amp; Mockito&quot;" />
+    <MESSAGE value="&quot;✔ added SonarCLoud for code quality&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;✔ added SonarCLoud for code quality&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
