@@ -60,5 +60,23 @@ F
 yinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java,5\0\50cb141d1c2c8d7f7b9e1423517b467bc506a282
 µ
 „infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java,f\4\f4f46eefb78c3438f4c4fe4bce268a48081de7af
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+}
+Mdomain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java,4\9\4916abbd9a5aeacba52857787735150295256859
+§
+wapplication/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java,8\2\82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4
+‹
+[domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java,8\b\8baf8f4b78b5dbf8a61bcd7e3fdd2051f1d884c4
+Ž
+^domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java,3\c\3c19a3c40d1e823337827cbdad11d93df88f2300
+v
+Fbootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java,c\5\c53b69c6e09022da81c4088ce357fa9e058b64d7
+P
+ application/adapter-rest/pom.xml,6\e\6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5
+j
+:infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
+¬
+|infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java,c\4\c4b00919095d27e78b695f0e71bfbb2d98c92db2
+¹
+ˆinfrastructure/adapter-persistence-spring-data-jpa/src/test/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.java,6\0\60bbf77e1f197fe8b2bfbb18c1a0e4a15693e660
+º
+‰infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.java,9\6\96999b5bc7973f741107559aecd3430ae5fbfde8
