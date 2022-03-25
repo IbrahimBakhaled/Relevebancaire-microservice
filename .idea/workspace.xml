@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;✔ added SonarCLoud for code quality&quot;">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,23 +89,17 @@
       <recent name="cdg.releve.persistence.jpa.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
-    <configuration name="ReleveBancaireControllerImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adapter-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cdg.releve.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cdg.releve" />
-      <option name="MAIN_CLASS_NAME" value="cdg.releve.ReleveBancaireControllerImplTest" />
+  <component name="RunManager" selected="JUnit.ReleveBancaireControllerImplTest (2)">
+    <configuration name="ReleveBancaireControllerImplTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootloader" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReleveBancaireControllerImplTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReleveBancaireControllerImplTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootloader" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
@@ -160,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire (1)" />
         <item itemvalue="JUnit.ReleveBancaireControllerImplTest (2)" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest (3)" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire (1)" />
         <item itemvalue="JUnit.ReleveBancaireControllerImplTest.setUp" />
         <item itemvalue="JUnit.ReleveBancaireControllerImplTest" />
-        <item itemvalue="JUnit.ReleveBancaireControllerImplTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +192,7 @@
       <workItem from="1648149058616" duration="3651000" />
       <workItem from="1648170498029" duration="127000" />
       <workItem from="1648213718606" duration="62000" />
-      <workItem from="1648233946456" duration="4257000" />
+      <workItem from="1648233946456" duration="4562000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -307,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648235582406</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="&quot;✔ added SonarCLoud for code quality&quot;">
+      <created>1648239070167</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1648239070167</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
