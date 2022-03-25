@@ -5,10 +5,11 @@ import cdg.releve.application.service.adapter.ReleveBancaireServiceAdapter;
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//@ComponentScan(basePackages = {"cdg.releve"})
+@ComponentScan(basePackages = {"cdg.releve"})
 public class ApplicationConfiguration {
 
     @Bean

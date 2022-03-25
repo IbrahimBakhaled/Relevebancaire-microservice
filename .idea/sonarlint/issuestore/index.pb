@@ -62,8 +62,6 @@ yinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/per
 „infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java,f\4\f4f46eefb78c3438f4c4fe4bce268a48081de7af
 }
 Mdomain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java,4\9\4916abbd9a5aeacba52857787735150295256859
-§
-wapplication/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java,8\2\82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4
 ‹
 [domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java,8\b\8baf8f4b78b5dbf8a61bcd7e3fdd2051f1d884c4
 Ž
