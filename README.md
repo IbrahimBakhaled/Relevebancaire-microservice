@@ -13,6 +13,7 @@ Building web project microservices for bank statement based on Hexagonal archite
 
 - Apache Maven 3.8.4
 - java version 8 update 144 ("1.8.0_144") 
+- java version 11 update 13 for sonarscanner analyzing "11.0.13" 2021-10-19 LTS
 - MySQL 8.0.28
 - Spring Boot version 2.1.3.RELEASE
 
