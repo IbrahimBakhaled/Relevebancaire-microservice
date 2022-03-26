@@ -31,6 +31,7 @@ Building web project microservices for bank statement based on Hexagonal archite
 - [Ibrahim BAKHALED](https://github.com/IbrahimBakhaled)
 
 #Support
-you can catch me over at my social medias:
-<a href="https://www.linkedin.com/in/ibrahim-bakhaled-887429206/"><img align="left" src="resources/linkedin.png" alt="Larissa Silva | LinkedIn" width="21px"/></a>
-<a href="https://www.instagram.com/bakhaledibrahim/?hl=en"><img align="left" src="resources/instagram.png" alt="larssslv | Instagram" width="21px"/></a>
+you can catch me over at my social medias
+
+<a href="https://www.linkedin.com/in/ibrahim-bakhaled-887429206/"><img align="left" src="resources/linkedin.png" alt="Ibrahim Bakhaled | LinkedIn" width="21px"/></a>
+<a href="https://www.instagram.com/bakhaledibrahim/?hl=en"><img align="left" src="resources/instagram.png" alt="Ibrahim Bakhaled | LinkedIn" width="21px"/></a>
