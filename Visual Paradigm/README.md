@@ -1,0 +1,2 @@
+This is a folder contains all visuals and explanation paradigms for the releve bancaire.
+the file (Releve Bancaire Visual Paradigm.vpd) you can use it in website https://online.visual-paradigm.com/ for modifying.
