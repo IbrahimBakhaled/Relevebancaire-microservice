@@ -1,6 +1,7 @@
-projectKey=releveproject
-serverUrl=http://localhost:9000
-serverVersion=9.3.0.51899
-dashboardUrl=http://localhost:9000/dashboard?id=releveproject
-ceTaskId=AX_DkNi6G_Ek4U_-47FV
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_DkNi6G_Ek4U_-47FV
+organization=ibrahimbakhaled
+projectKey=IbrahimBakhaled_relevebancaire
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.27832
+dashboardUrl=https://sonarcloud.io/dashboard?id=IbrahimBakhaled_relevebancaire
+ceTaskId=AX_MdAJnS8MjSZbnHC_T
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX_MdAJnS8MjSZbnHC_T

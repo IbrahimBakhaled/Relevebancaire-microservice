@@ -17,7 +17,9 @@
         <module>application-configuration</module>
         <module>adapter-rest</module>
     </modules>
-    
+
+
+
 
     <build>
         <plugins>

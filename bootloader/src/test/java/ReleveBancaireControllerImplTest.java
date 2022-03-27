@@ -55,8 +55,8 @@ public class ReleveBancaireControllerImplTest {
 
     private static final String LABEL = "Releve Bancaire Label File";
     private static final int NBRLIGNES = 14;
-    private static final BigDecimal SOLDEINITIAL = new BigDecimal(1478.25);
-    private static final BigDecimal SOLDEFINAL = new BigDecimal(1896.65);
+    private static final BigDecimal SOLDEINITIAL = BigDecimal.valueOf(1478.25);
+    private static final BigDecimal SOLDEFINAL = BigDecimal.valueOf(1896.65);
     private static final int NBROPERATIONCREDIT = 18;
     private static final int NBROPERATIONDEBIT = 64;
 

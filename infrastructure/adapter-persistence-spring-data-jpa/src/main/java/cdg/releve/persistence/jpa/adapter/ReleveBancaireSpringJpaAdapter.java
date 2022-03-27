@@ -100,10 +100,6 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
         ReleveBancaire releveBancaire = new ReleveBancaire();
         releveBancaireRepository.deleteById(releveBancaireId);
-        if (releveBancaireEntity == null){
-            throw new EntityNotFoundException("releve bancaire pas trouvé");
-        }
-
         BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
 
     }

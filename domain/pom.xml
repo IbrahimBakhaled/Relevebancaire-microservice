@@ -8,6 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <sonar.tests></sonar.tests>
+        <sonar.skip>false</sonar.skip>
+    </properties>
 
     <artifactId>domain</artifactId>
     <name>domain</name>

@@ -13,6 +13,10 @@
     <artifactId>adapter-rest</artifactId>
     <name>adapter-rest</name>
     <description>adapter-rest</description>
+    <properties>
+        <sonar.tests></sonar.tests>
+        <sonar.skip>true</sonar.skip>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -85,8 +89,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>7</source>
-                    <target>7</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,11 +1,0 @@
-
-N	java:S106"9Replace this use of System.out or System.err by a logger.(‡¬¥ª
-l
-java:S1128
-"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ
-Q
-java:S1128";Remove this unused import 'javax.annotation.PostConstruct'.(›ÅÁ
-A
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
-J
-java:S1128"/Remove this unused import 'java.util.TimeZone'.(à‡Õùÿÿÿÿ
