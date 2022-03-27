@@ -95,7 +95,7 @@
         <sonar.binaries>**/**/target/**/**</sonar.binaries>
 <!--        <sonar.sources>pom.xml, src/main</sonar.sources>-->
         <sonar.tests>src/test</sonar.tests>
-        <sonar.login>SONAR_TOKEN</sonar.login>
+        <sonar.login>7819bacad97afd1cb240d34d541c0122ef742d84</sonar.login>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.coverage.jacoco.xmlReportPaths>*/tests/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
