@@ -27,6 +27,14 @@ Building web project microservices for bank statement based on Hexagonal archite
 
 `mvn spring-boot:run`
 
+## Unit Testing with JUnit 5 & Mockito
+Tested the save of releve bancaire with all ligne de releves and it all passed successfully ✔
+![](resources/Rest%20Test%20passed.png)
+<br />
+<br />
+<br />
+![](resources/Releve%20Bancaire%20Controller%20Test.png)
+
 <br/>
 
 ## IMPORTANT ⚠
