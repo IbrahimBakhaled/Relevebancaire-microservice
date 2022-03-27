@@ -1,1 +1,2 @@
-Jenkins: 8090
+Jenkins: localhost:8090
+SonarQube: localhost:9000
