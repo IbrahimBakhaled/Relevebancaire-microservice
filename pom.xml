@@ -73,36 +73,6 @@
         <java.version>11</java.version>
         <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
 
-            <sonar.organization>ibrahimbakhaled</sonar.organization>
-            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>cdg.releve:releveproject</sonar.projectKey>
-        <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
-<!--        <sonar.exclusions>-->
-<!--            **/*BootloaderApplicationLauncher.java,-->
-<!--            **/*Configuration.java,-->
-<!--            **/config/**,-->
-<!--            **/domain/**,-->
-<!--            **/adapter/**,-->
-<!--            **/entity/**,-->
-<!--            **/repository/**,-->
-<!--            **/api/**,-->
-<!--            **/**Test**/**,-->
-<!--            **/cdg.releve/**-->
-<!--        </sonar.exclusions>-->
-<!--        <sonar.jdbc.dialect>mysql</sonar.jdbc.dialect>-->
-<!--        <sonar.projectName>${application.name.value}</sonar.projectName>-->
-<!--        <sonar.projectVersion>0.0.1-SNAPSHOT</sonar.projectVersion>-->
-<!--        <sonar.language>java</sonar.language>-->
-<!--        <sonar.binaries>**/**/target/**/**</sonar.binaries>-->
-<!--&lt;!&ndash;        <sonar.sources>pom.xml, src/main</sonar.sources>&ndash;&gt;-->
-<!--        <sonar.tests>src/test</sonar.tests>-->
-<!--&lt;!&ndash;        <sonar.login>7819bacad97afd1cb240d34d541c0122ef742d84</sonar.login>&ndash;&gt;-->
-<!--        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>-->
-<!--        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>-->
-<!--        <sonar.coverage.jacoco.xmlReportPaths>*/tests/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>-->
-<!--        <src.dir>.</src.dir>-->
-<!--        <sonar.sources>pom.xml,./src/main</sonar.sources>-->
-
     </properties>
 
     <build>
@@ -147,9 +117,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.6.4</version>
-<!--                <configuration>-->
-<!--                    <skip>true</skip>-->
-<!--                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
