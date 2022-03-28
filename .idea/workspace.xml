@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot; fixed sonarcloud authentication and token&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;still fixing&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/bootloader-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/bootloader-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/bootloader-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/bootloader-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/2022-03-27T20-20-34_842-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/2022-03-27T20-20-34_842.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/adapter-persistence-spring-data-jpa-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/adapter-persistence-spring-data-jpa-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +196,7 @@
       <workItem from="1648309924682" duration="5745000" />
       <workItem from="1648333916300" duration="2648000" />
       <workItem from="1648336985618" duration="37185000" />
-      <workItem from="1648432736525" duration="1000000" />
+      <workItem from="1648432736525" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -444,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648413311448</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="&quot;still fixing&quot;">
+      <created>1648433798480</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1648433798480</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +469,8 @@
     <MESSAGE value="&quot; added SonarQube for code quality&quot;" />
     <MESSAGE value="&quot; added SonarQube for code quality&#10;2 commands should be activated StartSonar(c:/sonar_folder/bin) and 2nd sonar-scaner(c:/sonar-scanner_folder/bin)&quot;" />
     <MESSAGE value="&quot; fixed sonarcloud authentication and token&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot; fixed sonarcloud authentication and token&quot;" />
+    <MESSAGE value="&quot;still fixing&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;still fixing&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
