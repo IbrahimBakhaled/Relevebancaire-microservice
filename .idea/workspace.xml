@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot; added Hikari configuration for datasource&quot;">
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;changed bind-address to 0.0.0.0&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
@@ -205,7 +205,7 @@
       <workItem from="1648333916300" duration="2648000" />
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
-      <workItem from="1648471769761" duration="15502000" />
+      <workItem from="1648471769761" duration="15807000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -536,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648496278922</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="&quot;changed bind-address to 0.0.0.0&quot;">
+      <created>1648497425979</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1648497425981</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +587,8 @@
     <MESSAGE value="&quot;fixed token&quot;" />
     <MESSAGE value="&quot; added hikari configuration for datasource&quot;" />
     <MESSAGE value="&quot; added Hikari configuration for datasource&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot; added Hikari configuration for datasource&quot;" />
+    <MESSAGE value="&quot;changed bind-address to 0.0.0.0&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;changed bind-address to 0.0.0.0&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
