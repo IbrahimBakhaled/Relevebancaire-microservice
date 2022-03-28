@@ -19,6 +19,7 @@ import javax.sql.DataSource;
 public class HikariConfiguration {
 
 
+
     @Value("${spring.datasource.driver-class-name}")
     private String driver;
     @Value("${spring.datasource.hikari.connection-timeout}")

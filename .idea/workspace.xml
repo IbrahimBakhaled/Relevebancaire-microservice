@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot; added Hikari configuration for datasource&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot; added Hikari configuration for datasource&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +201,7 @@
       <workItem from="1648333916300" duration="2648000" />
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
-      <workItem from="1648471769761" duration="13648000" />
+      <workItem from="1648471769761" duration="14320000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -513,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648494232829</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="&quot; added Hikari configuration for datasource&quot;">
+      <created>1648495376353</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1648495376353</updated>
+    </task>
+    <task id="LOCAL-00046" summary="&quot;added Hikari configuration for datasource&quot;">
+      <created>1648495884335</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1648495884336</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
