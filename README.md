@@ -1,7 +1,4 @@
 # Releve Bancaire
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-<br />
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cdg.releve%3Areleveproject&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=cdg.releve%3Areleveproject)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=cdg.releve%3Areleveproject&metric=bugs)](https://sonarcloud.io/summary/new_code?id=cdg.releve%3Areleveproject)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=cdg.releve%3Areleveproject&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=cdg.releve%3Areleveproject)
