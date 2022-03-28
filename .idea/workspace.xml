@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;changed bind-address to 0.0.0.0&quot;">
-      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +90,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\infrastructure\adapter-persistence-spring-data-jpa\src\main\resources" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -152,7 +157,7 @@
     </configuration>
     <configuration name="BootloaderApplicationLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bootloader" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.BootloaderApplicationLauncher" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,20 +211,7 @@
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
       <workItem from="1648471769761" duration="16425000" />
-    </task>
-    <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
-      <created>1646954545691</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1646954545692</updated>
-    </task>
-    <task id="LOCAL-00002" summary="&quot;Fixed TimeZone for posting LigneReleve and ReleveBncaire&quot;">
-      <created>1646955554488</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1646955554488</updated>
+      <workItem from="1648506233943" duration="2595000" />
     </task>
     <task id="LOCAL-00003" summary="&quot;api for relevebancaire and lignereleve and operationcredit(dtype,operation_credit_id, operation_date is working fine stille working on inheritance mapping)&quot;">
       <created>1647035630199</created>
@@ -550,7 +542,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648498126939</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="&quot;changed bind-address to 0.0.0.0&quot;">
+      <created>1648506417359</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1648506417360</updated>
+    </task>
+    <task id="LOCAL-00051" summary="&quot;changed bind-address to 0.0.0.0&quot;">
+      <created>1648506557472</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1648506557472</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
