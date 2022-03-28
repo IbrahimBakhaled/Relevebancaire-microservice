@@ -11,6 +11,7 @@ import com.zaxxer.hikari.HikariConfig;
 
 import javax.sql.DataSource;
 
+
 @Configuration
 @EntityScan(basePackages = {"cdg.releve.persistence.jpa.entity"})
 @EnableJpaRepositories(basePackages = {"cdg.releve.persistence.jpa.repository"})
