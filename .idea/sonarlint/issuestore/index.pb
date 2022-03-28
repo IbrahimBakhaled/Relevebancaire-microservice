@@ -361,8 +361,6 @@ U
 %.scannerwork/ucfg2/java/ucfg_65.proto,7\3\735f5e28c73bf2751fdc809870b14c4e4c4fa5c7
 U
 %.scannerwork/ucfg2/java/ucfg_76.proto,3\7\376e5033dcd2ed6d2c5ec92c883247fd3eef8140
-]
--application/application-configuration/pom.xml,2\a\2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49
 C
 application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
 F

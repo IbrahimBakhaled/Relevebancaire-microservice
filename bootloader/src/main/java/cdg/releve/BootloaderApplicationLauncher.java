@@ -16,9 +16,9 @@ import java.util.TimeZone;
 
 //(exclude = {MongoAutoConfiguration.class,MongoDataAutoConfiguration.class})
 @SpringBootApplication(scanBasePackages = "cdg.releve")
-@EnableJpaRepositories
+//@EnableJpaRepositories
 @EnableDiscoveryClient
-@EntityScan(basePackages = {"cdg.releve.domain", "cdg.releve"})
+//@EntityScan(basePackages = {"cdg.releve.domain", "cdg.releve"})
 @OpenAPIDefinition(info = @Info(title = "Releve Bancaire API", version = "3.0", description = "Releve Bancaire Information"))
 public class BootloaderApplicationLauncher {
     public static void main(String[] args) {
