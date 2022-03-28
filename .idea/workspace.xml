@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed token&quot;">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/HikariConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +199,7 @@
       <workItem from="1648333916300" duration="2648000" />
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
-      <workItem from="1648471769761" duration="4741000" />
+      <workItem from="1648471769761" duration="6384000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -458,7 +460,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648485748953</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="&quot;fixed token&quot;">
+      <created>1648485960811</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485960811</updated>
+    </task>
+    <task id="LOCAL-00039" summary="&quot;fixed token&quot;">
+      <created>1648486216724</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1648486216724</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
