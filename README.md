@@ -56,7 +56,7 @@ This branch is just for demonstration purpose only go for master branch for code
 - [Ibrahim BAKHALED](https://github.com/IbrahimBakhaled)
 
 ## Support
-you can catch me over at my social medias
+Find me on
 
 <a href="https://www.linkedin.com/in/ibrahim-bakhaled-887429206/"><img align="left" src="resources/linkedin.png" alt="Ibrahim Bakhaled | LinkedIn" width="21px"/></a>
 <a href="https://www.instagram.com/bakhaledibrahim/?hl=en"><img align="left" src="resources/instagram.png" alt="Ibrahim Bakhaled | LinkedIn" width="21px"/></a>
