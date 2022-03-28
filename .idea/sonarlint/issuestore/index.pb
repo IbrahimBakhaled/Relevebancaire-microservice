@@ -365,8 +365,6 @@ U
 -application/application-configuration/pom.xml,2\a\2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49
 C
 application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
-j
-:infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
 n
