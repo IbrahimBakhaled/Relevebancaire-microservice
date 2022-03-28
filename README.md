@@ -46,7 +46,7 @@ Tested the save of releve bancaire with all ligne de releves and it all passed s
 <br />
 ![](resources/Releve%20Bancaire%20Controller%20Test.png)
 
-## Run Sonar Scanner to SonarCLoud:
+## Run Sonar Scanner to SonarCloud
 `mvn sonar:sonar -Dsonar.projectKey=cdg.releve:releveproject -DsonarZ.organization=ibrahimbakhaled -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=pass_token_here`
 
 <br/>
