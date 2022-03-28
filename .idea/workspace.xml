@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;still fixing&quot;">
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed token&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" beforeDir="false" />
@@ -323,7 +325,7 @@
       <workItem from="1648333916300" duration="2648000" />
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
-      <workItem from="1648471769761" duration="4118000" />
+      <workItem from="1648471769761" duration="4423000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -570,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648434717022</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="&quot;fixed token&quot;">
+      <created>1648485530394</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485530394</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +620,8 @@
     <MESSAGE value="&quot; added SonarQube for code quality&#10;2 commands should be activated StartSonar(c:/sonar_folder/bin) and 2nd sonar-scaner(c:/sonar-scanner_folder/bin)&quot;" />
     <MESSAGE value="&quot; fixed sonarcloud authentication and token&quot;" />
     <MESSAGE value="&quot;still fixing&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;still fixing&quot;" />
+    <MESSAGE value="&quot;fixed token&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;fixed token&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
