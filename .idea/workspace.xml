@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;fixed token&quot;">
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot; added hikari configuration for datasource&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +88,7 @@
       <recent name="cdg.releve.persistence.jpa.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReleveBancaireControllerImplTest (2)">
+  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
     <configuration name="ReleveBancaireControllerImplTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootloader" />
       <option name="PACKAGE_NAME" value="" />
@@ -197,7 +197,7 @@
       <workItem from="1648333916300" duration="2648000" />
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
-      <workItem from="1648471769761" duration="7090000" />
+      <workItem from="1648471769761" duration="8066000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Post Mapping for relevebancaire and lignereleve is working with mysql&#10; but still in progress still don't tested put/delete/get&quot;">
       <created>1646954545691</created>
@@ -479,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648487986331</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="&quot; added hikari configuration for datasource&quot;">
+      <created>1648489067863</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489067863</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +528,8 @@
     <MESSAGE value="&quot; fixed sonarcloud authentication and token&quot;" />
     <MESSAGE value="&quot;still fixing&quot;" />
     <MESSAGE value="&quot;fixed token&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;fixed token&quot;" />
+    <MESSAGE value="&quot; added hikari configuration for datasource&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot; added hikari configuration for datasource&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
