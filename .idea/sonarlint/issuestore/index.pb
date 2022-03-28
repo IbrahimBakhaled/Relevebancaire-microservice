@@ -365,7 +365,5 @@ C
 application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
-n
->bootloader/src/test/java/ReleveBancaireControllerImplTest.java,d\c\dc8bb0debc4cc9378756e95e8a6de985704f1d4f
 ¸
 ‡infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java,7\7\7770deb4e438e5f22e90114284fe76beb56db5ae
