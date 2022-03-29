@@ -16,7 +16,7 @@ spring:
       maximum-pool-size: 10
       connection-timeout: 5000
       pool-name: pool-relevebancaire
-      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG?useSSL=false&allowPublicKeyRetrieval=true
       username: root
       password: root
 
