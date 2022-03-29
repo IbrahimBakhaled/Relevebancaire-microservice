@@ -293,8 +293,6 @@ T
 $.scannerwork/ucfg2/java/ucfg_7.proto,0\3\03bfc5974d2bd9da0f6d4a02ba9e91b5be0a3b2d
 T
 $.scannerwork/ucfg2/java/ucfg_9.proto,6\a\6a413d8473c7be0cb9cfdd3ac36b3f2f0c62efe8
-A
-system.properties,a\5\a5db35984da8ffa0e255c16a2e31ae7b26e7d222
 U
 %.scannerwork/ucfg2/java/ucfg_90.proto,6\2\62660133356366f92a8024a5777f0cefa96acfcc
 U
