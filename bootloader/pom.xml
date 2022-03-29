@@ -14,6 +14,14 @@
     <name>bootloader</name>
     <description>bootloader</description>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven2</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+
 
     <dependencies>
 
@@ -62,6 +70,7 @@
             <groupId>cdg.releve</groupId>
             <artifactId>adapter-persistence-spring-data-jpa</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
 
 
@@ -128,6 +137,18 @@
         </dependencyManagement>
 
     <build>
+        <finalName>${application.name.value}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.yml</include>
+                </includes>
+            </resource>
+        </resources>
+
             <plugins>
                 <plugin>
                     <groupId>org.jacoco</groupId>
@@ -149,27 +170,6 @@
                         </execution>
                     </executions>
                 </plugin>
-<!--                <plugin>-->
-<!--                    <groupId>org.jacoco</groupId>-->
-<!--                    <artifactId>jacoco-maven-plugin</artifactId>-->
-<!--                    <version>0.8.3</version>-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <id>jacoco-initialize</id>-->
-<!--                            <goals>-->
-<!--                                <goal>prepare-agent</goal>-->
-<!--                            </goals>-->
-<!--                            <phase>test-compile</phase>-->
-<!--                        </execution>-->
-<!--                        <execution>-->
-<!--                            <id>jacoco-site</id>-->
-<!--                            <phase>verify</phase>-->
-<!--                            <goals>-->
-<!--                                <goal>report</goal>-->
-<!--                            </goals>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -180,21 +180,11 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>2.6.4</version>
-<!--                    <configuration>-->
-<!--                        <fork>true</fork>-->
-<!--                        <skip>true</skip>-->
-<!--&lt;!&ndash;                        <includes>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <include>**/*Test.java</include>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </includes>&ndash;&gt;-->
-<!--                        <includes>-->
-<!--                            <groupId>cdg.releve</groupId>-->
-<!--                            <artifactId>releveproject</artifactId>-->
-<!--                        </includes>-->
-<!--                    </configuration>-->
                     <executions>
                         <execution>
                             <goals>
                                 <goal>repackage</goal>
+                                <goal>build-info</goal>
                             </goals>
                         </execution>
                     </executions>

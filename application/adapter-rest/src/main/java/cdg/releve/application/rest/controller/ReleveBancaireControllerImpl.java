@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin("*")
-@RequestMapping("/api")
+//@RequestMapping("/api/v1")
 public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 
     private ReleveBancaireService releveBancaireService;

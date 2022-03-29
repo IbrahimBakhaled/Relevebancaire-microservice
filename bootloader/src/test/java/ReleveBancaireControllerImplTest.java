@@ -72,7 +72,7 @@ public class ReleveBancaireControllerImplTest {
 
 
         mockMvc.perform(
-                MockMvcRequestBuilders.post("/api/relevebancaire")
+                MockMvcRequestBuilders.post("/relevebancaire")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(json.writeValueAsString(createMockRequest()))
                         .accept(MediaType.APPLICATION_JSON)
