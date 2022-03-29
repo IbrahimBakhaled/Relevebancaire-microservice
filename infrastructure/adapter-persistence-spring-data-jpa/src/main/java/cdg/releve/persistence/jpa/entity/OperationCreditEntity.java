@@ -52,9 +52,9 @@ public class OperationCreditEntity {
     private LigneReleveEntity ligneReleve;
 
 
-    @OneToOne
-    @JoinColumn(name = "FK_produit")
-    private ProduitEntity produit;
+//    @OneToOne
+//    @JoinColumn(name = "FK_produit")
+//    private ProduitEntity produit;
 
 
 

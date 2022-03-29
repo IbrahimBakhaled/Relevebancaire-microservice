@@ -33,6 +33,7 @@ public class LigneReleveEntity{
     private String operationNature;
     private BigDecimal montant;
     private BigDecimal creditDebit;
+    // String creditDebit
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
