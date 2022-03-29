@@ -203,14 +203,7 @@
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
       <workItem from="1648471769761" duration="16425000" />
-      <workItem from="1648506233943" duration="8179000" />
-    </task>
-    <task id="LOCAL-00008" summary="&quot;fixed jsonIgnore rest is working properly&quot;">
-      <created>1647271657533</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1647271657533</updated>
+      <workItem from="1648506233943" duration="8586000" />
     </task>
     <task id="LOCAL-00009" summary="&quot; fixed: OneToMany relationship between ReleveBancaire and LigneReleve now it is working fine &#10;  fixed this error : JSON parse error: Cannot construct instance of ....&quot;">
       <created>1647727665828</created>
@@ -548,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648515694926</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="&quot;added yml files&quot;">
+      <created>1648516398589</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1648516398589</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
