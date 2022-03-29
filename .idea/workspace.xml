@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added yml files&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5db35984da8ffa0e255c16a2e31ae7b26e7d222" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env.list" beforeDir="false" afterPath="$PROJECT_DIR$/env.list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,14 +206,7 @@
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
       <workItem from="1648471769761" duration="16425000" />
-      <workItem from="1648506233943" duration="7517000" />
-    </task>
-    <task id="LOCAL-00006" summary="&quot; added creating produit&quot;">
-      <created>1647197694252</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647197694253</updated>
+      <workItem from="1648506233943" duration="7851000" />
     </task>
     <task id="LOCAL-00007" summary="&quot;fixed especes&quot;">
       <created>1647210232810</created>
@@ -553,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648514436674</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="&quot;added yml files&quot;">
+      <created>1648515491105</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1648515491105</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
