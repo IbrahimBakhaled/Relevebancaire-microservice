@@ -24,7 +24,7 @@ spring:
         maximum-pool-size: '10'
         password: root
       password: root
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driverClassName: com.mysql.cj.jdbc.Driver
       username: root
       url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
       tomcat:
