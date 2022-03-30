@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: relevebancaire
+  jmx:
+    enabled: true
+  main:
+    allow-bean-definition-overriding: true
+    banner-mode: log
+
+  flyway:
+    enabled: false
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 5000
+      pool-name: pool-relevebancaire
+      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
+      username: root
+      password: root
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+server:
+  address: 127.0.0.1
+  port: 8080
+  servlet:
+    context-path: /api/v1
