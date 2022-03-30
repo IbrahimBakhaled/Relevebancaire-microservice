@@ -5,6 +5,9 @@ DB_URL: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
 APPLICATION_NAME: relevebancaire
 DB_PASSWORD: root
 spring:
+  cloud:
+    config:
+      enabled: true
   jpa:
     generate-ddl: 'true'
     hibernate:
