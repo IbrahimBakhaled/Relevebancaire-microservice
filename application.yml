@@ -24,3 +24,36 @@ spring:
     port: ${SERVER_PORT}
     servlet:
       context-path: ${SERVLET_CONTEXT_PATH}
+SERVER_PORT: '8080'
+  jpa:
+    generate-ddl: 'true'
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: 'true'
+  datasource:
+    hikari:
+      username: root
+      connection-timeout: '5000'
+      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG?useSSL=false&allowPublicKeyRetrieval=true
+      pool-name: pool-relevebancaire
+      maximum-pool-size: '10'
+      password: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
+    tomcat:
+      validation-query: SELECT 1
+      test-while-idle: 'true'
+  main:
+    allow-bean-definition-overriding: 'true'
+  jackson:
+    serialization:
+      fail-on-empty-beans: 'false'
+DB_USERNAME: root
+SERVLET_CONTEXT_PATH: /api/v1
+DB_URL: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
+APPLICATION_NAME: relevebancaire
+DB_PASSWORD: root
