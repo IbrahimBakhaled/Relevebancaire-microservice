@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;enabled config cloud in application.yml&quot;">
+      <change afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/2022-03-30T01-30-28_433-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/HikariConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/HikariConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/HikariConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/HikariConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/relevebancaire.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/relevebancaire.jar" afterDir="false" />
     </list>
@@ -215,14 +224,7 @@
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
       <workItem from="1648471769761" duration="16425000" />
-      <workItem from="1648506233943" duration="24941000" />
-    </task>
-    <task id="LOCAL-00018" summary="&quot;made changes on GitHub build phase&quot;">
-      <created>1648240114549</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1648240114549</updated>
+      <workItem from="1648506233943" duration="28770000" />
     </task>
     <task id="LOCAL-00019" summary="&quot;made changes on GitHub build phase&quot;">
       <created>1648240286201</created>
@@ -560,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648603739846</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="&quot;enabled config cloud in application.yml&quot;">
+      <created>1648606791908</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1648606791909</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

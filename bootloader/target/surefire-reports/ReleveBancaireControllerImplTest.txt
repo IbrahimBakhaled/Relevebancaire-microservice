@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ReleveBancaireControllerImplTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 36.915 s <<< FAILURE! - in ReleveBancaireControllerImplTest
-saveReleveBancaire  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.492 s - in ReleveBancaireControllerImplTest

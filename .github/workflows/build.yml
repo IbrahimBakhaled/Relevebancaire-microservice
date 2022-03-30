@@ -17,6 +17,16 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+      - name: Setup MySQL 8.0
+        uses: haltuf/mysql-action@master
+        with:
+          host port: 3306
+          character set server: 'utf8mb4'
+          collation server: 'utf8mb4_general_ci'
+          mysql version: '8.0.28'
+          mysql database: 'Releve-Bancaire-CDG'
+          mysql user: 'root'
+          mysql password: 'root'
       - name: Compile with Maven
         run: mvn -f pom.xml clean install dependency:copy-dependencies
   test:
