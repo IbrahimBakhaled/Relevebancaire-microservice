@@ -5,9 +5,18 @@ DB_URL: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
 APPLICATION_NAME: relevebancaire
 DB_PASSWORD: root
 spring:
-  cloud:
-    config:
-      enabled: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-timeout: '5000'
+      maximum-pool-size: '10'
+      pool-name: pool-relevebancaire
+      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
+      username: root
+      password: root
+    tomcat:
+      test-while-idle: 'true'
+      validation-query: SELECT 1
   jpa:
     generate-ddl: 'true'
     hibernate:
@@ -15,32 +24,15 @@ spring:
     properties:
       hibernate:
         format_sql: 'true'
-    datasource:
-      hikari:
-        username: root
-        connection-timeout: '5000'
-        jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
-        pool-name: pool-relevebancaire
-        maximum-pool-size: '10'
-        password: root
-      password: root
-      driverClassName: com.mysql.cj.jdbc.Driver
-      username: root
-      url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
-      tomcat:
-        validation-query: SELECT 1
-        test-while-idle: 'true'
-    main:
-      allow-bean-definition-overriding: 'true'
-    jackson:
-      serialization:
-        fail-on-empty-beans: 'false'
+  jackson:
+    serialization:
+      fail-on-empty-beans: 'false'
+  main:
+    allow-bean-definition-overriding: 'true'
   application:
     name: ${APPLICATION_NAME}
   jmx:
     enabled: true
-  main:
-    allow-bean-definition-overriding: true
     banner-mode: log
 
   flyway:
