@@ -20,7 +20,7 @@ public class HikariConfiguration {
 
 
 
-    @Value("${spring.datasource.driver-class-name}")
+    @Value("${spring.datasource.driverClassName}")
     private String driver;
     @Value("${spring.datasource.hikari.connection-timeout}")
     private Integer connectionTimeout;

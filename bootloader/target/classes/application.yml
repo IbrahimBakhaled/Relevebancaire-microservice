@@ -11,12 +11,12 @@ spring:
     enabled: false
 
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 10
       connection-timeout: 5000
       pool-name: pool-relevebancaire
-      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG?useSSL=false&allowPublicKeyRetrieval=true
+      jdbc-url: jdbc:mysql://localhost:3306/Releve-Bancaire-CDG
       username: root
       password: root
 
