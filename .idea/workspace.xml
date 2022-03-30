@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added yml files&quot;">
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;replaced .properties configuration to yml&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/2022-03-30T00-12-30_394.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/relevebancaire.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/relevebancaire.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,14 +225,7 @@
       <workItem from="1648336985618" duration="37185000" />
       <workItem from="1648432736525" duration="2163000" />
       <workItem from="1648471769761" duration="16425000" />
-      <workItem from="1648506233943" duration="17548000" />
-    </task>
-    <task id="LOCAL-00012" summary="&quot;✔ added SonarCLoud for code quality&quot;">
-      <created>1648234191193</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1648234191193</updated>
+      <workItem from="1648506233943" duration="18937000" />
     </task>
     <task id="LOCAL-00013" summary="&quot;✔ added SonarCLoud for code quality&quot;">
       <created>1648234903780</created>
@@ -551,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648596991483</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="&quot;replaced .properties configuration to yml&quot;">
+      <created>1648599305228</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1648599305230</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +591,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;Fixed TimeZone for posting LigneReleve and ReleveBncaire&quot;" />
     <MESSAGE value="&quot;api for relevebancaire and lignereleve and operationcredit(dtype,operation_credit_id, operation_date is working fine stille working on inheritance mapping)&quot;" />
     <MESSAGE value="&quot; post mapping for operationEspeces is working&quot;" />
     <MESSAGE value="&quot;added all post method with all their exceptions still produit haven't been touched till tomorrow&quot;" />
@@ -597,7 +615,8 @@
     <MESSAGE value="&quot;changed bind-address to 0.0.0.0&quot;" />
     <MESSAGE value="&quot;deleted yaml files&quot;" />
     <MESSAGE value="&quot;added yml files&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;added yml files&quot;" />
+    <MESSAGE value="&quot;replaced .properties configuration to yml&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;replaced .properties configuration to yml&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
