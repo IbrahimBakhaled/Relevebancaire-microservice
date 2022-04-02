@@ -4,134 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql to build-yml&quot;">
-      <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8e09e04d708c7173c1ba2685d2316cc2ad28f74" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;working on filtring&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/service/QualificationReleveDeCompte.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/service/QualificationReleveDeCompte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/jacoco.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/cdg.releve/BootloaderApplicationLauncher.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/cdg.releve/BootloaderApplicationLauncher.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/cdg.releve/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/cdg.releve/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/site/jacoco/jacoco.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/ReleveBancaireControllerImplTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/surefire-reports/TEST-ReleveBancaireControllerImplTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/target/test-classes/ReleveBancaireControllerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/test-classes/ReleveBancaireControllerImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/OperationCredit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/LigneReleve.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/LigneReleve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/OperationCredit.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/OperationCredit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationChequeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationChequeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationCreditRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationCreditRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/HikariConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/HikariConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ActeurEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ActeurEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/BanqueEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/BanqueEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/CompteBancaireEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/CompteBancaireEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/LigneReleveEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/LigneReleveEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationChequeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationChequeEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationCreditEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationCreditEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationVirementEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/OperationVirementEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ProduitEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ProduitEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity$ReleveBancaireEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity$ReleveBancaireEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/OpeartionCreditCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/OpeartionCreditCreationRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/OperationChequeCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/OperationChequeCreationRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/TimeDeserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/TimeDeserializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ActeurRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ActeurRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/BanqueRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/BanqueRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/CompteBancaireRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/CompteBancaireRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/LigneReleveRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/LigneReleveRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationChequeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationChequeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationCreditRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationCreditRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationEspecesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationEspecesRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationVirementRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/OperationVirementRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ProduitRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ProduitRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/relevebancaire.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/test-classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/test-classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/antrun/build-main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/.sonar_lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,14 +239,7 @@
       <workItem from="1648652803308" duration="7917000" />
       <workItem from="1648665404981" duration="1163000" />
       <workItem from="1648666645897" duration="46038000" />
-      <workItem from="1648840668210" duration="10703000" />
-    </task>
-    <task id="LOCAL-00020" summary="&quot;made changes on GitHub build phase&quot;">
-      <created>1648241107574</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1648241107574</updated>
+      <workItem from="1648840668210" duration="13771000" />
     </task>
     <task id="LOCAL-00021" summary="&quot;made changes on GitHub build phase&quot;">
       <created>1648241490786</created>
@@ -708,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648610777696</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="&quot;working on filtring&quot;">
+      <created>1648859545556</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1648859545560</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot; added creating produit&quot;" />
     <MESSAGE value="&quot;fixed especes&quot;" />
     <MESSAGE value="&quot;fixed jsonIgnore rest is working properly&quot;" />
     <MESSAGE value="&quot; fixed: OneToMany relationship between ReleveBancaire and LigneReleve now it is working fine &#10;  fixed this error : JSON parse error: Cannot construct instance of ....&quot;" />
@@ -754,7 +629,8 @@
     <MESSAGE value="&quot;replaced .properties configuration to yml and fixed driverClassName&quot;" />
     <MESSAGE value="&quot;enabled config cloud in application.yml&quot;" />
     <MESSAGE value="&quot;added mysql to build-yml&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;added mysql to build-yml&quot;" />
+    <MESSAGE value="&quot;working on filtring&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;working on filtring&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

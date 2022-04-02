@@ -81,45 +81,24 @@ class QualificationReleveDeCompteTest {
         ligneReleveEntities1.forEach(System.out::println);
         System.out.println("===========================");
 
-        List<OperationCreditEntity> operationCreditEntityList = ligneReleveEntities1.stream()
-                .map( l -> {
-            OperationCreditEntity operationCreditEntity = new OperationCreditEntity();
-//            operationCreditEntity.setLigneReleve(l);
+        List<OperationCreditEntity> operationCreditEntityList = ligneReleveEntities1.stream().map(l -> {
+//            System.out.println(l);
             String operationNature = l.getOperationNature();
-            OperationCreditEntity returnedOperationCredit = null;
-
-            if ("Virement".equals(operationNature)){
+//            System.out.println("Shwoing operation nature ===> " + operationNature);
+            OperationCreditEntity returnedOperationCredit = new OperationCreditEntity();
+            if (Objects.equals(operationNature, "Virement")){
                 returnedOperationCredit = new OperationVirementEntity();
-            } else if ("Espece".equals(operationNature)){
+            } else if (Objects.equals(operationNature, "Espece")){
                 returnedOperationCredit = new OperationEspecesEntity();
-            } else if (operationNature.equals("Cheque")) {
+            } else if (Objects.equals(operationNature, "Cheque")){
                 returnedOperationCredit = new OperationChequeEntity();
             }
-            else {
-                throw  new RuntimeException(" ||||||| this operation doesnt have any of virement,cheque,especes ||||||||");
-            }
             returnedOperationCredit.setLigneReleve(l);
-            return operationCreditEntity;
-        })
-                .collect(Collectors.toList());
-//        operationCreditEntityList.forEach(System.out::println);
-//        OperationCreditEntity opC = new OperationCreditEntity();
-//        opC.setLigneReleve(new LigneReleveEntity(21L, new Date(), "Virement", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "VISA", releveBancaireEntity));
-//        LigneReleveEntity ligneReleveEntity = new LigneReleveEntity(21L, new Date(), "Virement", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "VISA", releveBancaireEntity);
-//        String operationNature = ligneReleveEntity.getOperationNature();
-//        OperationCreditEntity returnedOperationCredit = null;
-//        if (Objects.equals(opC.getLigneReleve().getOperationNature(), "Virement")){
-//            returnedOperationCredit = new OperationVirementEntity();
-//        } else if (Objects.equals(opC.getLigneReleve().getOperationNature(), "Espece")){
-//            returnedOperationCredit = new OperationEspecesEntity();
-//        } else if (Objects.equals(opC.getLigneReleve().getOperationNature(), "Cheque")) {
-//            returnedOperationCredit = new OperationChequeEntity();
-//        }
-//         else {
-//            throw  new RuntimeException(" ||||||| this operation doesnt have any of virement,cheque,especes ||||||||");
-//        }
-//        returnedOperationCredit.setLigneReleve(ligneReleveEntity);
-//        System.out.println(returnedOperationCredit);
+            System.out.println( "Showing returned operation credit "+ "[" + operationNature +"] " +returnedOperationCredit);
+            return returnedOperationCredit;
+
+        }).collect(Collectors.toList());
+        operationCreditEntityList.forEach(System.out::println);
     }
 
 
@@ -132,7 +111,6 @@ class QualificationReleveDeCompteTest {
         if (Objects.equals(opC.getLigneReleve().getOperationNature(), "Virement")){
             opC.setDtype("Virement");
             System.out.println(opC);
-//            operationCreditRepository.save(opC);
         }else {
             throw  new RuntimeException(" ||||||| this operation doesnt have any of virement,cheque,especes ||||||||");
         }
