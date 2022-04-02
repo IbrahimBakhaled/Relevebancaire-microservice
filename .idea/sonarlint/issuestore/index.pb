@@ -49,5 +49,3 @@ H
 sonar-project.properties,2\5\2538046035efb77ecc44e1fd2eec1e2641594d4c
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-F
-application.properties,2\f\2f692484526a88bd040e1ec9f8c211bca74f6755
