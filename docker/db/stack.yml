@@ -11,7 +11,7 @@ services:
       - "3306:3306"
     volumes:
       - mysql-relevebancaire-volume:/var/lib/relevebancaire
-#      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
       - ./custom.cnf:/etc/mysql/conf.d/custom.cnf
 volumes:
   mysql-relevebancaire-volume:
