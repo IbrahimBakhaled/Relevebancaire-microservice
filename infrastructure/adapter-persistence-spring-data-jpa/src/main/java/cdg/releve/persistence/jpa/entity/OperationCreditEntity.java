@@ -26,8 +26,8 @@ public class OperationCreditEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long operationCreditId;
 
-    @Column(name = "DTYPE", insertable = false, updatable = false)
-    private String dtype;
+//    @Column(name = "DTYPE", insertable = false, updatable = false)
+//    private String dtype;
 
     @CreationTimestamp
     @Temporal(TemporalType.DATE)

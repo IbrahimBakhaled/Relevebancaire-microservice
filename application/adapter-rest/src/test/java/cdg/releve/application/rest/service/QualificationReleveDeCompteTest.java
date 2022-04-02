@@ -109,7 +109,7 @@ class QualificationReleveDeCompteTest {
         OperationCreditEntity opC = new OperationCreditEntity();
         opC.setLigneReleve(new LigneReleveEntity(21L, new Date(), "Virement", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "VISA", releveBancaireEntity));
         if (Objects.equals(opC.getLigneReleve().getOperationNature(), "Virement")){
-            opC.setDtype("Virement");
+//            opC.setDtype("Virement");
             System.out.println(opC);
         }else {
             throw  new RuntimeException(" ||||||| this operation doesnt have any of virement,cheque,especes ||||||||");

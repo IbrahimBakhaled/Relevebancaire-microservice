@@ -265,8 +265,8 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
         CompteBancaireEntity compteBancaireEntity = new CompteBancaireEntity();
         BeanUtils.copyProperties(compteBancaireCreationRequestDomain, compteBancaireEntity);
-        compteBancaireEntity.setBanqueEntity(banqueEntity.get());
-        compteBancaireEntity.setActeurEntity(acteurEntity.get());
+        banqueEntity.ifPresent(compteBancaireEntity::setBanqueEntity);
+        acteurEntity.ifPresent(compteBancaireEntity::setActeurEntity);
         Acteur acteur = new Acteur();
         Banque banque = new Banque();
         BeanUtils.copyProperties(compteBancaireEntity, acteur);

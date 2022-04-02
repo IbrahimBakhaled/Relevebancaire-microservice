@@ -6,13 +6,11 @@ public class OperationCredit {
 
     private Long operationCreditId;
     private Date operationDate;
-    private String dtype;
     private LigneReleve ligneReleve;
 
-    public OperationCredit(Long operationCreditId, Date operationDate, String dtype, LigneReleve ligneReleve) {
+    public OperationCredit(Long operationCreditId, Date operationDate, LigneReleve ligneReleve) {
         this.operationCreditId = operationCreditId;
         this.operationDate = operationDate;
-        this.dtype = dtype;
         this.ligneReleve = ligneReleve;
     }
 
@@ -34,14 +32,6 @@ public class OperationCredit {
 
     public void setOperationDate(Date operationDate) {
         this.operationDate = operationDate;
-    }
-
-    public String getDtype() {
-        return dtype;
-    }
-
-    public void setDtype(String dtype) {
-        this.dtype = dtype;
     }
 
     public LigneReleve getLigneReleve() {
