@@ -1,0 +1,17 @@
+version: '3.6'
+services:
+  Releve-Bancaire-CDG:
+    image: mysql
+    container_name: Releve-Bancaire-CDG
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: "Releve-Bancaire-CDG"
+      MYSQL_ROOT_PASSWORD: "root"
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-relevebancaire-volume:/var/lib/relevebancaire
+#      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./custom.cnf:/etc/mysql/conf.d/custom.cnf
+volumes:
+  mysql-relevebancaire-volume:
