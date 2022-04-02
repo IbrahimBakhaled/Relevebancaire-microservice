@@ -9,14 +9,14 @@ import java.time.LocalDate;
 public class LigneReleveCreationRequestDomain {
 
     private String operationNature;
-    private BigDecimal creditDebit;
+    private String creditDebit;
     private BigDecimal montant;
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
     private ReleveBancaireCreationRequestDomain releveBancaire;
 
-    public LigneReleveCreationRequestDomain(String operationNature, BigDecimal creditDebit, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, ReleveBancaireCreationRequestDomain releveBancaire) {
+    public LigneReleveCreationRequestDomain(String operationNature, String creditDebit, BigDecimal montant, int refCdg, int refPaiment, String modePaiment, ReleveBancaireCreationRequestDomain releveBancaire) {
         this.operationNature = operationNature;
         this.creditDebit = creditDebit;
         this.montant = montant;
@@ -38,11 +38,11 @@ public class LigneReleveCreationRequestDomain {
         this.operationNature = operationNature;
     }
 
-    public BigDecimal getCreditDebit() {
+    public String getCreditDebit() {
         return creditDebit;
     }
 
-    public void setCreditDebit(BigDecimal creditDebit) {
+    public void setCreditDebit(String creditDebit) {
         this.creditDebit = creditDebit;
     }
 

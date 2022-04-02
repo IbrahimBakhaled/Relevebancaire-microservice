@@ -11,7 +11,7 @@ public class LigneReleve{
     private Date dateOperation;
     private String operationNature;
     private BigDecimal montant;
-    private BigDecimal creditDebit;
+    private String creditDebit;
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
@@ -20,7 +20,7 @@ public class LigneReleve{
 
     public LigneReleve() {}
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, BigDecimal montant, BigDecimal creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
+    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, BigDecimal montant, String creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
         this.ligneReleveId = ligneReleveId;
         this.dateOperation = dateOperation;
         this.operationNature = operationNature;
@@ -64,11 +64,11 @@ public class LigneReleve{
         this.montant = montant;
     }
 
-    public BigDecimal getCreditDebit() {
+    public String getCreditDebit() {
         return creditDebit;
     }
 
-    public void setCreditDebit(BigDecimal creditDebit) {
+    public void setCreditDebit(String creditDebit) {
         this.creditDebit = creditDebit;
     }
 

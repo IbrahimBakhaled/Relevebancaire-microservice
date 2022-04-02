@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@DiscriminatorValue("Operation_Cheque")
+@DiscriminatorColumn(name = "CHEQUE", discriminatorType = DiscriminatorType.STRING)
 public class OperationChequeEntity extends OperationCreditEntity{
 
 

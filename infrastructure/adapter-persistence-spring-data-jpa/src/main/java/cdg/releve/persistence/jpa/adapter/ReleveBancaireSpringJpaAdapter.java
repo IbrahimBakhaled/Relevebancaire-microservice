@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.*;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 
 @Primary
@@ -45,22 +47,11 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     }
 
 
-//    public Employee addEmployee(Employee employee) {
-//        Department dept = departmentRepository.findById(employee.getDepartment().getId()).orElse(null);
-//        if (null == dept) {
-//            dept = new Department();
-//        }
-//        dept.setDeptName(employee.getDepartment().getDeptName());
-//        employee.setDepartment(dept);
-//        return employeeRepository.save(employee);
-//    }
-//
-
-
     @Override
     public void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
         releveBancaireEntity.fromReleveBancaireTo(releveBancaire);
+
         releveBancaireRepository.save(releveBancaireEntity);
     }
 

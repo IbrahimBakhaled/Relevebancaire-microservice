@@ -1,5 +1,6 @@
 package cdg.releve.application.rest.controller;
 
+import cdg.releve.application.rest.service.QualificationReleveDeCompte;
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;

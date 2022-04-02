@@ -85,7 +85,7 @@ public class ReleveBancaireControllerImplTest {
         List<LigneReleveCreationRequestDomain> ligne = new ArrayList<>();
         ligne.forEach(l -> {
             l.setReleveBancaire(request);
-            l.setCreditDebit(BigDecimal.valueOf(1478.214));
+            l.setCreditDebit("C");
             l.setMontant(BigDecimal.valueOf(1487.69));
             l.setRefCdg(147);
             l.setOperationNature("OP_Nature_Mockito");

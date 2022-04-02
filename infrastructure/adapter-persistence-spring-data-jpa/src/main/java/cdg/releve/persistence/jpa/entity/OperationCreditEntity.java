@@ -1,10 +1,8 @@
 package cdg.releve.persistence.jpa.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -16,8 +14,10 @@ import java.util.Date;
 @Table(name = "OPERATIONCREDIT")
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "DTYPE", discriminatorType = DiscriminatorType.STRING)
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class OperationCreditEntity {
 
 
@@ -26,37 +26,15 @@ public class OperationCreditEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long operationCreditId;
 
+    @Column(name = "DTYPE", insertable = false, updatable = false)
+    private String dtype;
 
-
-    @CreatedDate
-//    @CreationTimestamp
+    @CreationTimestamp
+    @Temporal(TemporalType.DATE)
     private Date operationDate;
 
-
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "FK_operation_cheque")
-//    private OperationChequeEntity operationCheque;
-//
-//
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "FK_operation_especes")
-//    private OperationEspecesEntity operationEspeces;
-//
-//
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "FK_operation_virement")
-//    private OperationVirementEntity operationVirement;
-
-
     @OneToOne
+    @JoinColumn(name = "FK_LigneReleve")
     private LigneReleveEntity ligneReleve;
-
-
-//    @OneToOne
-//    @JoinColumn(name = "FK_produit")
-//    private ProduitEntity produit;
-
-
-
 
 }

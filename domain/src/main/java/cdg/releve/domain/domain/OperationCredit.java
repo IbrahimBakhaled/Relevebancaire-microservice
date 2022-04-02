@@ -6,23 +6,19 @@ public class OperationCredit {
 
     private Long operationCreditId;
     private Date operationDate;
-//    private OperationCheque operationCheque;
-//    private OperationEspeces operationEspeces;
-//    private OperationVirement operationVirement;
-    private Produit produit;
+    private String dtype;
     private LigneReleve ligneReleve;
 
-
-    public OperationCredit(Long operationCreditId, Date operationDate, Produit produit, LigneReleve ligneReleve) {
+    public OperationCredit(Long operationCreditId, Date operationDate, String dtype, LigneReleve ligneReleve) {
         this.operationCreditId = operationCreditId;
         this.operationDate = operationDate;
-        this.produit = produit;
+        this.dtype = dtype;
         this.ligneReleve = ligneReleve;
     }
 
-    public OperationCredit(){
-        super();
+    public OperationCredit() {
     }
+
 
     public Long getOperationCreditId() {
         return operationCreditId;
@@ -40,38 +36,13 @@ public class OperationCredit {
         this.operationDate = operationDate;
     }
 
-//    public OperationCheque getOperationCheque() {
-//        return operationCheque;
-//    }
-//
-//    public void setOperationCheque(OperationCheque operationCheque) {
-//        this.operationCheque = operationCheque;
-//    }
-//
-//    public OperationEspeces getOperationEspeces() {
-//        return operationEspeces;
-//    }
-//
-//    public void setOperationEspeces(OperationEspeces operationEspeces) {
-//        this.operationEspeces = operationEspeces;
-//    }
-//
-//    public OperationVirement getOperationVirement() {
-//        return operationVirement;
-//    }
-//
-//    public void setOperationVirement(OperationVirement operationVirement) {
-//        this.operationVirement = operationVirement;
-//    }
-
-    public Produit getProduit() {
-        return produit;
+    public String getDtype() {
+        return dtype;
     }
 
-    public void setProduit(Produit produit) {
-        this.produit = produit;
+    public void setDtype(String dtype) {
+        this.dtype = dtype;
     }
-
 
     public LigneReleve getLigneReleve() {
         return ligneReleve;

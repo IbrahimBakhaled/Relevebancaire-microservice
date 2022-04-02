@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@DiscriminatorValue("Operation_Especes")
+@DiscriminatorColumn(name = "ESPECE", discriminatorType = DiscriminatorType.STRING)
 public class OperationEspecesEntity extends OperationCreditEntity {
 
 
