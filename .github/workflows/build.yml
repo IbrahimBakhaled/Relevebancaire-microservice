@@ -10,9 +10,8 @@ on:
 jobs:
   test-container:
     runs-on: ubuntu-latest
-    container: releve-bancaire-cdg
     services:
-      releve-bancaire-cdg:
+      mysql:
         image: mysql
         env:
           MYSQL_DATABASE: "releve-bancaire-cdg"

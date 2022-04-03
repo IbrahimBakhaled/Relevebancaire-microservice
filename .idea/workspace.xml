@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;">
-      <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +95,7 @@
       <recent name="cdg.releve.persistence.jpa.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.db/stack.yml.Releve-Bancaire-CDG: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
     <configuration name="QualificationReleveDeCompteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adapter-rest" />
       <extension name="coverage">
@@ -226,21 +224,7 @@
       <workItem from="1648840668210" duration="16167000" />
       <workItem from="1648910996470" duration="10859000" />
       <workItem from="1648924380496" duration="8120000" />
-      <workItem from="1648941526164" duration="4161000" />
-    </task>
-    <task id="LOCAL-00031" summary="&quot; fixed sonarcloud authentication and token&quot;">
-      <created>1648412941250</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1648412941251</updated>
-    </task>
-    <task id="LOCAL-00032" summary="&quot; fixed sonarcloud authentication and token&quot;">
-      <created>1648413311448</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1648413311448</updated>
+      <workItem from="1648941526164" duration="4979000" />
     </task>
     <task id="LOCAL-00033" summary="&quot;still fixing&quot;">
       <created>1648433798480</created>
@@ -571,7 +555,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648946448715</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="&quot;added mysql container&quot;">
+      <created>1648946560132</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1648946560134</updated>
+    </task>
+    <task id="LOCAL-00081" summary="&quot;added mysql container&quot;">
+      <created>1648946744895</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1648946744896</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
