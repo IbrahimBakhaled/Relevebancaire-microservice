@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/custom.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/custom.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,21 +227,7 @@
       <workItem from="1648840668210" duration="16167000" />
       <workItem from="1648910996470" duration="10859000" />
       <workItem from="1648924380496" duration="8120000" />
-      <workItem from="1648941526164" duration="7040000" />
-    </task>
-    <task id="LOCAL-00038" summary="&quot;fixed token&quot;">
-      <created>1648485960811</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1648485960811</updated>
-    </task>
-    <task id="LOCAL-00039" summary="&quot;fixed token&quot;">
-      <created>1648486216724</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1648486216724</updated>
+      <workItem from="1648941526164" duration="7337000" />
     </task>
     <task id="LOCAL-00040" summary="&quot;fixed token&quot;">
       <created>1648487986331</created>
@@ -572,7 +558,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648949355558</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="&quot;added mysql container&quot;">
+      <created>1648949720106</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1648949720108</updated>
+    </task>
+    <task id="LOCAL-00088" summary="&quot;added mysql container&quot;">
+      <created>1648949955036</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1648949955037</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
