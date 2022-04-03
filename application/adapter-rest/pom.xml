@@ -14,7 +14,7 @@
     <name>adapter-rest</name>
     <description>adapter-rest</description>
     <properties>
-        <sonar.tests></sonar.tests>
+        <sonar.tests/>
     </properties>
 
     <dependencies>
