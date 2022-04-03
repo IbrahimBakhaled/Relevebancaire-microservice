@@ -1,5 +1,6 @@
 
 import cdg.releve.BootloaderApplicationLauncher;
+import cdg.releve.application.rest.controller.ReleveBancaireControllerImpl;
 import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
 import cdg.releve.persistence.jpa.adapter.ReleveBancaireSpringJpaAdapter;
@@ -33,7 +34,7 @@ import java.util.List;
 //@WebMvcTest(controllers = cdg.releve.application.rest.controller.ReleveBancaireControllerImpl.class)
 @SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-@WebMvcTest
+@WebMvcTest(controllers = ReleveBancaireControllerImpl.class)
 public class ReleveBancaireControllerImplTest {
 
     @Autowired
