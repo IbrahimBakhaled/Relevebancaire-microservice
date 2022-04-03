@@ -1,6 +1,7 @@
+organization=ibrahimbakhaled
 projectKey=cdg.releve:releveproject
-serverUrl=http://localhost:9000
-serverVersion=9.3.0.51899
-dashboardUrl=http://localhost:9000/dashboard?id=cdg.releve%3Areleveproject
-ceTaskId=AX_sRlCZgBQCIb3EsupB
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_sRlCZgBQCIb3EsupB
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.27985
+dashboardUrl=https://sonarcloud.io/dashboard?id=cdg.releve%3Areleveproject
+ceTaskId=AX_wRKB9YFH2Wz1LUBGZ
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX_wRKB9YFH2Wz1LUBGZ
