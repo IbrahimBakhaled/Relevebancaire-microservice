@@ -3,8 +3,6 @@
 ˆinfrastructure/adapter-persistence-spring-data-jpa/src/test/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.java,6\0\60bbf77e1f197fe8b2bfbb18c1a0e4a15693e660
 \
 ,.scannerwork/css-bundle/stylelintconfig.json,7\a\7a053b9b124ee943f7883db012f314b3d827be32
-F
-infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
 ›
 kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java,f\1\f10b6051c1ff89fb0dba342aa7856ac0ea0c6206
 8
@@ -23,8 +21,6 @@ yinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/per
 ~infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java,f\5\f568b19c2e41553a9c73002bded6cd55d29c1e21
 ¯
 infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java,b\c\bc2518c9df1637268a09669fcb5ad0cb9ea47ae9
-j
-:infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java,c\4\c4b00919095d27e78b695f0e71bfbb2d98c92db2
 ­

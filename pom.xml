@@ -75,6 +75,12 @@
         <sonar.jdbc.dialect>mysql</sonar.jdbc.dialect>
         <sonar.organization>ibrahimbakhaled</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.language>java</sonar.language>
+        <sonar.binaries>**/target/classes</sonar.binaries>
+<!--        <sonar.sources>.</sonar.sources>-->
+        <sonar.tests>src/test</sonar.tests>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
 <!--        <sonar.host.url>-->
 <!--            http://localhost:9000-->
 <!--        </sonar.host.url>-->
