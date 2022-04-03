@@ -17,10 +17,10 @@ jobs:
           MYSQL_DATABASE: "releve-bancaire-cdg"
           MYSQL_ROOT_PASSWORD: "root"
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
-        volumes:
-          - mysql-relevebancaire-volume:/var/lib/relevebancaire
-#          - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-          - ./custom.cnf:/etc/mysql/conf.d/custom.cnf
+#        volumes:
+#          - mysql-relevebancaire-volume:/var/lib/relevebancaire
+##          - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+#          - ./custom.cnf:/etc/mysql/conf.d/custom.cnf
     steps:
       - name: Verify MySQL connection from container
         run: |
