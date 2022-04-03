@@ -1,7 +1,0 @@
-organization=ibrahimbakhaled
-projectKey=IbrahimBakhaled_relevebancaire
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.27985
-dashboardUrl=https://sonarcloud.io/dashboard?id=IbrahimBakhaled_relevebancaire
-ceTaskId=AX_wbXYwjScI07WxSBi-
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX_wbXYwjScI07WxSBi-

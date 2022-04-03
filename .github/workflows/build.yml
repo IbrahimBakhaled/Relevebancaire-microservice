@@ -60,6 +60,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run; mvn -B clean
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=IbrahimBakhaled_relevebancaire -DsonarZ.organization=ibrahimbakhaled -Dsonar.host.url=https://sonarcloud.io
   build:
     runs-on: ubuntu-latest

@@ -1,16 +1,0 @@
-
-dcdg.releve.domain.domain.request.LigneReleveCreationRequestDomain#getMontant()Ljava/math/BigDecimal;ê
-ÖC:/Users/Nuklearka/Desktop/relevebancaire/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java1 1( "1*Ÿ
-1ê
-ÖC:/Users/Nuklearka/Desktop/relevebancaire/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java2 2(å
-â
-ê
-ÖC:/Users/Nuklearka/Desktop/relevebancaire/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java2 2(
-%0java.math.BigDecimal"__id*R*PC
-Acdg.releve.domain.domain.request.LigneReleveCreationRequestDomain"	
-montant"±
-ê
-ÖC:/Users/Nuklearka/Desktop/relevebancaire/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java2 2(
-
-%0java.math.BigDecimalBEC
-Acdg.releve.domain.domain.request.LigneReleveCreationRequestDomain
