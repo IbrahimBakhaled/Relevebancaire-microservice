@@ -10,12 +10,12 @@ on:
 jobs:
   test-container:
     runs-on: ubuntu-latest
-    container: Releve-Bancaire-CDG
+    container: releve-bancaire-cdg
     services:
-      Releve-Bancaire-CDG:
+      releve-bancaire-cdg:
         image: mysql
         env:
-          MYSQL_DATABASE: "Releve-Bancaire-CDG"
+          MYSQL_DATABASE: "releve-bancaire-cdg"
           MYSQL_ROOT_PASSWORD: "root"
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
         volumes:
