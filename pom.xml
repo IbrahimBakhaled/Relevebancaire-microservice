@@ -80,7 +80,7 @@
         <sonar.binaries>**/target/classes</sonar.binaries>
         <sonar.projectBaseDir>.</sonar.projectBaseDir>
 <!--        <sonar.sources>.</sonar.sources>-->
-        <sonar.tests>src/test</sonar.tests>
+        <sonar.tests>.</sonar.tests>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
 <!--        <sonar.host.url>-->
