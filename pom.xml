@@ -74,9 +74,10 @@
         <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
         <sonar.jdbc.dialect>mysql</sonar.jdbc.dialect>
         <sonar.organization>ibrahimbakhaled</sonar.organization>
-        <sonar.host.url>
-            http://localhost:9000
-        </sonar.host.url>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+<!--        <sonar.host.url>-->
+<!--            http://localhost:9000-->
+<!--        </sonar.host.url>-->
     </properties>
 
     <build>

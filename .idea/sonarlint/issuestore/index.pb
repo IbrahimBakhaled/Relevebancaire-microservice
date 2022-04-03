@@ -33,5 +33,3 @@ j
 …infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationCreditRepository.java,c\3\c35ef608f040276c213fca38412d938a4020432f
 L
 .scannerwork/report-task.txt,1\f\1feadc761844720d11268cc01b88d72358e54ba6
-H
-sonar-project.properties,2\5\2538046035efb77ecc44e1fd2eec1e2641594d4c
