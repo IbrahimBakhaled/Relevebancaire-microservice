@@ -31,12 +31,8 @@ j
 :infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
 ›
 kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java,4\6\46971a145fc7bf6606184efd413f6183ca5461f7
-n
->bootloader/src/test/java/ReleveBancaireControllerImplTest.java,d\c\dc8bb0debc4cc9378756e95e8a6de985704f1d4f
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java,c\4\c4b00919095d27e78b695f0e71bfbb2d98c92db2
-Ÿ
-oapplication/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java,2\3\23c0a7ecced2d4d833a1d6788357b8f8362d527e
 ­
 }infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java,1\e\1e4e8a327a34296b04953e84d6e99f0cc82f02df
 ¶
