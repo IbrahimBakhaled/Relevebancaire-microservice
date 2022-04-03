@@ -5,11 +5,13 @@ import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
+@Primary
 public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
 
     private ReleveBancairePersistencePort releveBancairePersistencePort;
