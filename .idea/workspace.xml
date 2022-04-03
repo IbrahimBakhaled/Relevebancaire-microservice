@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;">
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,21 +226,7 @@
       <workItem from="1648840668210" duration="16167000" />
       <workItem from="1648910996470" duration="10859000" />
       <workItem from="1648924380496" duration="8120000" />
-      <workItem from="1648941526164" duration="8262000" />
-    </task>
-    <task id="LOCAL-00043" summary="&quot; added hikari configuration for datasource&quot;">
-      <created>1648489636445</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489636445</updated>
-    </task>
-    <task id="LOCAL-00044" summary="&quot; added Hikari configuration for datasource&quot;">
-      <created>1648494232829</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1648494232829</updated>
+      <workItem from="1648941526164" duration="8625000" />
     </task>
     <task id="LOCAL-00045" summary="&quot; added Hikari configuration for datasource&quot;">
       <created>1648495376353</created>
@@ -569,7 +557,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648950691379</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="&quot;added mysql container&quot;">
+      <created>1648950992356</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1648950992359</updated>
+    </task>
+    <task id="LOCAL-00093" summary="&quot;added mysql container&quot;">
+      <created>1648951193616</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1648951193618</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

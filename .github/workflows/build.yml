@@ -8,24 +8,21 @@ on:
 
 
 jobs:
-  test-container:
+  test-host:
     runs-on: ubuntu-latest
     services:
-      releve-bancaire-cdg:
-        image: mysql
+      mysql:
+        image: mysql:5.7
         env:
-          MYSQL_DATABASE: "releve-bancaire-cdg"
-          MYSQL_ROOT_PASSWORD: "root"
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
-#        volumes:
-#          - mysql-relevebancaire-volume:/var/lib/relevebancaire
-##          - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-#          - ./custom.cnf:/etc/mysql/conf.d/custom.cnf
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 32574:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
-      - name: Verify MySQL connection from container
+      - name: Verify MySQL connection from host
         run: |
-          sudo apt-get update
-          mysql --host releve-bancaire-cdg -uroot -ppassword -e "SHOW DATABASES"
+          sudo apt-get install -y mysql-client
+          mysql --host 127.0.0.1 --port 32574 -uroot -ppassword -e "SHOW DATABASES"
   compile:
     runs-on: ubuntu-latest
     name: Build
