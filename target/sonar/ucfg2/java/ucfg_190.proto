@@ -1,0 +1,42 @@
+
+”cdg.releve.application.service.adapter.ReleveBancaireServiceAdapter#getReleveBancaireById(Ljava/lang/Long;)Lcdg/releve/domain/domain/ReleveBancaire;±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java+ +(/"startingBlock*Æ
+startingBlock±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java+/ +(F‡
+„
+±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java* *(
+%2"
+__annotate*
+java.lang.Override*$
+"
+releveBancaireIdjava.lang.Longñ
+î
+±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java+5 +(E"
+releveBancaireIdjava.lang.Long"__annotation*
+
+%2*
+1*‚
+
+1±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java, ,(,ä
+á
+±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java, ,(,9
+%03cdg.releve.domain.spi.ReleveBancairePersistencePort"__id*j*hE
+Ccdg.releve.application.service.adapter.ReleveBancaireServiceAdapter"
+releveBancairePersistencePortùö
+±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java, ,(T-
+%1'cdg.releve.domain.domain.ReleveBancaire"„cdg.releve.domain.spi.ReleveBancairePersistencePort#getReleveBancaireById(Ljava/lang/Long;)Lcdg/releve/domain/domain/ReleveBancaire;*;
+9
+%03cdg.releve.domain.spi.ReleveBancairePersistencePort*$
+"
+releveBancaireIdjava.lang.Long2'getReleveBancaireById(Ljava/lang/Long;)"å
+±
+¦C:/Users/Nuklearka/Desktop/relevebancaire/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java, ,(U/
+-
+%1'cdg.releve.domain.domain.ReleveBancaire:"
+releveBancaireIdjava.lang.LongBGE
+Ccdg.releve.application.service.adapter.ReleveBancaireServiceAdapter
