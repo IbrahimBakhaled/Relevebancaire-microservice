@@ -65,6 +65,7 @@
     </dependencyManagement>
 
 
+
     <properties>
         <application.name.value>relevebancaire</application.name.value>
         <maven.compiler.source>11</maven.compiler.source>
