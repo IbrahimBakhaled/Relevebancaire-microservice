@@ -30,13 +30,10 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-//@RunWith(SpringRunner.class)
 @ExtendWith(SpringExtension.class)
 //@WebMvcTest(controllers = cdg.releve.application.rest.controller.ReleveBancaireControllerImpl.class)
-//@SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-//@AutoConfigureMockMvc
-@WebMvcTest(controllers = ReleveBancaireControllerImpl.class)
-@ContextConfiguration(classes = BootloaderApplicationLauncher.class)
+@SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@AutoConfigureMockMvc
 public class ReleveBancaireControllerImplTest {
 
     @Autowired

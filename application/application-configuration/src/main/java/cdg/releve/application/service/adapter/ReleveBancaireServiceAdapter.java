@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Component
-@Primary
+
 public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
 
     private ReleveBancairePersistencePort releveBancairePersistencePort;
