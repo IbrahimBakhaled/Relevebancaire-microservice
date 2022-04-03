@@ -17,6 +17,6 @@ public class ReleveBancaireCreationRequest {
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
 
-    private List<LigneReleveEntity> lignereleve = new ArrayList<>();
+    private List<LigneReleveCreationRequest> lignereleve = new ArrayList<>();
 
 }

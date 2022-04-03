@@ -1,9 +1,11 @@
 package cdg.releve.domain.domain;
 
-import java.io.Serializable;
+import lombok.Builder;
+
 import java.math.BigDecimal;
 import java.util.*;
 
+@Builder
 public class ReleveBancaire{
 
 
@@ -111,6 +113,9 @@ public class ReleveBancaire{
         }
         this.lignereleve = lignereleve;
     }
+
+
+
 }
 
 

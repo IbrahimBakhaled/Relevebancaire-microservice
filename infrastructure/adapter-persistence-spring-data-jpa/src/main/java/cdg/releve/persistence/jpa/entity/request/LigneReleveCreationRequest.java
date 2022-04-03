@@ -1,6 +1,7 @@
 package cdg.releve.persistence.jpa.entity.request;
 
 import cdg.releve.persistence.jpa.entity.OperationEspecesEntity;
+import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
@@ -19,12 +20,11 @@ public class LigneReleveCreationRequest implements Serializable {
 
     private String operationNature;
     private String rib;
-    private BigDecimal creditDebit;
+    private String creditDebit;
     private int numCheck;
     private BigDecimal montant;
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-    private Long releveBancaireId;
-    private Long operationCreditId;
+    private ReleveBancaireCreationRequest releveBancaire;
 }

@@ -7,8 +7,6 @@
 kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java,f\1\f10b6051c1ff89fb0dba342aa7856ac0ea0c6206
 8
 env.list,c\7\c79de27c0d9f0caa77ace39d1ff4bf2b1163d61c
-A
-system.properties,a\5\a5db35984da8ffa0e255c16a2e31ae7b26e7d222
 n
 >domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java,f\9\f9722516bf52c4a50a76062d7274133994f5c490
 ‹
