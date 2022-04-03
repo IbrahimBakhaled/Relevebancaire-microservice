@@ -1,11 +1,11 @@
 version: '3.6'
 services:
-  Releve-Bancaire-CDG:
+  releve-bancaire-cdg:
     image: mysql
-    container_name: Releve-Bancaire-CDG
+    container_name: releve-bancaire-cdg
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: "Releve-Bancaire-CDG"
+      MYSQL_DATABASE: "releve-bancaire-cdg"
       MYSQL_ROOT_PASSWORD: "root"
     ports:
       - "3306:3306"
