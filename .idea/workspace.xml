@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f692484526a88bd040e1ec9f8c211bca74f6755" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,14 +226,7 @@
       <workItem from="1648840668210" duration="16167000" />
       <workItem from="1648910996470" duration="10859000" />
       <workItem from="1648924380496" duration="8120000" />
-      <workItem from="1648941526164" duration="1953000" />
-    </task>
-    <task id="LOCAL-00026" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
-      <created>1648247192911</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1648247192911</updated>
+      <workItem from="1648941526164" duration="2794000" />
     </task>
     <task id="LOCAL-00027" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
       <created>1648247353378</created>
@@ -572,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648943047123</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="&quot;added mysql container&quot;">
+      <created>1648943729323</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1648943729323</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
