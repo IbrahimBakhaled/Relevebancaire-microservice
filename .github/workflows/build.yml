@@ -9,7 +9,7 @@ on:
 jobs:
   compile:
     runs-on: ubuntu-latest
-    name: Build
+    name: Compile
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
@@ -17,16 +17,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Setup MySQL 8.0
-        uses: haltuf/mysql-action@master
-        with:
-          host port: 3306
-          character set server: 'utf8mb4'
-          collation server: 'utf8mb4_general_ci'
-          mysql version: '8.0.28'
-          mysql database: 'Releve-Bancaire-CDG'
-          mysql user: 'root'
-          mysql password: 'root'
       - name: Compile with Maven
         run: mvn -f pom.xml clean install dependency:copy-dependencies
   test:
@@ -84,4 +74,3 @@ jobs:
           distribution: 'adopt'
       - name: Build Project
         run: mvn -B package --file pom.xml
-#        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=IbrahimBakhaled_relevebancaire -Dsonar.login=7819bacad97afd1cb240d34d541c0122ef742d84

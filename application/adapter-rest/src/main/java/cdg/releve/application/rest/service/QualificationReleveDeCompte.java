@@ -8,7 +8,6 @@ import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
 import cdg.releve.persistence.jpa.repository.LigneReleveRepository;
 import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
 import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 

@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/test/java/ReleveBancaireControllerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1116e8e6e492a185f4df7f55ff557cb2e5ac869a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23c0a7ecced2d4d833a1d6788357b8f8362d527e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46971a145fc7bf6606184efd413f6183ca5461f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8e09e04d708c7173c1ba2685d2316cc2ad28f74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/service/QualificationReleveDeCompte.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/service/QualificationReleveDeCompte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/bootloader.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/stack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/stack.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +91,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38965517" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -99,21 +114,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
-    <configuration name="QualificationReleveDeCompteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adapter-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cdg.releve.application.rest.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cdg.releve.application.rest.service" />
-      <option name="MAIN_CLASS_NAME" value="cdg.releve.application.rest.service.QualificationReleveDeCompteTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="QualificationReleveDeCompteTest.testingFiltrage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adapter-rest" />
       <extension name="coverage">
@@ -126,6 +126,29 @@
       <option name="MAIN_CLASS_NAME" value="cdg.releve.application.rest.service.QualificationReleveDeCompteTest" />
       <option name="METHOD_NAME" value="testingFiltrage" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReleveBancaireControllerImplTest.saveReleveBancaire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootloader" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
+      <option name="METHOD_NAME" value="saveReleveBancaire" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="docker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="docker" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QualificationReleveDeCompteTest.testingFiltrage" />
+        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire" />
         <item itemvalue="Docker.db/stack.yml.Releve-Bancaire-CDG: Compose Deployment" />
         <item itemvalue="Docker.db/stack.yml: Compose Deployment" />
         <item itemvalue="Docker.db/stack.yml.hexadb: Compose Deployment" />
-        <item itemvalue="JUnit.QualificationReleveDeCompteTest" />
-        <item itemvalue="JUnit.QualificationReleveDeCompteTest.testingFiltrage" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +250,149 @@
       <workItem from="1648840668210" duration="16167000" />
       <workItem from="1648910996470" duration="10859000" />
       <workItem from="1648924380496" duration="8120000" />
-      <workItem from="1648941526164" duration="8971000" />
+      <workItem from="1648941526164" duration="1953000" />
+      <workItem from="1649000009290" duration="1190000" />
+      <workItem from="1649001486866" duration="289000" />
+    </task>
+    <task id="LOCAL-00026" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648247192911</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1648247192911</updated>
+    </task>
+    <task id="LOCAL-00027" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648247353378</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1648247353379</updated>
+    </task>
+    <task id="LOCAL-00028" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648247585119</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1648247585119</updated>
+    </task>
+    <task id="LOCAL-00029" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648248067698</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1648248067699</updated>
+    </task>
+    <task id="LOCAL-00030" summary="&quot; added SonarQube for code quality&#10;2 commands should be activated StartSonar(c:/sonar_folder/bin) and 2nd sonar-scaner(c:/sonar-scanner_folder/bin)&quot;">
+      <created>1648253801031</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1648253801031</updated>
+    </task>
+    <task id="LOCAL-00031" summary="&quot; fixed sonarcloud authentication and token&quot;">
+      <created>1648412941250</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1648412941251</updated>
+    </task>
+    <task id="LOCAL-00032" summary="&quot; fixed sonarcloud authentication and token&quot;">
+      <created>1648413311448</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1648413311448</updated>
+    </task>
+    <task id="LOCAL-00033" summary="&quot;still fixing&quot;">
+      <created>1648433798480</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1648433798480</updated>
+    </task>
+    <task id="LOCAL-00034" summary="&quot;still fixing&quot;">
+      <created>1648434470011</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1648434470012</updated>
+    </task>
+    <task id="LOCAL-00035" summary="&quot;still fixing&quot;">
+      <created>1648434717022</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1648434717022</updated>
+    </task>
+    <task id="LOCAL-00036" summary="&quot;fixed token&quot;">
+      <created>1648485530394</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485530394</updated>
+    </task>
+    <task id="LOCAL-00037" summary="&quot;fixed token&quot;">
+      <created>1648485748953</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485748953</updated>
+    </task>
+    <task id="LOCAL-00038" summary="&quot;fixed token&quot;">
+      <created>1648485960811</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485960811</updated>
+    </task>
+    <task id="LOCAL-00039" summary="&quot;fixed token&quot;">
+      <created>1648486216724</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1648486216724</updated>
+    </task>
+    <task id="LOCAL-00040" summary="&quot;fixed token&quot;">
+      <created>1648487986331</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1648487986331</updated>
+    </task>
+    <task id="LOCAL-00041" summary="&quot; added hikari configuration for datasource&quot;">
+      <created>1648489067863</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489067863</updated>
+    </task>
+    <task id="LOCAL-00042" summary="&quot; added hikari configuration for datasource&quot;">
+      <created>1648489618944</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489618945</updated>
+    </task>
+    <task id="LOCAL-00043" summary="&quot; added hikari configuration for datasource&quot;">
+      <created>1648489636445</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489636445</updated>
+    </task>
+    <task id="LOCAL-00044" summary="&quot; added Hikari configuration for datasource&quot;">
+      <created>1648494232829</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1648494232829</updated>
+    </task>
+    <task id="LOCAL-00045" summary="&quot; added Hikari configuration for datasource&quot;">
+      <created>1648495376353</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1648495376353</updated>
     </task>
     <task id="LOCAL-00046" summary="&quot;added Hikari configuration for datasource&quot;">
       <created>1648495884335</created>
@@ -432,147 +597,7 @@
       <option name="project" value="LOCAL" />
       <updated>1648943047123</updated>
     </task>
-    <task id="LOCAL-00075" summary="&quot;added mysql container&quot;">
-      <created>1648943729323</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1648943729323</updated>
-    </task>
-    <task id="LOCAL-00076" summary="&quot;added mysql container&quot;">
-      <created>1648945308808</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1648945308810</updated>
-    </task>
-    <task id="LOCAL-00077" summary="&quot;added mysql container&quot;">
-      <created>1648946197081</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1648946197083</updated>
-    </task>
-    <task id="LOCAL-00078" summary="&quot;added mysql container&quot;">
-      <created>1648946329031</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1648946329032</updated>
-    </task>
-    <task id="LOCAL-00079" summary="&quot;added mysql container&quot;">
-      <created>1648946448714</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1648946448715</updated>
-    </task>
-    <task id="LOCAL-00080" summary="&quot;added mysql container&quot;">
-      <created>1648946560132</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1648946560134</updated>
-    </task>
-    <task id="LOCAL-00081" summary="&quot;added mysql container&quot;">
-      <created>1648946744895</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1648946744896</updated>
-    </task>
-    <task id="LOCAL-00082" summary="&quot;added mysql container&quot;">
-      <created>1648947436056</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1648947436060</updated>
-    </task>
-    <task id="LOCAL-00083" summary="&quot;added mysql container&quot;">
-      <created>1648947528350</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1648947528353</updated>
-    </task>
-    <task id="LOCAL-00084" summary="&quot;added mysql container&quot;">
-      <created>1648949038258</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1648949038262</updated>
-    </task>
-    <task id="LOCAL-00085" summary="&quot;added mysql container&quot;">
-      <created>1648949212197</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1648949212198</updated>
-    </task>
-    <task id="LOCAL-00086" summary="&quot;added mysql container&quot;">
-      <created>1648949355556</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1648949355558</updated>
-    </task>
-    <task id="LOCAL-00087" summary="&quot;added mysql container&quot;">
-      <created>1648949720106</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1648949720108</updated>
-    </task>
-    <task id="LOCAL-00088" summary="&quot;added mysql container&quot;">
-      <created>1648949955036</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1648949955037</updated>
-    </task>
-    <task id="LOCAL-00089" summary="&quot;added mysql container&quot;">
-      <created>1648950116930</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1648950116933</updated>
-    </task>
-    <task id="LOCAL-00090" summary="&quot;added mysql container&quot;">
-      <created>1648950376792</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1648950376794</updated>
-    </task>
-    <task id="LOCAL-00091" summary="&quot;added mysql container&quot;">
-      <created>1648950691374</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1648950691379</updated>
-    </task>
-    <task id="LOCAL-00092" summary="&quot;added mysql container&quot;">
-      <created>1648950992356</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1648950992359</updated>
-    </task>
-    <task id="LOCAL-00093" summary="&quot;added mysql container&quot;">
-      <created>1648951193616</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1648951193618</updated>
-    </task>
-    <task id="LOCAL-00094" summary="&quot;added mysql container&quot;">
-      <created>1648951369157</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1648951369161</updated>
-    </task>
-    <option name="localTasksCounter" value="95" />
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -11,8 +11,6 @@ kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/controller/R
 env.list,c\7\c79de27c0d9f0caa77ace39d1ff4bf2b1163d61c
 A
 system.properties,a\5\a5db35984da8ffa0e255c16a2e31ae7b26e7d222
-?
-application.yml,1\1\1116e8e6e492a185f4df7f55ff557cb2e5ac869a
 n
 >domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java,f\9\f9722516bf52c4a50a76062d7274133994f5c490
 ‹
@@ -25,23 +23,15 @@ yinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/per
 ~infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationEspecesEntity.java,f\5\f568b19c2e41553a9c73002bded6cd55d29c1e21
 ¯
 infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationVirementEntity.java,b\c\bc2518c9df1637268a09669fcb5ad0cb9ea47ae9
-C
-application/pom.xml,c\8\c8e09e04d708c7173c1ba2685d2316cc2ad28f74
 j
 :infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
-›
-kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java,4\6\46971a145fc7bf6606184efd413f6183ca5461f7
 ¬
 |infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java,c\4\c4b00919095d27e78b695f0e71bfbb2d98c92db2
 ­
 }infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/OperationCreditEntity.java,1\e\1e4e8a327a34296b04953e84d6e99f0cc82f02df
 ¶
 …infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationCreditRepository.java,c\3\c35ef608f040276c213fca38412d938a4020432f
-]
--application/application-configuration/pom.xml,2\a\2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49
 L
 .scannerwork/report-task.txt,1\f\1feadc761844720d11268cc01b88d72358e54ba6
 H
 sonar-project.properties,2\5\2538046035efb77ecc44e1fd2eec1e2641594d4c
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
