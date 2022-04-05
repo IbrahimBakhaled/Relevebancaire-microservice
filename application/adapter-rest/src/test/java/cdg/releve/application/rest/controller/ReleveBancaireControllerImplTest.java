@@ -3,25 +3,19 @@ package cdg.releve.application.rest.controller;
 import cdg.releve.application.rest.BootloaderApplicationLauncher;
 import cdg.releve.application.rest.mapper.ReleveBancaireDtoMapper;
 import cdg.releve.domain.domain.ReleveBancaire;
-import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
 import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
 import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -31,17 +25,9 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-
-
-//@ExtendWith(SpringExtension.class)
-////@WebMvcTest(controllers = ReleveBancaireControllerImpl.class)
-//@SpringBootTest(classes = BootloaderApplicationLauncher.class,
-//        webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @RunWith(SpringRunner.class)
-//@WebMvcTest(controllers = ReleveBancaireControllerImpl.class)
 @SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 class ReleveBancaireControllerImplTest {

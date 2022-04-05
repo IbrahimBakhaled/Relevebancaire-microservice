@@ -1,0 +1,32 @@
+
+¤
+java:S1186¿"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ê”–Ðûÿÿÿÿ8÷®Ö¾ÿ/
+Ÿ
+java:S1186Ô"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ìÚš¦8ø®Ö¾ÿ/
+¤
+java:S1186—"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’ßäëøÿÿÿÿ8ø®Ö¾ÿ/
+X	java:S125{"<This block of commented-out lines of code should be removed.(Áñ®œ8þ¯Ö¾ÿ/
+Y	java:S125ž"<This block of commented-out lines of code should be removed.(•Ö¿8ƒ°Ö¾ÿ/
+Y	java:S125Ä"<This block of commented-out lines of code should be removed.(žÛôå8Š°Ö¾ÿ/
+^	java:S125Ù"<This block of commented-out lines of code should be removed.(©‘í üÿÿÿÿ8’°Ö¾ÿ/
+^	java:S125œ"<This block of commented-out lines of code should be removed.( Ç¹ûÿÿÿÿ8¨°Ö¾ÿ/
+^	java:S125´"<This block of commented-out lines of code should be removed.(ûÙÛ‰ÿÿÿÿÿ8«°Ö¾ÿ/
+s
+java:S1128	"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8º°Ö¾ÿ/
+`
+java:S1128"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8»°Ö¾ÿ/
+V
+java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶8»°Ö¾ÿ/
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8¼°Ö¾ÿ/
+V
+java:S1068"9Remove this unused "ligneReleveRepository" private field.(àªÿê8Ï°Ö¾ÿ/
+_
+java:S1068"=Remove this unused "operationCreditRepository" private field.(¦ÆÆÉøÿÿÿÿ8Ó°Ö¾ÿ/
+`
+java:S1068">Remove this unused "operationEspecesRepository" private field.(¬ÛÓ‡øÿÿÿÿ8Û°Ö¾ÿ/
+Z
+java:S1068"=Remove this unused "operationChequeRepository" private field.(ÓœÚâ8ë°Ö¾ÿ/
+\
+java:S1068 "?Remove this unused "operationVirementRepository" private field.(³­Ï–8ú°Ö¾ÿ/
+^	java:S107$"BConstructor has 10 parameters, which is greater than 7 authorized.(¾ç¯§8Š±Ö¾ÿ/
