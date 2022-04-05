@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+adapter-rest,cdg.releve.application.rest,BootloaderApplicationLauncher,8,7,0,0,3,2,1,2,1,2
+adapter-rest,cdg.releve.application.rest.service,QualificationReleveDeCompte,50,0,2,0,14,0,4,0,3,0
+adapter-rest,cdg.releve.application.rest.configuration,AdapterRestConfiguration,5,3,0,0,1,1,1,1,1,1
+adapter-rest,cdg.releve.application.rest.controller,ReleveBancaireControllerImpl,125,15,0,0,26,5,15,2,15,2

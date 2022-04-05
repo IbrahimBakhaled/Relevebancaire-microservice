@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QualificationReleveDeCompte.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">adapter-rest</a> &gt; <a href="index.source.html" class="el_package">cdg.releve.application.rest.service</a> &gt; <span class="el_source">QualificationReleveDeCompte.java</span></div><h1>QualificationReleveDeCompte.java</h1><pre class="source lang-java linenums">package cdg.releve.application.rest.service;
+
+import cdg.releve.domain.domain.LigneReleve;
+import cdg.releve.domain.domain.OperationCredit;
+import cdg.releve.persistence.jpa.entity.LigneReleveEntity;
+import cdg.releve.persistence.jpa.entity.OperationCreditEntity;
+import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
+import cdg.releve.persistence.jpa.repository.LigneReleveRepository;
+import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
+import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+import javax.persistence.EntityNotFoundException;
+import java.util.*;
+import java.util.stream.Collectors;
+
+//@Service
+public class QualificationReleveDeCompte {
+
+
+    private ReleveBancaireRepository releveBancaireRepository;
+    private OperationCreditRepository operationCreditRepository;
+    private LigneReleveRepository ligneReleveRepository;
+
+
+<span class="nc" id="L27">    public QualificationReleveDeCompte(ReleveBancaireRepository releveBancaireRepository, OperationCreditRepository operationCreditRepository, LigneReleveRepository ligneReleveRepository) {</span>
+<span class="nc" id="L28">        this.releveBancaireRepository = releveBancaireRepository;</span>
+<span class="nc" id="L29">        this.operationCreditRepository = operationCreditRepository;</span>
+<span class="nc" id="L30">        this.ligneReleveRepository = ligneReleveRepository;</span>
+<span class="nc" id="L31">    }</span>
+
+
+    private void qualificationReleveDeCompte(Long releveBancaireId) {
+<span class="nc" id="L35">        Optional&lt;ReleveBancaireEntity&gt; releveBancaireEntity = releveBancaireRepository.findById(releveBancaireId);</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        if (!releveBancaireEntity.isPresent()) {</span>
+<span class="nc" id="L37">            throw new EntityNotFoundException(&quot;ReleveBancaire are not presented in database&quot;);</span>
+        }
+
+<span class="nc" id="L40">        List&lt;LigneReleveEntity&gt; ligneReleveEntities = ligneReleveRepository.findAll();</span>
+<span class="nc" id="L41">        List&lt;LigneReleveEntity&gt; streamedLigneReleve = ligneReleveEntities.stream()</span>
+<span class="nc" id="L42">                .filter(entity -&gt; entity.getCreditDebit().equals(&quot;C&quot;))</span>
+<span class="nc" id="L43">                .collect(Collectors.toList());</span>
+<span class="nc" id="L44">        streamedLigneReleve.forEach(System.out::println);</span>
+
+
+<span class="nc" id="L47">    }</span>
+}
+
+
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

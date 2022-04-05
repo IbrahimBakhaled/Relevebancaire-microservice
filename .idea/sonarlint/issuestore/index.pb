@@ -31,14 +31,10 @@ oapplication/adapter-rest/src/test/java/cdg/releve/application/rest/service/Qual
 ^domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java,3\c\3c19a3c40d1e823337827cbdad11d93df88f2300
 F
 infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3
-?
-application.yml,1\1\1116e8e6e492a185f4df7f55ff557cb2e5ac869a
 ∏
 áinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java,7\7\7770deb4e438e5f22e90114284fe76beb56db5ae
 ]
 -application/application-configuration/pom.xml,2\a\2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49
-F
-application.properties,2\f\2f692484526a88bd040e1ec9f8c211bca74f6755
 j
 :.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb.xml,0\7\07ab19ad6e713e2a7d49a535557fb540c666d7f3
 ê
@@ -53,12 +49,8 @@ m.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb/storage_v2/_src_/schema/
 napplication/adapter-rest/src/main/java/cdg/releve/application/rest/configuration/AdapterRestConfiguration.java,9\a\9a7edb2d48524bc597401ab83ed59e0d513beb63
 ß
 wapplication/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java,8\2\82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4
-P
- application/adapter-rest/pom.xml,6\e\6e0ddee2b1bd58300ceb4e347a3e51f430b3e3d5
 j
 :infrastructure/adapter-persistence-spring-data-jpa/pom.xml,c\2\c27f557691b463f54da34ba0536c0f259a7dd2bf
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 õ
 kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java,4\6\46971a145fc7bf6606184efd413f6183ca5461f7
 q

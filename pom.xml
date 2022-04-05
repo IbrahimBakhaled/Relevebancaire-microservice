@@ -86,11 +86,20 @@
         <springstarter.version>2.6.4</springstarter.version>
         <sonar.jdbc.dialect>mysql</sonar.jdbc.dialect>
         <sonar.organization>ibrahimbakhaled</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+
         <springstarter.version>2.6.4</springstarter.version>
         <mockito.version>4.0.0</mockito.version>
+<!--        <sonar.exclusions>-->
+<!--            **/*Application.java,-->
+<!--            **/*Configuration.java,-->
+<!--            **/configuration/**,-->
+<!--            **/entity/**,-->
+<!--            **/mapper/**,-->
+<!--            **/**Test**/**-->
+<!--        </sonar.exclusions>-->
     </properties>
 
     <build>
