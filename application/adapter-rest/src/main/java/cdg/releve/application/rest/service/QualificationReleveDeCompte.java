@@ -15,7 +15,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Service
+//@Service
 public class QualificationReleveDeCompte {
 
 

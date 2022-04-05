@@ -13,8 +13,8 @@ import javax.sql.DataSource;
 
 
 @Configuration
-@EntityScan(basePackages = {"cdg.releve.persistence.jpa.entity"})
-@EnableJpaRepositories(basePackages = {"cdg.releve.persistence.jpa.repository"})
+//@EntityScan(basePackages = {"cdg.releve.persistence.jpa.entity"})
+//@EnableJpaRepositories(basePackages = {"cdg.releve.persistence.jpa.repository"})
 
 public class HikariConfiguration {
 

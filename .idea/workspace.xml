@@ -4,16 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;Continuous Integration with GitHub Action is working&quot;">
-      <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/mapper/ReleveBancaireEntityMapper.java" afterDir="false" />
+    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;added mysql container&quot;">
+      <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/configuration/AdapterRestConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/mapper/ReleveBancaireDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5db35984da8ffa0e255c16a2e31ae7b26e7d222" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f10b6051c1ff89fb0dba342aa7856ac0ea0c6206" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/configuration/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/service/QualificationReleveDeCompte.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/adapter-rest-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/configuration/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/service/QualificationReleveDeCompte.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/service/QualificationReleveDeCompte.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
@@ -21,13 +31,24 @@
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/surefire-reports/TEST-cdg.releve.application.rest.service.QualificationReleveDeCompteTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/surefire-reports/cdg.releve.application.rest.service.QualificationReleveDeCompteTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/config/ApplicationConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/antrun/build-main.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/config/ApplicationConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/config/ApplicationConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/hs_err_pid12140.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/hs_err_pid14068.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/replay_pid12140.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/replay_pid14068.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/java/cdg/releve/BootloaderApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/BootloaderApplicationLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/target/antrun/build-main.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/target/classes/META-INF/build-info.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/target/classes/application.yml" beforeDir="false" />
@@ -38,6 +59,7 @@
       <change beforePath="$PROJECT_DIR$/bootloader/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bootloader/target/relevebancaire.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloader/web/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/ReleveBancaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/target/antrun/build-main.xml" beforeDir="false" />
@@ -47,9 +69,14 @@
       <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/HikariConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/HikariConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/HikariConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/HikariConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/config/SpringDataJpaAdapterConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/ReleveBancaireCreationRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" beforeDir="false" />
@@ -323,6 +350,7 @@
       <list>
         <option value="HTTP Public Environment File" />
         <option value="HTTP Private Environment File" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
@@ -330,7 +358,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -395,10 +422,8 @@
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\infrastructure\adapter-persistence-spring-data-jpa\src\main\resources" />
     </key>
-    <key name="CreateBuilderDialog.RecentsKey">
-      <recent name="cdg.releve.domain.domain" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cdg.releve.application.rest" />
       <recent name="cdg.releve" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -407,7 +432,7 @@
       <recent name="cdg.releve.persistence.jpa.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReleveBancaireControllerImplTest">
+  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
     <configuration name="QualificationReleveDeCompteTest.testingFiltrage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adapter-rest" />
       <extension name="coverage">
@@ -449,22 +474,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReleveBancaireControllerImplTest.saveReleveBancaireTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adapter-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cdg.releve.application.rest.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cdg.releve.application.rest.controller" />
-      <option name="MAIN_CLASS_NAME" value="cdg.releve.application.rest.controller.ReleveBancaireControllerImplTest" />
-      <option name="METHOD_NAME" value="saveReleveBancaireTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="docker" />
       <method v="2">
@@ -479,8 +488,9 @@
       </method>
     </configuration>
     <configuration name="BootloaderApplicationLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="bootloader" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.BootloaderApplicationLauncher" />
+      <module name="adapter-rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.application.rest.BootloaderApplicationLauncher" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -498,10 +508,16 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.db/stack.yml.Releve-Bancaire-CDG: Compose Deployment" />
+      <item itemvalue="JUnit.QualificationReleveDeCompteTest.testingFiltrage" />
+      <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire" />
+      <item itemvalue="JUnit.ReleveBancaireControllerImplTest" />
+      <item itemvalue="Spring Boot.BootloaderApplicationLauncher" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ReleveBancaireControllerImplTest" />
-        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaireTest" />
         <item itemvalue="JUnit.QualificationReleveDeCompteTest.testingFiltrage" />
         <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire" />
         <item itemvalue="Docker.db/stack.yml.Releve-Bancaire-CDG: Compose Deployment" />
@@ -556,7 +572,127 @@
       <workItem from="1648924380496" duration="8120000" />
       <workItem from="1648941526164" duration="1953000" />
       <workItem from="1649000009290" duration="1190000" />
-      <workItem from="1649001486866" duration="15001000" />
+      <workItem from="1649001486866" duration="289000" />
+      <workItem from="1649039411228" duration="491000" />
+      <workItem from="1649040049730" duration="290000" />
+      <workItem from="1649040420779" duration="7012000" />
+      <workItem from="1649096195870" duration="1974000" />
+      <workItem from="1649106321190" duration="2783000" />
+      <workItem from="1649114968543" duration="1537000" />
+      <workItem from="1649120828724" duration="6256000" />
+      <workItem from="1649127199247" duration="7426000" />
+    </task>
+    <task id="LOCAL-00026" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648247192911</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1648247192911</updated>
+    </task>
+    <task id="LOCAL-00027" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648247353378</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1648247353379</updated>
+    </task>
+    <task id="LOCAL-00028" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648247585119</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1648247585119</updated>
+    </task>
+    <task id="LOCAL-00029" summary="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;">
+      <created>1648248067698</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1648248067699</updated>
+    </task>
+    <task id="LOCAL-00030" summary="&quot; added SonarQube for code quality&#10;2 commands should be activated StartSonar(c:/sonar_folder/bin) and 2nd sonar-scaner(c:/sonar-scanner_folder/bin)&quot;">
+      <created>1648253801031</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1648253801031</updated>
+    </task>
+    <task id="LOCAL-00031" summary="&quot; fixed sonarcloud authentication and token&quot;">
+      <created>1648412941250</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1648412941251</updated>
+    </task>
+    <task id="LOCAL-00032" summary="&quot; fixed sonarcloud authentication and token&quot;">
+      <created>1648413311448</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1648413311448</updated>
+    </task>
+    <task id="LOCAL-00033" summary="&quot;still fixing&quot;">
+      <created>1648433798480</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1648433798480</updated>
+    </task>
+    <task id="LOCAL-00034" summary="&quot;still fixing&quot;">
+      <created>1648434470011</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1648434470012</updated>
+    </task>
+    <task id="LOCAL-00035" summary="&quot;still fixing&quot;">
+      <created>1648434717022</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1648434717022</updated>
+    </task>
+    <task id="LOCAL-00036" summary="&quot;fixed token&quot;">
+      <created>1648485530394</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485530394</updated>
+    </task>
+    <task id="LOCAL-00037" summary="&quot;fixed token&quot;">
+      <created>1648485748953</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485748953</updated>
+    </task>
+    <task id="LOCAL-00038" summary="&quot;fixed token&quot;">
+      <created>1648485960811</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648485960811</updated>
+    </task>
+    <task id="LOCAL-00039" summary="&quot;fixed token&quot;">
+      <created>1648486216724</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1648486216724</updated>
+    </task>
+    <task id="LOCAL-00040" summary="&quot;fixed token&quot;">
+      <created>1648487986331</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1648487986331</updated>
+    </task>
+    <task id="LOCAL-00041" summary="&quot; added hikari configuration for datasource&quot;">
+      <created>1648489067863</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489067863</updated>
     </task>
     <task id="LOCAL-00042" summary="&quot; added hikari configuration for datasource&quot;">
       <created>1648489618944</created>
@@ -789,119 +925,7 @@
       <option name="project" value="LOCAL" />
       <updated>1648943047123</updated>
     </task>
-    <task id="LOCAL-00075" summary="&quot;deleted controller test&quot;">
-      <created>1649001999933</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1649001999934</updated>
-    </task>
-    <task id="LOCAL-00076" summary="&quot;deleted controller test&quot;">
-      <created>1649002245154</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1649002245154</updated>
-    </task>
-    <task id="LOCAL-00077" summary="&quot;deleted controller test&quot;">
-      <created>1649002842948</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1649002842949</updated>
-    </task>
-    <task id="LOCAL-00078" summary="&quot;deleted controller test&quot;">
-      <created>1649003063620</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1649003063620</updated>
-    </task>
-    <task id="LOCAL-00079" summary="&quot;deleted controller test&quot;">
-      <created>1649003769583</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1649003769584</updated>
-    </task>
-    <task id="LOCAL-00080" summary="&quot;deleted controller test&quot;">
-      <created>1649006276829</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1649006276830</updated>
-    </task>
-    <task id="LOCAL-00081" summary="&quot;deleted controller test&quot;">
-      <created>1649008522722</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1649008522723</updated>
-    </task>
-    <task id="LOCAL-00082" summary="&quot;deleted controller test&quot;">
-      <created>1649008761273</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1649008761273</updated>
-    </task>
-    <task id="LOCAL-00083" summary="&quot;deleted controller test&quot;">
-      <created>1649008876912</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1649008876912</updated>
-    </task>
-    <task id="LOCAL-00084" summary="&quot;deleted controller test&quot;">
-      <created>1649009436213</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1649009436216</updated>
-    </task>
-    <task id="LOCAL-00085" summary="&quot;deleted controller test&quot;">
-      <created>1649010192563</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1649010192563</updated>
-    </task>
-    <task id="LOCAL-00086" summary="&quot;deleted controller test&quot;">
-      <created>1649014322389</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1649014322390</updated>
-    </task>
-    <task id="LOCAL-00087" summary="&quot;deleted controller test&quot;">
-      <created>1649014438600</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1649014438600</updated>
-    </task>
-    <task id="LOCAL-00088" summary="&quot;deleted controller test&quot;">
-      <created>1649014704167</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1649014704167</updated>
-    </task>
-    <task id="LOCAL-00089" summary="&quot;deleted controller test&quot;">
-      <created>1649015171143</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1649015171144</updated>
-    </task>
-    <task id="LOCAL-00090" summary="&quot;Continuous Integration with GitHub Action is working&quot;">
-      <created>1649015559025</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1649015559027</updated>
-    </task>
-    <option name="localTasksCounter" value="91" />
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -922,6 +946,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;fixed datetime in mysql_columns&quot;" />
+    <MESSAGE value="&quot; moved copy method to ReleveBancaireEntity&quot;" />
     <MESSAGE value="&quot;added unit testing with Junit 5 &amp; Mockito&quot;" />
     <MESSAGE value="&quot;✔ added unit testing with Junit 5 &amp; Mockito&quot;" />
     <MESSAGE value="&quot;✔ added SonarCLoud for code quality&quot;" />
@@ -945,9 +971,7 @@
     <MESSAGE value="&quot;filtrage is working&quot;" />
     <MESSAGE value="&quot;added docker module&quot;" />
     <MESSAGE value="&quot;added mysql container&quot;" />
-    <MESSAGE value="&quot;deleted controller test&quot;" />
-    <MESSAGE value="&quot;Continuous Integration with GitHub Action is working&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Continuous Integration with GitHub Action is working&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;added mysql container&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

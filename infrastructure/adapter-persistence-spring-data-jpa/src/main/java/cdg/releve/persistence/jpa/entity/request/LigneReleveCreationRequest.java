@@ -1,10 +1,9 @@
 package cdg.releve.persistence.jpa.entity.request;
 
 import cdg.releve.persistence.jpa.entity.OperationEspecesEntity;
-import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import lombok.Data;
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.CascadeType;
@@ -15,8 +14,12 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
 
-@Data
-public class LigneReleveCreationRequest implements Serializable {
+@AllArgsConstructor
+@RequiredArgsConstructor
+@Setter
+@Getter
+@Builder
+public class LigneReleveCreationRequest {
 
     private String operationNature;
     private String rib;
@@ -26,5 +29,5 @@ public class LigneReleveCreationRequest implements Serializable {
     private int refCdg;
     private int refPaiment;
     private String modePaiment;
-    private ReleveBancaireCreationRequest releveBancaire;
+    private ReleveBancaireCreationRequest releveBancaireCreationRequest;
 }

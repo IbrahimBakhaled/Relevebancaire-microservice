@@ -1,14 +1,17 @@
 package cdg.releve.persistence.jpa.entity.request;
 
-import cdg.releve.persistence.jpa.entity.LigneReleveEntity;
-import lombok.Data;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
-public class ReleveBancaireCreationRequest {
+@Getter
+@Setter
+@AllArgsConstructor
+@RequiredArgsConstructor
+@Builder
+public class ReleveBancaireCreationRequest{
 
 
     private String label;

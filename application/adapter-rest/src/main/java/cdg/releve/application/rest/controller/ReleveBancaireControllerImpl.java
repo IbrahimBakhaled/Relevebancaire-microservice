@@ -4,9 +4,12 @@ import cdg.releve.application.rest.service.QualificationReleveDeCompte;
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@RequiredArgsConstructor
 //@RequestMapping("/api/v1")
 public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 

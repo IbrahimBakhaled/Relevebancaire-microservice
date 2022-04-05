@@ -3,8 +3,6 @@
 ˆinfrastructure/adapter-persistence-spring-data-jpa/src/test/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepositoryTest.java,6\0\60bbf77e1f197fe8b2bfbb18c1a0e4a15693e660
 \
 ,.scannerwork/css-bundle/stylelintconfig.json,7\a\7a053b9b124ee943f7883db012f314b3d827be32
-›
-kapplication/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java,f\1\f10b6051c1ff89fb0dba342aa7856ac0ea0c6206
 8
 env.list,c\7\c79de27c0d9f0caa77ace39d1ff4bf2b1163d61c
 n
@@ -27,3 +25,9 @@ yinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/per
 …infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/OperationCreditRepository.java,c\3\c35ef608f040276c213fca38412d938a4020432f
 L
 .scannerwork/report-task.txt,1\f\1feadc761844720d11268cc01b88d72358e54ba6
+Ÿ
+oapplication/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java,2\3\23c0a7ecced2d4d833a1d6788357b8f8362d527e
+Ž
+^domain/src/main/java/cdg/releve/domain/domain/request/ReleveBancaireCreationRequestDomain.java,3\c\3c19a3c40d1e823337827cbdad11d93df88f2300
+F
+infrastructure/pom.xml,2\b\2bb83dd43ff74bd2017133cd9dea6897cfe43de3

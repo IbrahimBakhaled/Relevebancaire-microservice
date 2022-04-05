@@ -2,10 +2,8 @@ package cdg.releve.application.service.api;
 
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
 
 public interface ReleveBancaireService {
 

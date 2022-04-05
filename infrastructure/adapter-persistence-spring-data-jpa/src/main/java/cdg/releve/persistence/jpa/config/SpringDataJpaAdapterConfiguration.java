@@ -8,9 +8,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 @Configuration
-@ComponentScan(basePackages = {"cdg.releve"})
+@ComponentScan(basePackages = {"cdg.releve", "cdg.releve.domain", "cdg.releve.persistence"})
 public class SpringDataJpaAdapterConfiguration {
     @Bean
     public ReleveBancairePersistencePort getReleveBancairePersistencePort(
@@ -26,5 +27,12 @@ public class SpringDataJpaAdapterConfiguration {
             ProduitRepository produitRepository){
         return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository, operationChequeRepository, acteurRepository, banqueRepository, compteBancaireRepository, operationVirementRepository, produitRepository);
     }
+
+//    @Bean(name="entityManagerFactory")
+//    public LocalSessionFactoryBean sessionFactory() {
+//        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+//
+//        return sessionFactory;
+//    }
 
 }
