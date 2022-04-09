@@ -3,29 +3,24 @@
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //(exclude = {MongoAutoConfiguration.class,MongoDataAutoConfiguration.class})
 @SpringBootApplication(scanBasePackages = &quot;cdg.releve&quot;)
 @EnableJpaRepositories
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @EntityScan(basePackages = {&quot;cdg.releve.domain&quot;, &quot;cdg.releve&quot;})
 @ComponentScan({&quot;cdg.releve.persistence&quot;, &quot;cdg.releve.application&quot;, &quot;cdg.releve.domain&quot;})
 @OpenAPIDefinition(info = @Info(title = &quot;Releve Bancaire API&quot;, version = &quot;3.0&quot;, description = &quot;Releve Bancaire Information&quot;))
-<span class="fc" id="L23">@Slf4j</span>
-<span class="fc" id="L24">public class BootloaderApplicationLauncher {</span>
-    public static void main(String[] args) {
 
-<span class="nc" id="L27">        SpringApplication.run(BootloaderApplicationLauncher.class, args);</span>
-<span class="nc" id="L28">        log.info(org.hibernate.Version.getVersionString());</span>
-<span class="nc" id="L29">    }</span>
+<span class="nc" id="L20">public class BootloaderApplicationLauncher {</span>
+    public static void main(String[] args) {
+<span class="nc" id="L22">        SpringApplication.run(BootloaderApplicationLauncher.class, args);</span>
+
+<span class="nc" id="L24">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

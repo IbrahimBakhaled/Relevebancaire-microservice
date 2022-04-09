@@ -1,24 +1,17 @@
 package cdg.releve.persistence.jpa.entity;
 
 
-import cdg.releve.domain.domain.LigneReleve;
-import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
-import cdg.releve.persistence.jpa.entity.request.TimeDeserializer;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.beans.BeanUtils;
-import org.springframework.data.annotation.CreatedDate;
-
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 
 @AllArgsConstructor
@@ -88,6 +81,7 @@ public class ReleveBancaireEntity{
         return this;
 
     }
+
 
 
 }

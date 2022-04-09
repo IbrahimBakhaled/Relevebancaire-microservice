@@ -7,6 +7,7 @@ import cdg.releve.persistence.jpa.entity.request.LigneReleveCreationRequest;
 import cdg.releve.persistence.jpa.entity.request.ReleveBancaireCreationRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -26,7 +27,7 @@ import org.springframework.web.context.WebApplicationContext;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-
+@Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = BootloaderApplicationLauncher.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc

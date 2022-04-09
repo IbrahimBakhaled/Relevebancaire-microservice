@@ -1,24 +1,28 @@
 package cdg.releve.persistence.jpa.adapter;
 
-import cdg.releve.domain.domain.*;
+import cdg.releve.domain.domain.Acteur;
+import cdg.releve.domain.domain.Banque;
+import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
+import cdg.releve.persistence.jpa.config.CopyUtil;
 import cdg.releve.persistence.jpa.entity.*;
 import cdg.releve.persistence.jpa.repository.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-import java.util.*;
-import java.util.function.Predicate;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 
 @Primary
 @Component
+@Slf4j
 public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistencePort {
 
     private ReleveBancaireRepository releveBancaireRepository;
@@ -59,19 +63,13 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     public void removeReleveBancaire(ReleveBancaire releveBancaire) {
         ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
         BeanUtils.copyProperties(releveBancaire, releveBancaireEntity);
-
         releveBancaireRepository.delete(releveBancaireEntity);
     }
 
     @Override
     public List<ReleveBancaire> getReleveBancaires() {
-        List<ReleveBancaire> releveBancaireList = new ArrayList<>();
         List<ReleveBancaireEntity> releveBancaireEntityList = releveBancaireRepository.findAll();
-        releveBancaireEntityList.forEach(r -> {
-            ReleveBancaire releveBancaire = new ReleveBancaire();
-            BeanUtils.copyProperties(r, releveBancaire);
-            releveBancaireList.add(releveBancaire);});
-        return releveBancaireList;
+        return CopyUtil.copyList(releveBancaireEntityList, ReleveBancaire.class);
     }
 
     @Override
@@ -83,6 +81,32 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
         }
         ReleveBancaire releveBancaire = new ReleveBancaire();
         BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+
+        List<LigneReleveEntity> ligneReleveEntities = ligneReleveRepository.findAll();
+
+        List<LigneReleveEntity> streamedLigneReleve = ligneReleveEntities.stream()
+                .filter(ligneReleve -> ligneReleve.getCreditDebit().equals("C"))
+                .filter(ligneReleve -> ligneReleve.getOperationNature().contains("Virment") || ligneReleve.getOperationNature().contains("Cheque") || ligneReleve.getOperationNature().contains("Espece"))
+                .collect(Collectors.toList());
+
+        List<OperationCreditEntity> operationCreditEntityList = streamedLigneReleve.stream().map(l -> {
+            OperationCreditEntity returnedOperationCredit = new OperationCreditEntity();
+            String operationNature = l.getOperationNature();
+            if (Objects.equals(operationNature, "Virement")){
+                returnedOperationCredit = new OperationVirementEntity();
+            } else if (Objects.equals(operationNature, "Espece")){
+                returnedOperationCredit = new OperationEspecesEntity();
+            } else if (Objects.equals(operationNature, "Cheque")){
+                returnedOperationCredit = new OperationChequeEntity();
+            }
+            returnedOperationCredit.setLigneReleve(l);
+            System.out.println( "Showing returned operation credit "+ "[" + operationNature +"] " +returnedOperationCredit);
+            operationCreditRepository.save(returnedOperationCredit);
+            return returnedOperationCredit;
+
+        }).collect(Collectors.toList());
+        operationCreditEntityList.forEach(System.out::println);
+
         return releveBancaire;
     }
 

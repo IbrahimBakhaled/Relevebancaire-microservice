@@ -8,7 +8,9 @@ import java.util.List;
 public interface ReleveBancaireService {
 
     void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire);
+
     void removeReleveBancaire(ReleveBancaire releveBancaire);
+
     List<ReleveBancaire> getReleveBancaires();
 
     ReleveBancaire getReleveBancaireById(Long releveBancaireId);

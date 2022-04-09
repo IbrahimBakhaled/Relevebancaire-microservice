@@ -1,21 +1,20 @@
 package cdg.releve.application.rest.service;
 
-import cdg.releve.domain.domain.LigneReleve;
-import cdg.releve.domain.domain.OperationCredit;
-import cdg.releve.persistence.jpa.entity.LigneReleveEntity;
-import cdg.releve.persistence.jpa.entity.OperationCreditEntity;
-import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
+import cdg.releve.persistence.jpa.entity.*;
 import cdg.releve.persistence.jpa.repository.LigneReleveRepository;
 import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
 import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
-import org.springframework.stereotype.Component;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-import java.util.*;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
-//@Service
+@Slf4j
+@Service
 public class QualificationReleveDeCompte {
 
 
@@ -33,15 +32,34 @@ public class QualificationReleveDeCompte {
 
     private void qualificationReleveDeCompte(Long releveBancaireId) {
         Optional<ReleveBancaireEntity> releveBancaireEntity = releveBancaireRepository.findById(releveBancaireId);
-        if (!releveBancaireEntity.isPresent()) {
+        if (releveBancaireEntity.isEmpty()) {
             throw new EntityNotFoundException("ReleveBancaire are not presented in database");
         }
-
         List<LigneReleveEntity> ligneReleveEntities = ligneReleveRepository.findAll();
+
         List<LigneReleveEntity> streamedLigneReleve = ligneReleveEntities.stream()
-                .filter(entity -> entity.getCreditDebit().equals("C"))
+                .filter(ligneReleve -> ligneReleve.getCreditDebit().equals("C"))
+                .filter(ligneReleve -> ligneReleve.getOperationNature().contains("Virment") || ligneReleve.getOperationNature().contains("Cheque") || ligneReleve.getOperationNature().contains("Espece"))
                 .collect(Collectors.toList());
-        streamedLigneReleve.forEach(System.out::println);
+       log.info(String.valueOf(streamedLigneReleve));
+
+        List<OperationCreditEntity> operationCreditEntityList = streamedLigneReleve.stream().map(l -> {
+            OperationCreditEntity returnedOperationCredit = new OperationCreditEntity();
+            String operationNature = l.getOperationNature();
+            if (Objects.equals(operationNature, "Virement")){
+                returnedOperationCredit = new OperationVirementEntity();
+            } else if (Objects.equals(operationNature, "Espece")){
+                returnedOperationCredit = new OperationEspecesEntity();
+            } else if (Objects.equals(operationNature, "Cheque")){
+                returnedOperationCredit = new OperationChequeEntity();
+            }
+            returnedOperationCredit.setLigneReleve(l);
+            System.out.println( "Showing returned operation credit "+ "[" + operationNature +"] " +returnedOperationCredit);
+            operationCreditRepository.save(returnedOperationCredit);
+            return returnedOperationCredit;
+
+        }).collect(Collectors.toList());
+        operationCreditEntityList.forEach(System.out::println);
 
 
     }

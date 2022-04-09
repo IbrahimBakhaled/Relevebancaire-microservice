@@ -1,0 +1,11 @@
+
+r
+java:S1128"\Remove this unused import 'cdg.releve.application.rest.controller.ReleveBancaireController'.(ä‹¾²
+v
+java:S1128"`Remove this unused import 'cdg.releve.application.rest.controller.ReleveBancaireControllerImpl'.(”Ş—
+_
+java:S1128"DRemove this unused import 'cdg.releve.domain.domain.ReleveBancaire'.(­§†Èúÿÿÿÿ
+k
+java:S1128	"URemove this unused import 'org.springframework.boot.autoconfigure.domain.EntityScan'.(›Ù¯
+|
+java:S1128"aRemove this unused import 'org.springframework.data.jpa.repository.config.EnableJpaRepositories'.(²œ˜üÿÿÿÿ

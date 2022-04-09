@@ -1,0 +1,7 @@
+cdg\releve\application\rest\controller\ReleveBancaireControllerImpl.class
+cdg\releve\application\rest\configuration\AdapterRestConfiguration.class
+cdg\releve\application\rest\controller\ReleveBancaireController.class
+cdg\releve\application\rest\mapper\ReleveBancaireDtoMapper.class
+cdg\releve\application\rest\service\QualificationReleveDeCompte.class
+cdg\releve\application\rest\mapper\ReleveBancaireEntityMapper.class
+cdg\releve\application\rest\BootloaderApplicationLauncher.class

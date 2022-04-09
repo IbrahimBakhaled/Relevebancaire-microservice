@@ -16,15 +16,15 @@ spring:
             maximum-pool-size: 10
             connection-timeout: 5000
             pool-name: pool-relevebancaire
-            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg
+            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=false
             username: root
             password: root
 
     jpa:
         show-sql: false
         hibernate:
-            ddl-auto: validate
-        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+            ddl-auto: create
+        database-platform: org.hibernate.dialect.MySQL8Dialect
 
 server:
     address: 127.0.0.1
