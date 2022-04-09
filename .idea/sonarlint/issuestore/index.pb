@@ -33,8 +33,6 @@ m.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb/storage_v2/_src_/schema/
 {infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/config/HikariConfiguration.java,e\1\e1ee4043a2787a60a79d91e08fd3bf1c78ba106a
 »
 Šinfrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/LigneReleveCreationRequest.java,c\1\c1beb0200f2f2956664069093f3c39225c6d4132
-K
-.github/workflows/build.yml,f\e\fe77d5d1439f26e353a42bbd38dece2467ff6558
 C
 docker/db/stack.yml,7\c\7c4d89730cadabc8bc7b8a564796dec3ee170cf5
 Ÿ
@@ -43,8 +41,6 @@ oapplication/adapter-rest/src/test/java/cdg/releve/application/rest/service/Qual
 application.yml,1\1\1116e8e6e492a185f4df7f55ff557cb2e5ac869a
 8
 env.list,c\7\c79de27c0d9f0caa77ace39d1ff4bf2b1163d61c
-H
-sonar-project.properties,2\5\2538046035efb77ecc44e1fd2eec1e2641594d4c
 A
 system.properties,a\5\a5db35984da8ffa0e255c16a2e31ae7b26e7d222
 ™

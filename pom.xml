@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>application</module>
-<!--        <module>bootloader</module>-->
         <module>domain</module>
         <module>infrastructure</module>
 
@@ -81,14 +80,11 @@
         <springstarter.version>2.1.3.RELEASE</springstarter.version>
         <sonar.jdbc.dialect>mysql</sonar.jdbc.dialect>
         <sonar.organization>ibrahimbakhaled</sonar.organization>
-        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <springstarter.version>2.6.4</springstarter.version>
         <mockito.version>4.0.0</mockito.version>
-<!--        <sonar.exclusions>-->
-<!--            **/adapter-rest/**ReleveBancaireController**-->
-<!--        </sonar.exclusions>-->
     </properties>
 
     <build>
