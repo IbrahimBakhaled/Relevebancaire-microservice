@@ -1,65 +1,39 @@
 package cdg.releve.application.rest.service;
 
 import cdg.releve.persistence.jpa.entity.*;
-import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
-import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
-
 import org.junit.jupiter.api.Test;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
-
 
 import javax.persistence.EntityNotFoundException;
 import java.math.BigDecimal;
-
-import java.util.*;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 
 
 class QualificationReleveDeCompteTest {
 
-    @Autowired
-    private TestEntityManager entityManager;
-    @Autowired
-    private OperationCreditRepository operationCreditRepository;
-
-    @Autowired
-    private ReleveBancaireRepository releveBancaireRepository;
-
-
-
-
     static ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity(1L, new Date(), "Releve Label", 14, 147, 15, BigDecimal.valueOf(147.47), BigDecimal.valueOf(162.24), getLignes());
-
-
 
     private static List<LigneReleveEntity> getLignes() {
         return List.of(
-                new LigneReleveEntity(14L, new Date(), "Virment", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(15L, new Date(), "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(16L, new Date(), "Virment", BigDecimal.valueOf(1879564.12), "D", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(17L, new Date(), "Espece", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(18L, new Date(), "Virment", BigDecimal.valueOf(1879564.12), "D", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(19L, new Date(), "Nothing", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(20L, new Date(), "Virment", BigDecimal.valueOf(1879564.12), "D", 147895, 166698, "mode_Paiment_Test", null),
-                new LigneReleveEntity(21L, new Date(), "Also Nothing", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "mode_Paiment_Test", null)
+                new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "Something", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "Something", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virement", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null)
+
         );
     }
-
-//    @Test
-//     void qualificationReleveDeCompte() {
-//        List<LigneReleveEntity> ligneReleveEntities = getLignes();
-//        List<LigneReleveEntity> ligneReleveEntities1 =
-//        ligneReleveEntities.stream()
-//                .filter(ligneReleve -> ligneReleve.getCreditDebit().equals("C"))
-//                .collect(Collectors.toList());
-//        ligneReleveEntities1.forEach(System.out::println);
-//
-//    }
-
 
     @Test
     void testingFiltrage() {
@@ -96,26 +70,5 @@ class QualificationReleveDeCompteTest {
         }).collect(Collectors.toList());
         operationCreditEntityList.forEach(System.out::println);
     }
-
-
-
-    @Test
-    void  qualifierNatureOp() {
-
-        OperationCreditEntity opC = new OperationCreditEntity();
-        opC.setLigneReleve(new LigneReleveEntity(21L, new Date(), "Virement", BigDecimal.valueOf(1879564.12), "C", 147895, 166698, "VISA", releveBancaireEntity));
-        if (Objects.equals(opC.getLigneReleve().getOperationNature(), "Virement")){
-//            opC.setDtype("Virement");
-            System.out.println(opC);
-        }else {
-            throw  new RuntimeException(" ||||||| this operation doesnt have any of virement,cheque,especes ||||||||");
-        }
-    }
-
-
-
-
-
-
     }
 

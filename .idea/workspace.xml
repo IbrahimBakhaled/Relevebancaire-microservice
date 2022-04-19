@@ -4,32 +4,189 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="&quot;excluded controller from github workfflow and added generic class to copy objects&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/50b4447147ce40bff92c834a6710e111d5a2cf52" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImplTest.class" afterDir="false" />
+    <list default="true" id="15903db3-c60d-48a7-8534-eaf971dc8a00" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f692484526a88bd040e1ec9f8c211bca74f6755" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6de8ca01053d8c068dcef8610f333e5630e58109" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7770deb4e438e5f22e90114284fe76beb56db5ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9ccf2d5899760bef80fb8020c7f820c5fb90108f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c4b00919095d27e78b695f0e71bfbb2d98c92db2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/configuration/MyDataRestConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application-configuration/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/service/QualificationReleveDeCompte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea028a55-903d-492b-a8a3-49d52839b6eb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint-state.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/036a3f98b42cb92d94ef9f7e10ba521e440d27ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07ab19ad6e713e2a7d49a535557fb540c666d7f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e4e8a327a34296b04953e84d6e99f0cc82f02df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1feadc761844720d11268cc01b88d72358e54ba6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23c0a7ecced2d4d833a1d6788357b8f8362d527e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a8b57eb8f0d9b801c9411b5adb27c2cfe70ab49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c19a3c40d1e823337827cbdad11d93df88f2300" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d5006f05323d9fee02607343796411d292d818d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52b5ceacb6cfc51cb08cc6ba3aa5a960e050c42f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60bbf77e1f197fe8b2bfbb18c1a0e4a15693e660" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a053b9b124ee943f7883db012f314b3d827be32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c4d89730cadabc8bc7b8a564796dec3ee170cf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82e60b1ec3f2798d1b66a4ef3aba5eb363d9f0d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8baf8f4b78b5dbf8a61bcd7e3fdd2051f1d884c4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96999b5bc7973f741107559aecd3430ae5fbfde8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a7edb2d48524bc597401ab83ed59e0d513beb63" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f41db6e7cc68d3beaf3f64dbaf2144f7c4d12ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5db35984da8ffa0e255c16a2e31ae7b26e7d222" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8d0ac2576addd2f034790cb5b6024a0d8ce3a00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc2518c9df1637268a09669fcb5ad0cb9ea47ae9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c35ef608f040276c213fca38412d938a4020432f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8e09e04d708c7173c1ba2685d2316cc2ad28f74" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8e09e04d708c7173c1ba2685d2316cc2ad28f74" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce361a4c197f0fbfd80b5e79704cfb3e192c929c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d87d3e7f2701459cf6fdb84bf59c39bd43a90db5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1ee4043a2787a60a79d91e08fd3bf1c78ba106a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec7f08323911edef8a063fa575d68723f13eeaac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed8be334d8debf86d2ac0ac957531ba42f84436b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f26cca70039af2af0091251263f124df164e171f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4f46eefb78c3438f4c4fe4bce268a48081de7af" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4f46eefb78c3438f4c4fe4bce268a48081de7af" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f568b19c2e41553a9c73002bded6cd55d29c1e21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/configuration/AdapterRestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/configuration/AdapterRestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/test/java/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/META-INF/build-info.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/configuration/AdapterRestConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/configuration/AdapterRestConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireController.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/relevebancaire.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/relevebancaire.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.configuration/AdapterRestConfiguration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.configuration/AdapterRestConfiguration.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.configuration/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.configuration/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.controller/ReleveBancaireControllerImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.controller/ReleveBancaireControllerImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.controller/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.controller/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.service/QualificationReleveDeCompte.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.service/QualificationReleveDeCompte.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.service/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest.service/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest/BootloaderApplicationLauncher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest/BootloaderApplicationLauncher.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/cdg.releve.application.rest/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/site/jacoco/jacoco.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/surefire-reports/2022-04-09T02-18-04_598-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/surefire-reports/TEST-cdg.releve.application.rest.service.QualificationReleveDeCompteTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/surefire-reports/cdg.releve.application.rest.service.QualificationReleveDeCompteTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/test-classes/cdg/releve/application/rest/service/QualificationReleveDeCompteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/application-configuration-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/LigneReleve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/LigneReleve.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/LigneReleve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/domain/request/LigneReleveCreationRequestDomain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/spi/ReleveBancairePersistencePort.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/spi/ReleveBancairePersistencePort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/LigneReleveEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/entity/request/TimeDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/LigneReleveEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/LigneReleveEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/ReleveBancaireEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/entity/request/TimeDeserializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/repository/ReleveBancaireRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/relevebancaire.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/.sonar_lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTTP Public Environment File" />
-        <option value="HTTP Private Environment File" />
-        <option value="Interface" />
-        <option value="JUnit5 Test Class" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -38,9 +195,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,569 +206,98 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="26A15iBuGUOaRxdlqEgorMJc8AH" />
+  <component name="ProjectId" id="27d3onmQWlQsTt0UsMC9Ux3Zsoa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="database.data.extractors.current.export.id" value="Tab-separated (TSV)_id" />
-    <property name="database.data.extractors.current.id" value="CSV-Groovy.csv.groovy" />
-    <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hexagonal-api-starter-main" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.14.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.27" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-relevebancaire/src/assets/js" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38965517" />
-    <property name="settings.editor.selected.configurable" value="sonarlint" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="ts.external.directory.path" value="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src\assets\js" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src\assets" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src\js" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire" />
-      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\infrastructure\adapter-persistence-spring-data-jpa\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="cdg.releve.application.rest" />
-      <recent name="cdg.releve" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="cdg.releve.application.rest.controller" />
-      <recent name="cdg.releve.application.rest.service" />
-      <recent name="cdg.releve.persistence.jpa.repository" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\frontrelevebancaire\src\app\dist" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\frontrelevebancaire\src\app" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\application\adapter-rest\src\main\resources" />
+      <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\application\application-configuration\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BootloaderApplicationLauncher">
-    <configuration name="QualificationReleveDeCompteTest.testingFiltrage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adapter-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cdg.releve.application.rest.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cdg.releve.application.rest.service" />
-      <option name="MAIN_CLASS_NAME" value="cdg.releve.application.rest.service.QualificationReleveDeCompteTest" />
-      <option name="METHOD_NAME" value="testingFiltrage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReleveBancaireControllerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adapter-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cdg.releve.application.rest.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cdg.releve.application.rest.controller" />
-      <option name="MAIN_CLASS_NAME" value="cdg.releve.application.rest.controller.ReleveBancaireControllerImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReleveBancaireControllerImplTest.saveReleveBancaire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootloader" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReleveBancaireControllerImplTest" />
-      <option name="METHOD_NAME" value="saveReleveBancaire" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="docker" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="docker" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn clean" />
+      <command value="ng generate component components/relevebancaire-list" />
+      <command value="mvn spring-boot:run" />
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="BootloaderApplicationLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="adapter-rest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cdg.releve.application.rest.BootloaderApplicationLauncher" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="db/stack.yml.Releve-Bancaire-CDG: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="Releve-Bancaire-CDG" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker/db/stack.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Docker.db/stack.yml.Releve-Bancaire-CDG: Compose Deployment" />
-      <item itemvalue="JUnit.QualificationReleveDeCompteTest.testingFiltrage" />
-      <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire" />
-      <item itemvalue="JUnit.ReleveBancaireControllerImplTest" />
-      <item itemvalue="Spring Boot.BootloaderApplicationLauncher" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.QualificationReleveDeCompteTest.testingFiltrage" />
-        <item itemvalue="JUnit.ReleveBancaireControllerImplTest" />
-        <item itemvalue="JUnit.ReleveBancaireControllerImplTest.saveReleveBancaire" />
-        <item itemvalue="Docker.db/stack.yml.Releve-Bancaire-CDG: Compose Deployment" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="360201e4-f64e-4cf2-a7fd-da24609dd623" name="Changes" comment="" />
-      <created>1646851396615</created>
+      <changelist id="15903db3-c60d-48a7-8534-eaf971dc8a00" name="Changes" comment="" />
+      <created>1649636320310</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646851396615</updated>
-      <workItem from="1646851398742" duration="6132000" />
-      <workItem from="1646871543867" duration="3018000" />
-      <workItem from="1646874664641" duration="356000" />
-      <workItem from="1646940066175" duration="147000" />
-      <workItem from="1646940262810" duration="7429000" />
-      <workItem from="1646953883068" duration="3821000" />
-      <workItem from="1646999372564" duration="52882000" />
-      <workItem from="1647183297273" duration="30333000" />
-      <workItem from="1647224395430" duration="4287000" />
-      <workItem from="1647269909318" duration="7847000" />
-      <workItem from="1647360858397" duration="8329000" />
-      <workItem from="1647386076214" duration="413000" />
-      <workItem from="1647421366404" duration="4382000" />
-      <workItem from="1647459230549" duration="9656000" />
-      <workItem from="1647517196334" duration="30177000" />
-      <workItem from="1647560366516" duration="19491000" />
-      <workItem from="1647692648365" duration="11996000" />
-      <workItem from="1647733876800" duration="1211000" />
-      <workItem from="1647735165860" duration="345000" />
-      <workItem from="1647780565436" duration="7760000" />
-      <workItem from="1648079711542" duration="15436000" />
-      <workItem from="1648149058616" duration="3651000" />
-      <workItem from="1648170498029" duration="127000" />
-      <workItem from="1648213718606" duration="62000" />
-      <workItem from="1648233946456" duration="18112000" />
-      <workItem from="1648257723859" duration="6715000" />
-      <workItem from="1648309924682" duration="5745000" />
-      <workItem from="1648333916300" duration="2648000" />
-      <workItem from="1648336985618" duration="37185000" />
-      <workItem from="1648432736525" duration="2163000" />
-      <workItem from="1648471769761" duration="16425000" />
-      <workItem from="1648506233943" duration="29464000" />
-      <workItem from="1648652803308" duration="7917000" />
-      <workItem from="1648665404981" duration="1163000" />
-      <workItem from="1648666645897" duration="46038000" />
-      <workItem from="1648840668210" duration="16167000" />
-      <workItem from="1648910996470" duration="10859000" />
-      <workItem from="1648924380496" duration="8120000" />
-      <workItem from="1648941526164" duration="1953000" />
-      <workItem from="1649000009290" duration="1190000" />
-      <workItem from="1649001486866" duration="289000" />
-      <workItem from="1649039411228" duration="491000" />
-      <workItem from="1649040049730" duration="290000" />
-      <workItem from="1649040420779" duration="7012000" />
-      <workItem from="1649096195870" duration="1974000" />
-      <workItem from="1649106321190" duration="2783000" />
-      <workItem from="1649114968543" duration="1537000" />
-      <workItem from="1649120828724" duration="6256000" />
-      <workItem from="1649127199247" duration="8027000" />
-      <workItem from="1649172999392" duration="499000" />
-      <workItem from="1649173519625" duration="553000" />
-      <workItem from="1649174084654" duration="985000" />
-      <workItem from="1649175152669" duration="11132000" />
-      <workItem from="1649258688947" duration="1094000" />
-      <workItem from="1649259899037" duration="942000" />
-      <workItem from="1649262019168" duration="8869000" />
-      <workItem from="1649303049212" duration="7094000" />
-      <workItem from="1649382191814" duration="1681000" />
-      <workItem from="1649384285908" duration="11077000" />
+      <updated>1649636320310</updated>
+      <workItem from="1649636345094" duration="227000" />
+      <workItem from="1649636581651" duration="1317000" />
+      <workItem from="1649637921281" duration="1628000" />
+      <workItem from="1649642300356" duration="9839000" />
+      <workItem from="1649734556948" duration="1971000" />
+      <workItem from="1649779392410" duration="964000" />
+      <workItem from="1649792601548" duration="1364000" />
+      <workItem from="1649794215153" duration="219000" />
+      <workItem from="1649794535123" duration="7894000" />
+      <workItem from="1649878432869" duration="3557000" />
+      <workItem from="1649892791350" duration="3498000" />
+      <workItem from="1649903015234" duration="12102000" />
+      <workItem from="1649958128858" duration="60618000" />
+      <workItem from="1650164156176" duration="1730000" />
+      <workItem from="1650215395751" duration="5080000" />
+      <workItem from="1650246955594" duration="1187000" />
+      <workItem from="1650249773001" duration="415000" />
+      <workItem from="1650300863238" duration="66000" />
+      <workItem from="1650301186104" duration="1796000" />
+      <workItem from="1650305085476" duration="1230000" />
+      <workItem from="1650306730063" duration="627000" />
+      <workItem from="1650307487872" duration="7471000" />
+      <workItem from="1650323479148" duration="18705000" />
     </task>
-    <task id="LOCAL-00031" summary="&quot; fixed sonarcloud authentication and token&quot;">
-      <created>1648412941250</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1648412941251</updated>
-    </task>
-    <task id="LOCAL-00032" summary="&quot; fixed sonarcloud authentication and token&quot;">
-      <created>1648413311448</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1648413311448</updated>
-    </task>
-    <task id="LOCAL-00033" summary="&quot;still fixing&quot;">
-      <created>1648433798480</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1648433798480</updated>
-    </task>
-    <task id="LOCAL-00034" summary="&quot;still fixing&quot;">
-      <created>1648434470011</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1648434470012</updated>
-    </task>
-    <task id="LOCAL-00035" summary="&quot;still fixing&quot;">
-      <created>1648434717022</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1648434717022</updated>
-    </task>
-    <task id="LOCAL-00036" summary="&quot;fixed token&quot;">
-      <created>1648485530394</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1648485530394</updated>
-    </task>
-    <task id="LOCAL-00037" summary="&quot;fixed token&quot;">
-      <created>1648485748953</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1648485748953</updated>
-    </task>
-    <task id="LOCAL-00038" summary="&quot;fixed token&quot;">
-      <created>1648485960811</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1648485960811</updated>
-    </task>
-    <task id="LOCAL-00039" summary="&quot;fixed token&quot;">
-      <created>1648486216724</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1648486216724</updated>
-    </task>
-    <task id="LOCAL-00040" summary="&quot;fixed token&quot;">
-      <created>1648487986331</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1648487986331</updated>
-    </task>
-    <task id="LOCAL-00041" summary="&quot; added hikari configuration for datasource&quot;">
-      <created>1648489067863</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489067863</updated>
-    </task>
-    <task id="LOCAL-00042" summary="&quot; added hikari configuration for datasource&quot;">
-      <created>1648489618944</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489618945</updated>
-    </task>
-    <task id="LOCAL-00043" summary="&quot; added hikari configuration for datasource&quot;">
-      <created>1648489636445</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489636445</updated>
-    </task>
-    <task id="LOCAL-00044" summary="&quot; added Hikari configuration for datasource&quot;">
-      <created>1648494232829</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1648494232829</updated>
-    </task>
-    <task id="LOCAL-00045" summary="&quot; added Hikari configuration for datasource&quot;">
-      <created>1648495376353</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1648495376353</updated>
-    </task>
-    <task id="LOCAL-00046" summary="&quot;added Hikari configuration for datasource&quot;">
-      <created>1648495884335</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1648495884336</updated>
-    </task>
-    <task id="LOCAL-00047" summary="&quot; added Hikari configuration for datasource&quot;">
-      <created>1648496278921</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1648496278922</updated>
-    </task>
-    <task id="LOCAL-00048" summary="&quot;changed bind-address to 0.0.0.0&quot;">
-      <created>1648497425979</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1648497425981</updated>
-    </task>
-    <task id="LOCAL-00049" summary="&quot;changed bind-address to 0.0.0.0&quot;">
-      <created>1648498126939</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1648498126939</updated>
-    </task>
-    <task id="LOCAL-00050" summary="&quot;changed bind-address to 0.0.0.0&quot;">
-      <created>1648506417359</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1648506417360</updated>
-    </task>
-    <task id="LOCAL-00051" summary="&quot;changed bind-address to 0.0.0.0&quot;">
-      <created>1648506557472</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1648506557472</updated>
-    </task>
-    <task id="LOCAL-00052" summary="&quot;deleted yaml files&quot;">
-      <created>1648510647074</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1648510647075</updated>
-    </task>
-    <task id="LOCAL-00053" summary="&quot;added yml files&quot;">
-      <created>1648514403400</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1648514403401</updated>
-    </task>
-    <task id="LOCAL-00054" summary="&quot;added yml files&quot;">
-      <created>1648514436674</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1648514436674</updated>
-    </task>
-    <task id="LOCAL-00055" summary="&quot;added yml files&quot;">
-      <created>1648515491105</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1648515491105</updated>
-    </task>
-    <task id="LOCAL-00056" summary="&quot;added yml files&quot;">
-      <created>1648515694926</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1648515694926</updated>
-    </task>
-    <task id="LOCAL-00057" summary="&quot;added yml files&quot;">
-      <created>1648516398589</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1648516398589</updated>
-    </task>
-    <task id="LOCAL-00058" summary="&quot;added yml files&quot;">
-      <created>1648517044961</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1648517044961</updated>
-    </task>
-    <task id="LOCAL-00059" summary="&quot;added yml files&quot;">
-      <created>1648594601455</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1648594601458</updated>
-    </task>
-    <task id="LOCAL-00060" summary="&quot;added yml files&quot;">
-      <created>1648596991482</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1648596991483</updated>
-    </task>
-    <task id="LOCAL-00061" summary="&quot;replaced .properties configuration to yml&quot;">
-      <created>1648599305228</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1648599305230</updated>
-    </task>
-    <task id="LOCAL-00062" summary="&quot;replaced .properties configuration to yml&quot;">
-      <created>1648600595637</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1648600595638</updated>
-    </task>
-    <task id="LOCAL-00063" summary="&quot;replaced .properties configuration to yml and fixed driverClassName&quot;">
-      <created>1648601272589</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1648601272592</updated>
-    </task>
-    <task id="LOCAL-00064" summary="&quot;enabled config cloud in application.yml&quot;">
-      <created>1648603056137</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1648603056138</updated>
-    </task>
-    <task id="LOCAL-00065" summary="&quot;enabled config cloud in application.yml&quot;">
-      <created>1648603409782</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1648603409783</updated>
-    </task>
-    <task id="LOCAL-00066" summary="&quot;enabled config cloud in application.yml&quot;">
-      <created>1648603739843</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1648603739846</updated>
-    </task>
-    <task id="LOCAL-00067" summary="&quot;enabled config cloud in application.yml&quot;">
-      <created>1648606791908</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1648606791909</updated>
-    </task>
-    <task id="LOCAL-00068" summary="&quot;added mysql to build-yml&quot;">
-      <created>1648610777696</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1648610777696</updated>
-    </task>
-    <task id="LOCAL-00069" summary="&quot;working on filtring&quot;">
-      <created>1648859545556</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1648859545560</updated>
-    </task>
-    <task id="LOCAL-00070" summary="&quot;filtrage is working&quot;">
-      <created>1648862565141</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1648862565143</updated>
-    </task>
-    <task id="LOCAL-00071" summary="&quot;filtrage is working&quot;">
-      <created>1648919360883</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1648919360886</updated>
-    </task>
-    <task id="LOCAL-00072" summary="&quot;added docker module&quot;">
-      <created>1648938323820</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1648938323825</updated>
-    </task>
-    <task id="LOCAL-00073" summary="&quot;added mysql container&quot;">
-      <created>1648942226542</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1648942226544</updated>
-    </task>
-    <task id="LOCAL-00074" summary="&quot;added mysql container&quot;">
-      <created>1648943047123</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1648943047123</updated>
-    </task>
-    <task id="LOCAL-00075" summary="&quot; fixed controller test and moved application main class&quot;">
-      <created>1649135662196</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1649135662201</updated>
-    </task>
-    <task id="LOCAL-00076" summary="&quot; fixed controller test and moved application main class&quot;">
-      <created>1649135806325</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1649135806325</updated>
-    </task>
-    <task id="LOCAL-00077" summary="&quot; fixed controller test and moved application main class&quot;">
-      <created>1649175786666</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1649175786666</updated>
-    </task>
-    <task id="LOCAL-00078" summary="&quot; fixed controller test and moved application main class&quot;">
-      <created>1649188531127</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1649188531131</updated>
-    </task>
-    <task id="LOCAL-00079" summary="&quot;excluded controller from github workfflow and added generic class to copy objects&quot;">
-      <created>1649470843883</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1649470843884</updated>
-    </task>
-    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="application.properties" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -626,47 +309,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;added unit testing with Junit 5 &amp; Mockito&quot;" />
-    <MESSAGE value="&quot;✔ added unit testing with Junit 5 &amp; Mockito&quot;" />
-    <MESSAGE value="&quot;✔ added SonarCLoud for code quality&quot;" />
-    <MESSAGE value="&quot;made changes on GitHub build phase&quot;" />
-    <MESSAGE value="&quot;fixed maven surefire plugin with JUnit 5 jupiter tests are working fine&quot;" />
-    <MESSAGE value="&quot; added SonarQube for code quality&quot;" />
-    <MESSAGE value="&quot; added SonarQube for code quality&#10;2 commands should be activated StartSonar(c:/sonar_folder/bin) and 2nd sonar-scaner(c:/sonar-scanner_folder/bin)&quot;" />
-    <MESSAGE value="&quot; fixed sonarcloud authentication and token&quot;" />
-    <MESSAGE value="&quot;still fixing&quot;" />
-    <MESSAGE value="&quot;fixed token&quot;" />
-    <MESSAGE value="&quot; added hikari configuration for datasource&quot;" />
-    <MESSAGE value="&quot; added Hikari configuration for datasource&quot;" />
-    <MESSAGE value="&quot;changed bind-address to 0.0.0.0&quot;" />
-    <MESSAGE value="&quot;deleted yaml files&quot;" />
-    <MESSAGE value="&quot;added yml files&quot;" />
-    <MESSAGE value="&quot;replaced .properties configuration to yml&quot;" />
-    <MESSAGE value="&quot;replaced .properties configuration to yml and fixed driverClassName&quot;" />
-    <MESSAGE value="&quot;enabled config cloud in application.yml&quot;" />
-    <MESSAGE value="&quot;added mysql to build-yml&quot;" />
-    <MESSAGE value="&quot;working on filtring&quot;" />
-    <MESSAGE value="&quot;filtrage is working&quot;" />
-    <MESSAGE value="&quot;added docker module&quot;" />
-    <MESSAGE value="&quot;added mysql container&quot;" />
-    <MESSAGE value="&quot; fixed controller test and moved application main class&quot;" />
-    <MESSAGE value="&quot;excluded controller from github workfflow and added generic class to copy objects&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;excluded controller from github workfflow and added generic class to copy objects&quot;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="org.hibernate.AnnotationException" package="org.hibernate" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

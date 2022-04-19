@@ -13,18 +13,5 @@
         <module name="domain" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="bootloader" target="11" />
-    </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="adapter-persistence-spring-data-jpa" options="" />
-      <module name="adapter-rest" options="" />
-      <module name="application" options="" />
-      <module name="application-configuration" options="" />
-      <module name="bootloader" options="" />
-      <module name="domain" options="" />
-    </option>
   </component>
 </project>

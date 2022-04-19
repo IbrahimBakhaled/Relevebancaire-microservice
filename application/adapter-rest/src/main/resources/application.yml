@@ -6,7 +6,6 @@ spring:
     main:
         allow-bean-definition-overriding: true
         banner-mode: log
-
     flyway:
         enabled: false
 
@@ -16,14 +15,14 @@ spring:
             maximum-pool-size: 10
             connection-timeout: 5000
             pool-name: pool-relevebancaire
-            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=false
+            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=false&allowPublicKeyRetrieval=true
             username: root
             password: root
 
     jpa:
         show-sql: false
         hibernate:
-            ddl-auto: create
+            ddl-auto: create-drop
         database-platform: org.hibernate.dialect.MySQL8Dialect
 
 server:

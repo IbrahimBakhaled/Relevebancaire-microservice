@@ -10,6 +10,7 @@ public interface ReleveBancaireService {
     void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire);
 
     void removeReleveBancaire(ReleveBancaire releveBancaire);
+    void qualificationrelevebancaire(Long releveBancaireId);
 
     List<ReleveBancaire> getReleveBancaires();
 

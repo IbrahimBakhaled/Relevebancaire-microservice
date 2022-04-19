@@ -2,6 +2,7 @@ package cdg.releve.persistence.jpa.entity;
 
 
 import cdg.releve.domain.domain.request.ReleveBancaireCreationRequestDomain;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
@@ -20,7 +21,6 @@ import java.util.List;
 @Setter
 @Table(name = "RELEVEBANCAIRE")
 @Entity
-@ToString
 @Builder
 public class ReleveBancaireEntity{
 
@@ -41,6 +41,7 @@ public class ReleveBancaireEntity{
     @OneToMany(cascade= CascadeType.ALL,mappedBy = "releveBancaire", fetch = FetchType.EAGER)
     @JsonIgnoreProperties("releveBancaire")
     @JsonIgnore
+    @JsonBackReference
     private List<LigneReleveEntity> lignereleve = new ArrayList<>();
 
 
@@ -74,6 +75,8 @@ public class ReleveBancaireEntity{
             ligneReleveEntity.setModePaiment(l.getModePaiment());
             ligneReleveEntity.setOperationNature(l.getOperationNature());
             ligneReleveEntity.setRefPaiment(l.getRefPaiment());
+            ligneReleveEntity.setNumCheck(l.getNumCheck());
+            ligneReleveEntity.setRib(l.getRib());
             ligneReleveEntity.setReleveBancaire(this);
             lignereleve.add(ligneReleveEntity);
         });

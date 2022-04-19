@@ -36,6 +36,11 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     }
 
     @Override
+    public void qualificationrelevebancaire(Long releveBancaireId) {
+        releveBancairePersistencePort.qualificationrelevebancaire(releveBancaireId);
+    }
+
+    @Override
     public List<ReleveBancaire> getReleveBancaires() {
         return releveBancairePersistencePort.getReleveBancaires();
     }

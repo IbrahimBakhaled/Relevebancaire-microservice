@@ -9,6 +9,8 @@ public interface ReleveBancairePersistencePort {
 
     void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire);
 
+    void qualificationrelevebancaire(Long releveBancaireId);
+
     void removeReleveBancaire(ReleveBancaire releveBancaire);
 
     List<ReleveBancaire> getReleveBancaires();

@@ -12,6 +12,9 @@ public interface ReleveBancaireController {
     @GetMapping("/relevebancaire")
     ResponseEntity<List<ReleveBancaire>> getReleveBancaires();
 
+    @PostMapping("/relevebancaire/qualification/{relevebancaireId}")
+    ResponseEntity<ReleveBancaire> qualificationrelevebancaire(@PathVariable Long relevebancaireId);
+
     @PostMapping("/relevebancaire")
     ResponseEntity<ReleveBancaire> addReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain releveBancaire);
 

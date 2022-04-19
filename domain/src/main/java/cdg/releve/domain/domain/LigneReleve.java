@@ -5,104 +5,137 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 
-public class LigneReleve{
+public class LigneReleve {
 
-    private Long ligneReleveId;
-    private Date dateOperation;
-    private String operationNature;
-    private BigDecimal montant;
-    private String creditDebit;
-    private int refCdg;
-    private int refPaiment;
-    private String modePaiment;
-    private ReleveBancaire releveBancaire;
+  private Long ligneReleveId;
+  private Date dateOperation;
+  private Date dateValue;
+  private String operationNature;
+  private BigDecimal montant;
+  private String creditDebit;
+  private Long refCdg;
+  private String refPaiment;
+  private String modePaiment;
+  private String rib;
+  private String numCheck;
+  private ReleveBancaire releveBancaire;
 
+  public LigneReleve(Long ligneReleveId, Date dateOperation, Date dateValue,
+      String operationNature, BigDecimal montant, String creditDebit, Long refCdg, String refPaiment,
+      String modePaiment, String rib, String numCheck,
+      ReleveBancaire releveBancaire) {
+    this.ligneReleveId = ligneReleveId;
+    this.dateOperation = dateOperation;
+    this.dateValue = dateValue;
+    this.operationNature = operationNature;
+    this.montant = montant;
+    this.creditDebit = creditDebit;
+    this.refCdg = refCdg;
+    this.refPaiment = refPaiment;
+    this.modePaiment = modePaiment;
+    this.rib = rib;
+    this.numCheck = numCheck;
+    this.releveBancaire = releveBancaire;
+  }
 
-    public LigneReleve() {}
+  public LigneReleve() {
+  }
 
-    public LigneReleve(Long ligneReleveId, Date dateOperation, String operationNature, BigDecimal montant, String creditDebit, int refCdg, int refPaiment, String modePaiment, ReleveBancaire releveBancaire) {
-        this.ligneReleveId = ligneReleveId;
-        this.dateOperation = dateOperation;
-        this.operationNature = operationNature;
-        this.montant = montant;
-        this.creditDebit = creditDebit;
-        this.refCdg = refCdg;
-        this.refPaiment = refPaiment;
-        this.modePaiment = modePaiment;
-        this.releveBancaire = releveBancaire;
-    }
+  public Long getLigneReleveId() {
+    return ligneReleveId;
+  }
 
-    public Long getLigneReleveId() {
-        return ligneReleveId;
-    }
+  public void setLigneReleveId(Long ligneReleveId) {
+    this.ligneReleveId = ligneReleveId;
+  }
 
-    public void setLigneReleveId(Long ligneReleveId) {
-        this.ligneReleveId = ligneReleveId;
-    }
+  public Date getDateOperation() {
+    return dateOperation;
+  }
 
-    public Date getDateOperation() {
-        return dateOperation;
-    }
+  public void setDateOperation(Date dateOperation) {
+    this.dateOperation = dateOperation;
+  }
 
-    public void setDateOperation(Date dateOperation) {
-        this.dateOperation = dateOperation;
-    }
+  public Date getDateValue() {
+    return dateValue;
+  }
 
-    public String getOperationNature() {
-        return operationNature;
-    }
+  public void setDateValue(Date dateValue) {
+    this.dateValue = dateValue;
+  }
 
-    public void setOperationNature(String operationNature) {
-        this.operationNature = operationNature;
-    }
+  public String getOperationNature() {
+    return operationNature;
+  }
 
-    public BigDecimal getMontant() {
-        return montant;
-    }
+  public void setOperationNature(String operationNature) {
+    this.operationNature = operationNature;
+  }
 
-    public void setMontant(BigDecimal montant) {
-        this.montant = montant;
-    }
+  public BigDecimal getMontant() {
+    return montant;
+  }
 
-    public String getCreditDebit() {
-        return creditDebit;
-    }
+  public void setMontant(BigDecimal montant) {
+    this.montant = montant;
+  }
 
-    public void setCreditDebit(String creditDebit) {
-        this.creditDebit = creditDebit;
-    }
+  public String getCreditDebit() {
+    return creditDebit;
+  }
 
-    public int getRefCdg() {
-        return refCdg;
-    }
+  public void setCreditDebit(String creditDebit) {
+    this.creditDebit = creditDebit;
+  }
 
-    public void setRefCdg(int refCdg) {
-        this.refCdg = refCdg;
-    }
+  public Long getRefCdg() {
+    return refCdg;
+  }
 
-    public int getRefPaiment() {
-        return refPaiment;
-    }
+  public void setRefCdg(Long refCdg) {
+    this.refCdg = refCdg;
+  }
 
-    public void setRefPaiment(int refPaiment) {
-        this.refPaiment = refPaiment;
-    }
+  public String getRefPaiment() {
+    return refPaiment;
+  }
 
-    public String getModePaiment() {
-        return modePaiment;
-    }
+  public void setRefPaiment(String refPaiment) {
+    this.refPaiment = refPaiment;
+  }
 
-    public void setModePaiment(String modePaiment) {
-        this.modePaiment = modePaiment;
-    }
+  public String getModePaiment() {
+    return modePaiment;
+  }
 
-    public ReleveBancaire getReleveBancaire() {
-        return releveBancaire;
-    }
+  public void setModePaiment(String modePaiment) {
+    this.modePaiment = modePaiment;
+  }
 
-    public void setReleveBancaire(ReleveBancaire releveBancaire) {
-        this.releveBancaire = releveBancaire;
-    }
+  public String getRib() {
+    return rib;
+  }
+
+  public void setRib(String rib) {
+    this.rib = rib;
+  }
+
+  public String getNumCheck() {
+    return numCheck;
+  }
+
+  public void setNumCheck(String numCheck) {
+    this.numCheck = numCheck;
+  }
+
+  public ReleveBancaire getReleveBancaire() {
+    return releveBancaire;
+  }
+
+  public void setReleveBancaire(ReleveBancaire releveBancaire) {
+    this.releveBancaire = releveBancaire;
+  }
 }
 
 
