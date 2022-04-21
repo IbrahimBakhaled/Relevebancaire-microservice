@@ -2,3 +2,5 @@ Jenkins: localhost:8090
 SonarQube: localhost:9000
 JaCoCo: http://localhost:63342/relevebancaire/bootloader/target/site/jacoco/index.html?_ijt=cvrd0klrbas5u3e0lf4ef655ih&_ij_reload=RELOAD_ON_SAVE
 Eureka server : localhost:8761
+Activit workflow microservice port: 8081
+Releve bancaire hexagonal architecture port : 8080
