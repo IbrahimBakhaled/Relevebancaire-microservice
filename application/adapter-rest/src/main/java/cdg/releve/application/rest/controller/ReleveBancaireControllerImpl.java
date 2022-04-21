@@ -16,7 +16,6 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:4200")
-//@RequestMapping("/api/v1")
 public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 
     private ReleveBancaireService releveBancaireService;
@@ -28,7 +27,7 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 
     @Override
     public ResponseEntity<List<ReleveBancaire>> getReleveBancaires() {
-        return new ResponseEntity<List<ReleveBancaire>>(releveBancaireService.getReleveBancaires(), HttpStatus.OK);
+        return new ResponseEntity<>(releveBancaireService.getReleveBancaires(), HttpStatus.OK);
     }
 
     @Override
@@ -41,18 +40,18 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     public ResponseEntity<ReleveBancaire> addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
 
         releveBancaireService.addReleveBancaire(releveBancaire);
-        return new ResponseEntity<ReleveBancaire>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<Void> removeReleveBancaire(ReleveBancaire releveBancaire) {
         releveBancaireService.removeReleveBancaire(releveBancaire);
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<ReleveBancaire> getReleveBancaireById(Long relevebancaireId) {
-        return new ResponseEntity<ReleveBancaire>(releveBancaireService.getReleveBancaireById(relevebancaireId), HttpStatus.OK);
+        return new ResponseEntity<>(releveBancaireService.getReleveBancaireById(relevebancaireId), HttpStatus.OK);
 
     }
 
@@ -60,38 +59,38 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     public ResponseEntity<Void> deleteReleveBancaireById(Long releveBancaireId) {
 
         releveBancaireService.deleteById(releveBancaireId);
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
 
     }
 
     @Override
     public ResponseEntity<Void> createLigneReleve(LigneReleveCreationRequestDomain request) {
         releveBancaireService.createLigneReleve(request);
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<Void> createReleveBancaire(ReleveBancaireCreationRequestDomain request) {
         releveBancaireService.createReleveBancaire(request);
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<Void> createOperationEspece(OperationEspeceCreationRequestDomain operationEspeceCreationRequestDomain) {
         releveBancaireService.createOperationEspece(operationEspeceCreationRequestDomain);
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<Void> createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain) {
         releveBancaireService.createoperationcheque((operationChequeCreationRequestDomain));
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<Void> createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
         releveBancaireService.createacteur(acteurCreationRequestDomain);
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Override
@@ -119,7 +118,7 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     }
     @ExceptionHandler(RuntimeException.class)
     public final ResponseEntity<Exception> handleAllExceptions(RuntimeException ex) {
-        return new ResponseEntity<Exception>(ex, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(ex, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 
