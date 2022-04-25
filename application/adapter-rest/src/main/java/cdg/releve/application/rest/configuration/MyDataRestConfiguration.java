@@ -14,8 +14,10 @@ public class MyDataRestConfiguration implements RepositoryRestConfigurer {
   public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
     // Array of unsupported HTTP Endpoints
-    HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST};
-
+    // I commented this out because I tried spring cloud api gateway to send a post to the banckend and it fails
+    //it gaves me 405 not allowed
+//    HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST};
+    HttpMethod[] theUnsupportedActions = {HttpMethod.PUT};
 
     // desactiver les methods PUT, POST  pour service workflow
     // here we are making the endpoint of workflows service Read-Only

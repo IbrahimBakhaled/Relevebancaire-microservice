@@ -1,31 +1,20 @@
 package cdg.releve.domain.domain;
 
 public class OperationCheque {
-//    private int numeroCheque;
-//    private Acteur acteur;
+    private String numeroCheque;
 
-//    public OperationCheque() {
-////        this.numeroCheque = numeroCheque;
-////        this.acteur = acteur;
-//    }
-
-    public OperationCheque(){
-        super();
+    public OperationCheque(String numeroCheque) {
+        this.numeroCheque = numeroCheque;
     }
 
-//    public int getNumeroCheque() {
-//        return numeroCheque;
-//    }
-//
-//    public void setNumeroCheque(int numeroCheque) {
-//        this.numeroCheque = numeroCheque;
-//    }
+    public OperationCheque() {
+    }
 
-//    public Acteur getActeur() {
-//        return acteur;
-//    }
-//
-//    public void setActeur(Acteur acteur) {
-//        this.acteur = acteur;
-//    }
+    public String getNumeroCheque() {
+        return numeroCheque;
+    }
+
+    public void setNumeroCheque(String numeroCheque) {
+        this.numeroCheque = numeroCheque;
+    }
 }

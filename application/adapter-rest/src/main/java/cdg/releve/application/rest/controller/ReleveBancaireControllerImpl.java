@@ -4,6 +4,8 @@ import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +19,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:4200")
 public class ReleveBancaireControllerImpl implements ReleveBancaireController{
+
+    Logger logger = LoggerFactory.getLogger(LoggerFactory.class);
 
     private ReleveBancaireService releveBancaireService;
 
@@ -38,7 +42,6 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 
     @Override
     public ResponseEntity<ReleveBancaire> addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
-
         releveBancaireService.addReleveBancaire(releveBancaire);
         return new ResponseEntity<>(HttpStatus.OK);
     }

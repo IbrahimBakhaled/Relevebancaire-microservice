@@ -18,7 +18,7 @@ public class OperationChequeEntity extends OperationCreditEntity{
 
 
 
-    private int numeroCheque;
+    private String numeroCheque;
 //    @OneToOne
 //    @JoinColumn(name = "Fk_Acteur")
 //    private ActeurEntity acteur;

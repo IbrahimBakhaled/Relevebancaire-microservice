@@ -2,6 +2,7 @@ package cdg.releve.persistence.jpa.adapter;
 
 import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.Banque;
+import cdg.releve.domain.domain.OperationVirement;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.ActeurCreationRequestDomain;
 import cdg.releve.domain.domain.request.BanqueCreationRequestDomain;
@@ -35,6 +36,7 @@ import cdg.releve.persistence.jpa.repository.OperationVirementRepository;
 import cdg.releve.persistence.jpa.repository.ProduitRepository;
 import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -102,21 +104,22 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
 
     List<LigneReleveEntity> streamedLigneReleve = ligneReleveEntities.stream()
         .filter(ligneReleve -> ligneReleve.getCreditDebit().equals("C")).filter(
-            ligneReleve -> ligneReleve.getOperationNature().contains("Virement")
-                || ligneReleve.getOperationNature().contains("Cheque")
-                || ligneReleve.getOperationNature().contains("Espece"))
+            ligneReleve -> ligneReleve.getOperationNature().toLowerCase().contains("virement")
+                || ligneReleve.getOperationNature().toLowerCase().contains("cheque")
+                || ligneReleve.getOperationNature().toLowerCase().contains("espece"))
         .collect(Collectors.toList());
 
     List<OperationCreditEntity> operationCreditEntityList = streamedLigneReleve.stream().map(l -> {
       OperationCreditEntity returnedOperationCredit = new OperationCreditEntity();
-      String operationNature = l.getOperationNature();
-      if (Objects.equals(operationNature, "Virement")) {
-        returnedOperationCredit = new OperationVirementEntity();
-      } else if (Objects.equals(operationNature, "Espece")) {
+      String operationNature = l.getOperationNature().toLowerCase();
+      if (operationNature.contains("virement")){
+        returnedOperationCredit = new OperationVirementEntity(l.getRib());
+      } else if (operationNature.contains("cheque")){
+        returnedOperationCredit = new OperationChequeEntity(l.getNumCheck());
+      } else if(operationNature.contains("espece")){
         returnedOperationCredit = new OperationEspecesEntity();
-      } else if (Objects.equals(operationNature, "Cheque")) {
-        returnedOperationCredit = new OperationChequeEntity();
       }
+      log.info("Showing operationNature " + operationNature);
       returnedOperationCredit.setLigneReleve(l);
       operationCreditRepository.save(returnedOperationCredit);
       return returnedOperationCredit;
