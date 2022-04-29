@@ -23,6 +23,18 @@ Building web project microservices for bank statement based on Hexagonal archite
 ![](Technologies/PFE%20microservices%20architecture.png)
 
 
+## Organizing information (Urls & Ports)
+
+| Microservices | Urls | Ports |
+| :---         |     :---:      |          ---: |
+| Releve Bancaire Microservice (Hexagonal Architecture)  | [Releve Bancaire Microservice (Hexagonal Architecture) Link](https://github.com/IbrahimBakhaled/Relevebancaire-microservice)    | localhost:8081/api/v1    |
+| Releve Bancaire Microservice (MongoDB)     | [Releve Bancaire Microservice (MongoDB) Link](https://github.com/IbrahimBakhaled/relevebancaire-microservice-mongodb)       | localhost:8082/api/v2      |
+| Activiti Workflow Microservice     | [Activiti Workflow Microservice Link](https://github.com/IbrahimBakhaled/Activiti-workflow-microservice)       | localhost:8083/api/v3      |
+| Zipkin Distributed Tracing Server & RabbitMQ     | [Zipkin Distributed Tracing Server & RabbitMQ Link](https://github.com/IbrahimBakhaled/Zipkin-distributed-tracing-server-RabbitMQ)       | Zipkin: localhost:9411  RabbitMQ:15672      |
+| Netflix Eureka Service Registry     | [Netflix Eureka Service Registry Link](https://github.com/IbrahimBakhaled/Netflix-Eureka-service-registry)       | localhost:8761      |
+| Spring CLoud API Gateway     | [Spring CLoud API Gateway Link](https://github.com/IbrahimBakhaled/Spring-cloud-api-gateway)       | localhost:8765      |
+
+
 ## Pre-requisite
 
 - Apache Maven 3.8.4
