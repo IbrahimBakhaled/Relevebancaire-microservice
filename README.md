@@ -17,6 +17,12 @@ Building web project microservices for bank statement based on Hexagonal archite
 
 
 
+
+## Microservices Architecture
+
+![](Technologies/PFE%20microservices%20architecture.svg)
+
+
 ## Pre-requisite
 
 - Apache Maven 3.8.4
