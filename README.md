@@ -33,6 +33,7 @@ Building web project microservices for bank statement based on Hexagonal archite
 | Zipkin Distributed Tracing Server & RabbitMQ     | [Zipkin Distributed Tracing Server & RabbitMQ Link](https://github.com/IbrahimBakhaled/Zipkin-distributed-tracing-server-RabbitMQ)       | Zipkin: localhost:9411  RabbitMQ:15672      |
 | Netflix Eureka Service Registry     | [Netflix Eureka Service Registry Link](https://github.com/IbrahimBakhaled/Netflix-Eureka-service-registry)       | localhost:8761      |
 | Spring CLoud API Gateway     | [Spring CLoud API Gateway Link](https://github.com/IbrahimBakhaled/Spring-cloud-api-gateway)       | localhost:8765      |
+| Angular - Frontend     | [Angular - Frontend Link]([https://github.com/IbrahimBakhaled/Spring-cloud-api-gateway](https://github.com/IbrahimBakhaled/angular-frontend-relevebancaire))       | localhost:4200      |
 
 
 ## Pre-requisite
