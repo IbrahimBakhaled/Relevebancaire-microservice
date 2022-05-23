@@ -38,6 +38,7 @@ public class ReleveBancaireEntity{
     private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
+    private String status;
     @OneToMany(cascade= CascadeType.ALL,mappedBy = "releveBancaire", fetch = FetchType.EAGER)
     @JsonIgnoreProperties("releveBancaire")
     @JsonIgnore
@@ -67,9 +68,12 @@ public class ReleveBancaireEntity{
         this.setSoldeInitial(releveBancaireCreationRequestDomain.getSoldeInitial());
         this.setNbrOperationCredit(releveBancaireCreationRequestDomain.getNbrOperationCredit());
         this.setNbrLignes(releveBancaireCreationRequestDomain.getNbrLignes());
+        this.setStatus(releveBancaireCreationRequestDomain.getStatus());
         releveBancaireCreationRequestDomain.getLignereleve().forEach(l -> {
             LigneReleveEntity ligneReleveEntity = new LigneReleveEntity();
             ligneReleveEntity.setCreditDebit(l.getCreditDebit());
+            ligneReleveEntity.setDateOperation(l.getDateOperation());
+            ligneReleveEntity.setDateValue(l.getDateValue());
             ligneReleveEntity.setMontant(l.getMontant());
             ligneReleveEntity.setRefCdg(l.getRefCdg());
             ligneReleveEntity.setModePaiment(l.getModePaiment());

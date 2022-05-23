@@ -14,23 +14,23 @@ import java.util.stream.Collectors;
 
 class QualificationReleveDeCompteTest {
 
-    static ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity(1L, new Date(), "Releve Label", 14, 147, 15, BigDecimal.valueOf(147.47), BigDecimal.valueOf(162.24), getLignes());
+    static ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity(1L, new Date(), "Releve Label", 14, 147, 15, BigDecimal.valueOf(147.47), BigDecimal.valueOf(162.24),"status_Test", getLignes());
 
     private static List<LigneReleveEntity> getLignes() {
         return List.of(
-                new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "Something", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "Something", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Virement", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
-            new LigneReleveEntity(14L, new Date(),new Date(),"147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null)
+                new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L,"2020-10-14","2020-10-14","147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "Something", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L,"2020-10-14","2020-10-14","147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Virment", BigDecimal.valueOf(1879564.12), "D", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Cheque", BigDecimal.valueOf(1879564.12), "Something", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Virement", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null),
+            new LigneReleveEntity(14L, "2020-10-14","2020-10-14","147852369547","14569772", "Espece", BigDecimal.valueOf(1879564.12), "C", 147895L, "166698", "mode_Paiment_Test", null)
 
         );
     }
@@ -38,7 +38,7 @@ class QualificationReleveDeCompteTest {
     @Test
     void testingFiltrage() {
 
-        ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity(1L, new Date(), "Releve Label", 14, 147, 15, BigDecimal.valueOf(147.47), BigDecimal.valueOf(162.24), getLignes());
+        ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity(1L, new Date(), "Releve Label", 14, 147, 15, BigDecimal.valueOf(147.47), BigDecimal.valueOf(162.24),"status_Test", getLignes());
         if (releveBancaireEntity.getReleveBancaireId() == null) {
             throw new EntityNotFoundException("ReleveBancaire are not presented in database");
         }

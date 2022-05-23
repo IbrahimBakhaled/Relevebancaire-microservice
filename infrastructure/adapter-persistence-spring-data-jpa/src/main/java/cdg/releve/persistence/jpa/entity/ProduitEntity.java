@@ -23,6 +23,7 @@ public class ProduitEntity implements Serializable {
     private Long produitId;
     private String produitCode;
     private String produitLabel;
+    private Long ligneReleveId;
 
 
 

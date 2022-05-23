@@ -15,19 +15,19 @@ spring:
             maximum-pool-size: 10
             connection-timeout: 5000
             pool-name: pool-relevebancaire
-            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=false&allowPublicKeyRetrieval=true
+            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
             username: root
             password: root
 
     jpa:
         show-sql: false
         hibernate:
-            ddl-auto: update
+            ddl-auto: create
         database-platform: org.hibernate.dialect.MySQL8Dialect
 
 server:
     address: 127.0.0.1
-    port: 8080
+    port: 8081
     servlet:
         context-path: /api/v1
 ribbon:
@@ -41,5 +41,3 @@ eureka:
             defaultZone: http://localhost:8761/eureka/
     instance:
         hostname: localhost
-
-

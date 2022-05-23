@@ -39,6 +39,7 @@ class ReleveBancaireRepositoryTest {
                 13,
                 BigDecimal.valueOf(478.14),
                 BigDecimal.valueOf(478.14),
+                "status_Test",
                 null);
 
 
@@ -60,6 +61,7 @@ class ReleveBancaireRepositoryTest {
                 13,
                 BigDecimal.valueOf(478.14),
                 BigDecimal.valueOf(478.14),
+                "statsu_Test",
                 null);
         ReleveBancaireEntity savedReleveBancaire = releveBancaireRepository.save(releveBancaireEntity);
         Optional<ReleveBancaireEntity> releveBancaire = releveBancaireRepository.findById(releveBancaireEntity.getReleveBancaireId());

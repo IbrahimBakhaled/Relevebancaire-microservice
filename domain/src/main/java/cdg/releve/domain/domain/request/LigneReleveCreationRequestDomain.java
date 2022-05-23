@@ -9,6 +9,8 @@ import java.time.LocalDate;
 public class LigneReleveCreationRequestDomain {
 
     private String operationNature;
+    private String dateOperation;
+    private String dateValue;
     private String creditDebit;
     private BigDecimal montant;
     private Long refCdg;
@@ -18,11 +20,13 @@ public class LigneReleveCreationRequestDomain {
     private String numCheck;
     private ReleveBancaireCreationRequestDomain releveBancaire;
 
-    public LigneReleveCreationRequestDomain(String operationNature, String creditDebit,
-        BigDecimal montant, Long refCdg, String refPaiment, String modePaiment, String rib,
-        String numCheck,
+    public LigneReleveCreationRequestDomain(String operationNature, String dateOperation,
+        String dateValue, String creditDebit, BigDecimal montant, Long refCdg,
+        String refPaiment, String modePaiment, String rib, String numCheck,
         ReleveBancaireCreationRequestDomain releveBancaire) {
         this.operationNature = operationNature;
+        this.dateOperation = dateOperation;
+        this.dateValue = dateValue;
         this.creditDebit = creditDebit;
         this.montant = montant;
         this.refCdg = refCdg;
@@ -42,6 +46,22 @@ public class LigneReleveCreationRequestDomain {
 
     public void setOperationNature(String operationNature) {
         this.operationNature = operationNature;
+    }
+
+    public String getDateOperation() {
+        return dateOperation;
+    }
+
+    public void setDateOperation(String dateOperation) {
+        this.dateOperation = dateOperation;
+    }
+
+    public String getDateValue() {
+        return dateValue;
+    }
+
+    public void setDateValue(String dateValue) {
+        this.dateValue = dateValue;
     }
 
     public String getCreditDebit() {

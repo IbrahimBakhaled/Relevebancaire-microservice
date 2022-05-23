@@ -1,5 +1,6 @@
 package cdg.releve.domain.spi;
 
+import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 
@@ -7,7 +8,7 @@ import java.util.List;
 
 public interface ReleveBancairePersistencePort {
 
-    void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire);
+    ReleveBancaire addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire);
 
     void qualificationrelevebancaire(Long releveBancaireId);
 
@@ -16,6 +17,8 @@ public interface ReleveBancairePersistencePort {
     List<ReleveBancaire> getReleveBancaires();
 
     ReleveBancaire getReleveBancaireById(Long releveBancaireId);
+
+    ReleveBancaire releveBancaireStatus(Long releveBancaireId);
 
     void deleteReleveBancaireById(Long releveBancaireId);
 
@@ -27,7 +30,11 @@ public interface ReleveBancairePersistencePort {
 
     void createoperationcheque(OperationChequeCreationRequestDomain operationChequeCreationRequestDomain);
 
-    void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain);
+    void createacteur(List<ActeurCreationRequestDomain> acteurCreationRequestDomain);
+
+    List<Acteur> getActeurs();
+
+    List<ActeurCreationRequestDomain> searchActeurs(String query);
 
     void createbanque(BanqueCreationRequestDomain banqueCreationRequestDomain);
 
@@ -35,7 +42,12 @@ public interface ReleveBancairePersistencePort {
 
     void createoperationvirement(OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
 
-    void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain);
+    void createproduit(List<ProduitCreationRequestDomain> produitCreationRequestDomain);
 
 
+    void mockActeur(MockActeurDTO mockActeurDTO);
+    List<MockActeurDTO> getmockActeur();
+    List<MockActeurDTO> getSearchedMockActeurs(String query);
+    void mockProduit(MockProduitDTO mockProduitDTO);
+    List<MockProduitDTO> getMockProduit();
 }

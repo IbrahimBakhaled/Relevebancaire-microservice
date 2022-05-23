@@ -1,6 +1,7 @@
 package cdg.releve.application.service.adapter;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
+import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
@@ -24,8 +25,8 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
 
 
     @Override
-    public void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
-        releveBancairePersistencePort.addReleveBancaire(releveBancaire);
+    public ReleveBancaire addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
+       return releveBancairePersistencePort.addReleveBancaire(releveBancaire);
 
     }
 
@@ -38,6 +39,11 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     @Override
     public void qualificationrelevebancaire(Long releveBancaireId) {
         releveBancairePersistencePort.qualificationrelevebancaire(releveBancaireId);
+    }
+
+    @Override
+    public ReleveBancaire releveBancaireStatus(Long releveBancaireId) {
+        return releveBancairePersistencePort.releveBancaireStatus(releveBancaireId);
     }
 
     @Override
@@ -77,8 +83,18 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     }
 
     @Override
-    public void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
+    public void createacteur(List<ActeurCreationRequestDomain> acteurCreationRequestDomain) {
         releveBancairePersistencePort.createacteur(acteurCreationRequestDomain);
+    }
+
+    @Override
+    public List<Acteur> getActeurs() {
+        return releveBancairePersistencePort.getActeurs();
+    }
+
+    @Override
+    public List<ActeurCreationRequestDomain> searchActeurs(String query) {
+        return releveBancairePersistencePort.searchActeurs(query);
     }
 
     @Override
@@ -97,7 +113,33 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     }
 
     @Override
-    public void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
+    public void createproduit(List<ProduitCreationRequestDomain> produitCreationRequestDomain) {
         releveBancairePersistencePort.createproduit(produitCreationRequestDomain);
     }
+
+    @Override
+    public void mockActeur(MockActeurDTO mockActeurDTO) {
+        releveBancairePersistencePort.mockActeur(mockActeurDTO);
+    }
+
+    @Override
+    public List<MockActeurDTO> getmockActeur() {
+        return releveBancairePersistencePort.getmockActeur();
+    }
+
+    @Override
+    public List<MockActeurDTO> getSearchedMockActeurs(String query) {
+        return releveBancairePersistencePort.getSearchedMockActeurs(query);
+    }
+
+    @Override
+    public void mockProduit(MockProduitDTO mockProduitDTO) {
+        releveBancairePersistencePort.mockProduit(mockProduitDTO);
+    }
+
+    @Override
+    public List<MockProduitDTO> getMockProduit() {
+        return releveBancairePersistencePort.getMockProduit();
+    }
+
 }

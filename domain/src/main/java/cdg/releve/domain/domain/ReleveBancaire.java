@@ -17,12 +17,16 @@ public class ReleveBancaire{
     private int nbrOperationDebit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
+    private String status;
     private List<LigneReleve> lignereleve = new ArrayList<>();    // ONE relevebancaire has MANY lignereleve (One to Many)
 
     public ReleveBancaire() {
     }
 
-    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes, int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleve> lignereleve) {
+    public ReleveBancaire(Long releveBancaireId, Date dateReception, String label, int nbrLignes,
+        int nbrOperationCredit, int nbrOperationDebit, BigDecimal soldeInitial,
+        BigDecimal soleFinal, String status,
+        List<LigneReleve> lignereleve) {
         this.releveBancaireId = releveBancaireId;
         this.dateReception = dateReception;
         this.label = label;
@@ -31,6 +35,7 @@ public class ReleveBancaire{
         this.nbrOperationDebit = nbrOperationDebit;
         this.soldeInitial = soldeInitial;
         this.soleFinal = soleFinal;
+        this.status = status;
         this.lignereleve = lignereleve;
     }
 
@@ -112,6 +117,14 @@ public class ReleveBancaire{
 
         }
         this.lignereleve = lignereleve;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
 

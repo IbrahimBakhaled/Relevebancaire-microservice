@@ -1,6 +1,7 @@
 package cdg.releve.application.rest.controller;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
+import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import lombok.RequiredArgsConstructor;
@@ -41,9 +42,14 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     }
 
     @Override
+    public ResponseEntity<ReleveBancaire> releveBancaireStatus(Long releveBancaireId) {
+        return new ResponseEntity<>(releveBancaireService.releveBancaireStatus(releveBancaireId), HttpStatus.OK) ;
+    }
+
+    @Override
     public ResponseEntity<ReleveBancaire> addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
-        releveBancaireService.addReleveBancaire(releveBancaire);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(releveBancaireService.addReleveBancaire(releveBancaire), HttpStatus.OK);
+
     }
 
     @Override
@@ -91,9 +97,48 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     }
 
     @Override
-    public ResponseEntity<Void> createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
+    public ResponseEntity<Void> createacteur(List<ActeurCreationRequestDomain> acteurCreationRequestDomain) {
         releveBancaireService.createacteur(acteurCreationRequestDomain);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<List<Acteur>> getActeurs() {
+        return new ResponseEntity<>(releveBancaireService.getActeurs(), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<List<ActeurCreationRequestDomain>> getSearchedActeurs(String query) {
+        return new ResponseEntity<>(releveBancaireService.searchActeurs(query), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> mockActeur(MockActeurDTO mockActeurDTO) {
+        releveBancaireService.mockActeur(mockActeurDTO);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<List<MockActeurDTO>> getMockActeur() {
+        return new ResponseEntity<>(releveBancaireService.getmockActeur(), HttpStatus.OK);
+    }
+
+
+
+    @Override
+    public ResponseEntity<List<MockActeurDTO>> getSearchedMockActeurs(String query) {
+        return new ResponseEntity<>(releveBancaireService.getSearchedMockActeurs(query), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> mockProduit(MockProduitDTO mockProduitDTO) {
+        releveBancaireService.mockProduit(mockProduitDTO);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<List<MockProduitDTO>> getMockProduit() {
+        return new ResponseEntity<>(releveBancaireService.getMockProduit() ,HttpStatus.OK);
     }
 
     @Override
@@ -115,7 +160,7 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     }
 
     @Override
-    public ResponseEntity<Void> createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
+    public ResponseEntity<Void> createproduit(List<ProduitCreationRequestDomain> produitCreationRequestDomain) {
         releveBancaireService.createproduit(produitCreationRequestDomain);
         return new ResponseEntity<>(HttpStatus.OK);
     }

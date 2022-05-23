@@ -1,5 +1,6 @@
 package cdg.releve.application.rest.controller;
 
+import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,9 @@ public interface ReleveBancaireController {
 
     @PostMapping("/relevebancaire/qualification/{relevebancaireId}")
     ResponseEntity<ReleveBancaire> qualificationrelevebancaire(@PathVariable Long relevebancaireId);
+
+    @PutMapping("/relevebancaire/{releveBancaireId}")
+    ResponseEntity<ReleveBancaire> releveBancaireStatus(@PathVariable Long releveBancaireId);
 
     @PostMapping("/relevebancaire")
     ResponseEntity<ReleveBancaire> addReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain releveBancaire);
@@ -39,8 +43,35 @@ public interface ReleveBancaireController {
     @PostMapping("createoperationcheque")
     ResponseEntity<Void> createoperationcheque(@RequestBody OperationChequeCreationRequestDomain operationChequeCreationRequestDomain);
 
+
+
+
+
+    // Methods for Acteur
     @PostMapping("createacteur")
-    ResponseEntity<Void> createacteur(@RequestBody ActeurCreationRequestDomain acteurCreationRequestDomain);
+    ResponseEntity<Void> createacteur(@RequestBody List<ActeurCreationRequestDomain> acteurCreationRequestDomain);
+    @GetMapping("/acteurs")
+    ResponseEntity<List<Acteur>> getActeurs();
+    @GetMapping("/search/acteurs")
+    ResponseEntity<List<ActeurCreationRequestDomain>> getSearchedActeurs(@RequestParam("query") String query);
+
+
+    // Methods for Mocking Data
+
+    @PostMapping("/mockacteur")
+    ResponseEntity<Void> mockActeur(@RequestBody MockActeurDTO mockActeurDTO);
+    @GetMapping("/mockacteurs")
+    ResponseEntity<List<MockActeurDTO>> getMockActeur();
+    @GetMapping("/search/mockacteurs")
+    ResponseEntity<List<MockActeurDTO>> getSearchedMockActeurs(@RequestParam ("query") String query);
+
+
+    @PostMapping("/mockproduit")
+    ResponseEntity<Void> mockProduit(@RequestBody MockProduitDTO mockProduitDTO);
+    @GetMapping("/mockproduit")
+    ResponseEntity<List<MockProduitDTO>> getMockProduit();
+
+
 
     @PostMapping("/createbanque")
     ResponseEntity<Void> createbanque(@RequestBody BanqueCreationRequestDomain banqueCreationRequestDomain);
@@ -52,5 +83,5 @@ public interface ReleveBancaireController {
     ResponseEntity<Void> createoperationvirement(@RequestBody OperationVirementCreationRequestDomain operationVirementCreationRequestDomain);
 
     @PostMapping("/createproduit")
-    ResponseEntity<Void> createproduit(@RequestBody ProduitCreationRequestDomain produitCreationRequestDomain);
+    ResponseEntity<Void> createproduit(@RequestBody List<ProduitCreationRequestDomain> produitCreationRequestDomain);
 }

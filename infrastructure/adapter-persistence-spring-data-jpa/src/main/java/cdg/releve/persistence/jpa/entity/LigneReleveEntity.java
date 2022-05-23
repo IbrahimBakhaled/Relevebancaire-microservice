@@ -36,12 +36,12 @@ public class LigneReleveEntity {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
 
   private Long ligneReleveId;
-  @CreationTimestamp
-  @Temporal(TemporalType.DATE)
-  private Date dateOperation;
-  @CreationTimestamp
-  @Temporal(TemporalType.DATE)
-  private Date dateValue;
+//  @CreationTimestamp
+//  @Temporal(TemporalType.DATE)
+  private String dateOperation;
+//  @CreationTimestamp
+//  @Temporal(TemporalType.DATE)
+  private String dateValue;
   private String rib;
   private String numCheck;
   private String operationNature;

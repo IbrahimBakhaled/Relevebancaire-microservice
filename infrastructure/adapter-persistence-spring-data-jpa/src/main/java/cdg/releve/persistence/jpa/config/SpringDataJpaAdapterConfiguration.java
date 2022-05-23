@@ -7,8 +7,6 @@ import cdg.releve.persistence.jpa.repository.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 @Configuration
 @ComponentScan(basePackages = {"cdg.releve", "cdg.releve.domain", "cdg.releve.persistence"})
@@ -24,8 +22,11 @@ public class SpringDataJpaAdapterConfiguration {
             BanqueRepository banqueRepository,
             CompteBancaireRepository compteBancaireRepository,
             OperationVirementRepository operationVirementRepository,
-            ProduitRepository produitRepository){
-        return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository, operationChequeRepository, acteurRepository, banqueRepository, compteBancaireRepository, operationVirementRepository, produitRepository);
+            ProduitRepository produitRepository,
+            MockProduitRepository mockProduitRepository,
+            MockActeurRepository mockActeurRepository){
+        return new ReleveBancaireSpringJpaAdapter(releveBancaireRepository, ligneReleveRepository, operationCreditRepository, operationEspecesRepository, operationChequeRepository, acteurRepository, banqueRepository, compteBancaireRepository, operationVirementRepository, produitRepository,
+            mockActeurRepository, mockProduitRepository);
     }
 
 //    @Bean(name="entityManagerFactory")

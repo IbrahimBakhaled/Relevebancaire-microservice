@@ -5,17 +5,21 @@ public class ProduitCreationRequestDomain {
     private Long produitId;
     private String produitCode;
     private String produitLabel;
+    private Long ligneReleveId;
 
 
-    public ProduitCreationRequestDomain(Long produitId, String produitCode, String produitLabel) {
-        this.produitId = produitId;
-        this.produitCode = produitCode;
-        this.produitLabel = produitLabel;
-    }
 
     public ProduitCreationRequestDomain() {
     }
 
+
+    public ProduitCreationRequestDomain(Long produitId, String produitCode,
+        String produitLabel, Long ligneReleveId) {
+        this.produitId = produitId;
+        this.produitCode = produitCode;
+        this.produitLabel = produitLabel;
+        this.ligneReleveId = ligneReleveId;
+    }
 
     public Long getProduitId() {
         return produitId;
@@ -41,4 +45,11 @@ public class ProduitCreationRequestDomain {
         this.produitLabel = produitLabel;
     }
 
+    public Long getLigneReleveId() {
+        return ligneReleveId;
+    }
+
+    public void setLigneReleveId(Long ligneReleveId) {
+        this.ligneReleveId = ligneReleveId;
+    }
 }

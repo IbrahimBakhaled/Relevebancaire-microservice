@@ -14,21 +14,24 @@ public class ReleveBancaireCreationRequestDomain {
     private int nbrOperationCredit;
     private BigDecimal soldeInitial;
     private BigDecimal soleFinal;
+    private String status;
     private List<LigneReleveCreationRequestDomain> lignereleve = new ArrayList<>();
 
 
     public ReleveBancaireCreationRequestDomain() {
     }
 
-    public ReleveBancaireCreationRequestDomain(String label, int nbrLignes, int nbrOperationCredit, BigDecimal soldeInitial, BigDecimal soleFinal, List<LigneReleveCreationRequestDomain> lignereleve) {
+    public ReleveBancaireCreationRequestDomain(String label, int nbrLignes, int nbrOperationCredit,
+        BigDecimal soldeInitial, BigDecimal soleFinal, String status,
+        List<LigneReleveCreationRequestDomain> lignereleve) {
         this.label = label;
         this.nbrLignes = nbrLignes;
         this.nbrOperationCredit = nbrOperationCredit;
         this.soldeInitial = soldeInitial;
         this.soleFinal = soleFinal;
+        this.status = status;
         this.lignereleve = lignereleve;
     }
-
 
     public String getLabel() {
         return label;
@@ -76,5 +79,13 @@ public class ReleveBancaireCreationRequestDomain {
 
     public void setLignereleve(List<LigneReleveCreationRequestDomain> lignereleve) {
         this.lignereleve = lignereleve;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

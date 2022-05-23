@@ -6,16 +6,16 @@ public class Acteur {
     private int acteurId;
     private String nomActeur;
     private String prenomActeur;
+    private Long ligneReleveId;
 
-
-    public Acteur(){
-        super();
-    }
-
-    public Acteur(int acteurId, String nomActeur, String prenomActeur) {
+    public Acteur(int acteurId, String nomActeur, String prenomActeur, Long ligneReleveId) {
         this.acteurId = acteurId;
         this.nomActeur = nomActeur;
         this.prenomActeur = prenomActeur;
+        this.ligneReleveId = ligneReleveId;
+    }
+
+    public Acteur() {
     }
 
     public int getActeurId() {
@@ -40,5 +40,13 @@ public class Acteur {
 
     public void setPrenomActeur(String prenomActeur) {
         this.prenomActeur = prenomActeur;
+    }
+
+    public Long getLigneReleveId() {
+        return ligneReleveId;
+    }
+
+    public void setLigneReleveId(Long ligneReleveId) {
+        this.ligneReleveId = ligneReleveId;
     }
 }

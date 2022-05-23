@@ -1,15 +1,14 @@
 package cdg.releve.domain.domain;
 
-import java.io.Serializable;
+
 import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.Date;
+
 
 public class LigneReleve {
 
   private Long ligneReleveId;
-  private Date dateOperation;
-  private Date dateValue;
+  private String dateOperation;
+  private String dateValue;
   private String operationNature;
   private BigDecimal montant;
   private String creditDebit;
@@ -20,9 +19,9 @@ public class LigneReleve {
   private String numCheck;
   private ReleveBancaire releveBancaire;
 
-  public LigneReleve(Long ligneReleveId, Date dateOperation, Date dateValue,
-      String operationNature, BigDecimal montant, String creditDebit, Long refCdg, String refPaiment,
-      String modePaiment, String rib, String numCheck,
+  public LigneReleve(Long ligneReleveId, String dateOperation, String dateValue,
+      String operationNature, BigDecimal montant, String creditDebit, Long refCdg,
+      String refPaiment, String modePaiment, String rib, String numCheck,
       ReleveBancaire releveBancaire) {
     this.ligneReleveId = ligneReleveId;
     this.dateOperation = dateOperation;
@@ -49,19 +48,19 @@ public class LigneReleve {
     this.ligneReleveId = ligneReleveId;
   }
 
-  public Date getDateOperation() {
+  public String getDateOperation() {
     return dateOperation;
   }
 
-  public void setDateOperation(Date dateOperation) {
+  public void setDateOperation(String dateOperation) {
     this.dateOperation = dateOperation;
   }
 
-  public Date getDateValue() {
+  public String getDateValue() {
     return dateValue;
   }
 
-  public void setDateValue(Date dateValue) {
+  public void setDateValue(String dateValue) {
     this.dateValue = dateValue;
   }
 

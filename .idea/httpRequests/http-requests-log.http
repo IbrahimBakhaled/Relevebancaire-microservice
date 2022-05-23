@@ -1,0 +1,12 @@
+GET http://localhost:8081/api/v1/acteurs
+
+<> 2022-05-17T203846.200.json
+
+###
+
+GET http://localhost:8081/acteurs
+
+<> 2022-05-17T203833.404.html
+
+###
+

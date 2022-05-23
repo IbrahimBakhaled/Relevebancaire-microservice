@@ -2,12 +2,14 @@ package cdg.releve.persistence.jpa.adapter;
 
 import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.Banque;
-import cdg.releve.domain.domain.OperationVirement;
+import cdg.releve.domain.domain.LigneReleve;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.ActeurCreationRequestDomain;
 import cdg.releve.domain.domain.request.BanqueCreationRequestDomain;
 import cdg.releve.domain.domain.request.CompteBancaireCreationRequestDomain;
 import cdg.releve.domain.domain.request.LigneReleveCreationRequestDomain;
+import cdg.releve.domain.domain.request.MockActeurDTO;
+import cdg.releve.domain.domain.request.MockProduitDTO;
 import cdg.releve.domain.domain.request.OperationChequeCreationRequestDomain;
 import cdg.releve.domain.domain.request.OperationEspeceCreationRequestDomain;
 import cdg.releve.domain.domain.request.OperationVirementCreationRequestDomain;
@@ -25,19 +27,22 @@ import cdg.releve.persistence.jpa.entity.OperationEspecesEntity;
 import cdg.releve.persistence.jpa.entity.OperationVirementEntity;
 import cdg.releve.persistence.jpa.entity.ProduitEntity;
 import cdg.releve.persistence.jpa.entity.ReleveBancaireEntity;
+import cdg.releve.persistence.jpa.mock.MockActeur;
+import cdg.releve.persistence.jpa.mock.MockProduit;
 import cdg.releve.persistence.jpa.repository.ActeurRepository;
 import cdg.releve.persistence.jpa.repository.BanqueRepository;
 import cdg.releve.persistence.jpa.repository.CompteBancaireRepository;
 import cdg.releve.persistence.jpa.repository.LigneReleveRepository;
+import cdg.releve.persistence.jpa.repository.MockActeurRepository;
+import cdg.releve.persistence.jpa.repository.MockProduitRepository;
 import cdg.releve.persistence.jpa.repository.OperationChequeRepository;
 import cdg.releve.persistence.jpa.repository.OperationCreditRepository;
 import cdg.releve.persistence.jpa.repository.OperationEspecesRepository;
 import cdg.releve.persistence.jpa.repository.OperationVirementRepository;
 import cdg.releve.persistence.jpa.repository.ProduitRepository;
 import cdg.releve.persistence.jpa.repository.ReleveBancaireRepository;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import javax.persistence.EntityNotFoundException;
@@ -62,6 +67,8 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
   private final CompteBancaireRepository compteBancaireRepository;
   private final OperationVirementRepository operationVirementRepository;
   private final ProduitRepository produitRepository;
+  private final MockActeurRepository mockActeurRepository;
+  private final MockProduitRepository mockProduitRepository;
 
 
   public ReleveBancaireSpringJpaAdapter(ReleveBancaireRepository releveBancaireRepository,
@@ -71,7 +78,9 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
       OperationChequeRepository operationChequeRepository, ActeurRepository acteurRepository,
       BanqueRepository banqueRepository, CompteBancaireRepository compteBancaireRepository,
       OperationVirementRepository operationVirementRepository,
-      ProduitRepository produitRepository) {
+      ProduitRepository produitRepository,
+      MockActeurRepository mockActeurRepository,
+      MockProduitRepository mockProduitRepository) {
     this.releveBancaireRepository = releveBancaireRepository;
     this.ligneReleveRepository = ligneReleveRepository;
     this.operationCreditRepository = operationCreditRepository;
@@ -82,15 +91,17 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
     this.compteBancaireRepository = compteBancaireRepository;
     this.operationVirementRepository = operationVirementRepository;
     this.produitRepository = produitRepository;
+    this.mockActeurRepository = mockActeurRepository;
+    this.mockProduitRepository = mockProduitRepository;
   }
 
 
   @Override
-  public void addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
+  public ReleveBancaire addReleveBancaire(ReleveBancaireCreationRequestDomain releveBancaire) {
     ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
     releveBancaireEntity.fromReleveBancaireTo(releveBancaire);
-
     releveBancaireRepository.save(releveBancaireEntity);
+    return CopyUtil.copy(releveBancaireEntity, ReleveBancaire.class);
   }
 
   @Override
@@ -155,6 +166,16 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
   }
 
   @Override
+  public ReleveBancaire releveBancaireStatus(Long releveBancaireId) {
+    ReleveBancaireEntity releveBancaireEntity = releveBancaireRepository.findByReleveBancaireId(releveBancaireId);
+    releveBancaireEntity.setStatus("rejeter");
+    ReleveBancaire releveBancaire = new ReleveBancaire();
+    releveBancaireRepository.save(releveBancaireEntity);
+    BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+    return releveBancaire;
+  }
+
+  @Override
   public void deleteReleveBancaireById(Long releveBancaireId) {
     ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
     ReleveBancaire releveBancaire = new ReleveBancaire();
@@ -209,13 +230,33 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
   }
 
   @Override
-  public void createacteur(ActeurCreationRequestDomain acteurCreationRequestDomain) {
+  public void createacteur(List<ActeurCreationRequestDomain> acteurCreationRequestDomain) {
 
-    ActeurEntity acteurEntity = new ActeurEntity();
-    BeanUtils.copyProperties(acteurCreationRequestDomain, acteurEntity);
-    acteurRepository.save(acteurEntity);
+    acteurCreationRequestDomain.forEach( acteur -> {
+      Optional<LigneReleveEntity> ligneReleveEntityOptional = ligneReleveRepository.findById(acteur.getLigneReleveId());
+      if (!ligneReleveEntityOptional.isPresent()) {
+        throw new EntityNotFoundException(
+            "You have to make sure that the ligneReleveId is not presented in database fill the database and then come to post");
+      }
+      ActeurEntity acteurEntity = new ActeurEntity();
+      BeanUtils.copyProperties(acteur, acteurEntity);
+      acteurEntity.setLigneReleveId(ligneReleveEntityOptional.get().getLigneReleveId());
+      LigneReleve ligneReleve = new LigneReleve();
+      BeanUtils.copyProperties(acteurEntity, ligneReleve);
+      acteurRepository.save(acteurEntity);
+    });
+  }
 
+  @Override
+  public List<Acteur> getActeurs() {
+    List<ActeurEntity> acteurEntityList = acteurRepository.findAll();
+    return CopyUtil.copyList(acteurEntityList, Acteur.class);
+  }
 
+  @Override
+  public List<ActeurCreationRequestDomain> searchActeurs(String query) {
+     List<ActeurEntity> returnedResults = acteurRepository.searchActeurs(query);
+    return CopyUtil.copyList(returnedResults, ActeurCreationRequestDomain.class);
   }
 
   @Override
@@ -259,11 +300,57 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
   }
 
   @Override
-  public void createproduit(ProduitCreationRequestDomain produitCreationRequestDomain) {
-    ProduitEntity produitEntity = new ProduitEntity();
-    BeanUtils.copyProperties(produitCreationRequestDomain, produitEntity);
-    produitRepository.save(produitEntity);
+  public void createproduit(List<ProduitCreationRequestDomain> produitCreationRequestDomain) {
+//    ProduitEntity produitEntity = new ProduitEntity();
+//    BeanUtils.copyProperties(produitCreationRequestDomain, produitEntity);
+//    produitRepository.save(produitEntity);
 
+    produitCreationRequestDomain.forEach( produit -> {
+      Optional<LigneReleveEntity> ligneReleveEntityOptional = ligneReleveRepository.findById(produit.getLigneReleveId());
+      if (!ligneReleveEntityOptional.isPresent()) {
+        throw new EntityNotFoundException(
+            "You have to make sure that the ligneReleveId is not presented in database fill the database and then come to post");
+      }
+      ProduitEntity produitEntity = new ProduitEntity();
+      BeanUtils.copyProperties(produit, produitEntity);
+      produitEntity.setLigneReleveId(ligneReleveEntityOptional.get().getLigneReleveId());
+      LigneReleve ligneReleve = new LigneReleve();
+      BeanUtils.copyProperties(produitEntity, ligneReleve);
+      produitRepository.save(produitEntity);
+    });
+
+  }
+
+  @Override
+  public void mockActeur(MockActeurDTO mockActeurDTO) {
+    MockActeur mockActeur = new MockActeur();
+    BeanUtils.copyProperties(mockActeurDTO, mockActeur);
+    mockActeurRepository.save(mockActeur);
+  }
+
+  @Override
+  public List<MockActeurDTO> getmockActeur() {
+    List<MockActeur> mockActeurList = mockActeurRepository.findAll();
+    return CopyUtil.copyList(mockActeurList, MockActeurDTO.class);
+  }
+
+  @Override
+  public List<MockActeurDTO> getSearchedMockActeurs(String query) {
+    List<MockActeur> returnedResults = mockActeurRepository.searchMockActeurs(query);
+    return CopyUtil.copyList(returnedResults, MockActeurDTO.class);
+  }
+
+  @Override
+  public void mockProduit(MockProduitDTO mockProduitDTO) {
+    MockProduit mockProduit = new MockProduit();
+    BeanUtils.copyProperties(mockProduitDTO, mockProduit);
+    mockProduitRepository.save(mockProduit);
+  }
+
+  @Override
+  public List<MockProduitDTO> getMockProduit() {
+   List<MockProduit> mockProduitList = mockProduitRepository.findAll();
+   return CopyUtil.copyList(mockProduitList, MockProduitDTO.class);
   }
 
 
