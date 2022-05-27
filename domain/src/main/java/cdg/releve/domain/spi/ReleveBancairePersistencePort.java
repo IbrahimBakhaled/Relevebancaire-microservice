@@ -1,6 +1,7 @@
 package cdg.releve.domain.spi;
 
 import cdg.releve.domain.domain.Acteur;
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 
@@ -20,6 +21,8 @@ public interface ReleveBancairePersistencePort {
 
     ReleveBancaire releveBancaireStatus(Long releveBancaireId);
 
+    ReleveBancaire releveBancaireStatusQualifier(Long releveBancaireId);
+
     void deleteReleveBancaireById(Long releveBancaireId);
 
     void createLigneReleve(LigneReleveCreationRequestDomain ligneReleve);
@@ -33,6 +36,7 @@ public interface ReleveBancairePersistencePort {
     void createacteur(List<ActeurCreationRequestDomain> acteurCreationRequestDomain);
 
     List<Acteur> getActeurs();
+    List<Produit> getProduits();
 
     List<ActeurCreationRequestDomain> searchActeurs(String query);
 

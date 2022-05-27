@@ -1,6 +1,7 @@
 package cdg.releve.application.service.api;
 
 import cdg.releve.domain.domain.Acteur;
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 
@@ -15,6 +16,8 @@ public interface ReleveBancaireService {
     void qualificationrelevebancaire(Long releveBancaireId);
 
     ReleveBancaire releveBancaireStatus(Long releveBancaireId);
+
+    ReleveBancaire releveBancaireStatusQualifier(Long releveBancaireId);
 
     List<ReleveBancaire> getReleveBancaires();
 
@@ -33,6 +36,7 @@ public interface ReleveBancaireService {
     void createacteur(List<ActeurCreationRequestDomain> acteurCreationRequestDomain);
 
     List<Acteur> getActeurs();
+    List<Produit> getProduits();
 
     List<ActeurCreationRequestDomain> searchActeurs(String query);
 

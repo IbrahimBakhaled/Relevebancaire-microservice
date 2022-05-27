@@ -2,6 +2,7 @@ package cdg.releve.application.rest.controller;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.Acteur;
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import lombok.RequiredArgsConstructor;
@@ -44,6 +45,11 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     @Override
     public ResponseEntity<ReleveBancaire> releveBancaireStatus(Long releveBancaireId) {
         return new ResponseEntity<>(releveBancaireService.releveBancaireStatus(releveBancaireId), HttpStatus.OK) ;
+    }
+
+    @Override
+    public ResponseEntity<ReleveBancaire> releveBancaireStatusQualifier(Long releveBancaireId) {
+        return new ResponseEntity<>(releveBancaireService.releveBancaireStatusQualifier(releveBancaireId), HttpStatus.OK);
     }
 
     @Override
@@ -128,6 +134,11 @@ public class ReleveBancaireControllerImpl implements ReleveBancaireController{
     @Override
     public ResponseEntity<List<MockActeurDTO>> getSearchedMockActeurs(String query) {
         return new ResponseEntity<>(releveBancaireService.getSearchedMockActeurs(query), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<List<Produit>> getProduits() {
+        return new ResponseEntity<>(releveBancaireService.getProduits(), HttpStatus.OK);
     }
 
     @Override

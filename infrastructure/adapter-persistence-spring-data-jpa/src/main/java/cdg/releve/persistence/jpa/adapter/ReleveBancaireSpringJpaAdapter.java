@@ -3,6 +3,7 @@ package cdg.releve.persistence.jpa.adapter;
 import cdg.releve.domain.domain.Acteur;
 import cdg.releve.domain.domain.Banque;
 import cdg.releve.domain.domain.LigneReleve;
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.ActeurCreationRequestDomain;
 import cdg.releve.domain.domain.request.BanqueCreationRequestDomain;
@@ -176,6 +177,16 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
   }
 
   @Override
+  public ReleveBancaire releveBancaireStatusQualifier(Long releveBancaireId) {
+    ReleveBancaireEntity releveBancaireEntity = releveBancaireRepository.findByReleveBancaireId(releveBancaireId);
+    releveBancaireEntity.setStatus("qualifier");
+    ReleveBancaire releveBancaire = new ReleveBancaire();
+    releveBancaireRepository.save(releveBancaireEntity);
+    BeanUtils.copyProperties(releveBancaireEntity, releveBancaire);
+    return releveBancaire;
+  }
+
+  @Override
   public void deleteReleveBancaireById(Long releveBancaireId) {
     ReleveBancaireEntity releveBancaireEntity = new ReleveBancaireEntity();
     ReleveBancaire releveBancaire = new ReleveBancaire();
@@ -251,6 +262,12 @@ public class ReleveBancaireSpringJpaAdapter implements ReleveBancairePersistence
   public List<Acteur> getActeurs() {
     List<ActeurEntity> acteurEntityList = acteurRepository.findAll();
     return CopyUtil.copyList(acteurEntityList, Acteur.class);
+  }
+
+  @Override
+  public List<Produit> getProduits() {
+    List<ProduitEntity> produitEntities = produitRepository.findAll();
+    return CopyUtil.copyList(produitEntities, Produit.class);
   }
 
   @Override

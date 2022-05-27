@@ -1,6 +1,7 @@
 package cdg.releve.application.rest.controller;
 
 import cdg.releve.domain.domain.Acteur;
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import org.springframework.http.ResponseEntity;
@@ -16,8 +17,11 @@ public interface ReleveBancaireController {
     @PostMapping("/relevebancaire/qualification/{relevebancaireId}")
     ResponseEntity<ReleveBancaire> qualificationrelevebancaire(@PathVariable Long relevebancaireId);
 
-    @PutMapping("/relevebancaire/{releveBancaireId}")
+    @PutMapping("/relevebancaire/statusrejeter/{releveBancaireId}")
     ResponseEntity<ReleveBancaire> releveBancaireStatus(@PathVariable Long releveBancaireId);
+
+    @PutMapping("/relevebancaire/statusqualifier/{releveBancaireId}")
+    ResponseEntity<ReleveBancaire> releveBancaireStatusQualifier(@PathVariable Long releveBancaireId);
 
     @PostMapping("/relevebancaire")
     ResponseEntity<ReleveBancaire> addReleveBancaire(@RequestBody ReleveBancaireCreationRequestDomain releveBancaire);
@@ -66,6 +70,8 @@ public interface ReleveBancaireController {
     ResponseEntity<List<MockActeurDTO>> getSearchedMockActeurs(@RequestParam ("query") String query);
 
 
+    @GetMapping("/produits")
+    ResponseEntity<List<Produit>> getProduits();
     @PostMapping("/mockproduit")
     ResponseEntity<Void> mockProduit(@RequestBody MockProduitDTO mockProduitDTO);
     @GetMapping("/mockproduit")

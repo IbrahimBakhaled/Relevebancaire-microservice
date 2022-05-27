@@ -2,6 +2,7 @@ package cdg.releve.application.service.adapter;
 
 import cdg.releve.application.service.api.ReleveBancaireService;
 import cdg.releve.domain.domain.Acteur;
+import cdg.releve.domain.domain.Produit;
 import cdg.releve.domain.domain.ReleveBancaire;
 import cdg.releve.domain.domain.request.*;
 import cdg.releve.domain.spi.ReleveBancairePersistencePort;
@@ -44,6 +45,11 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     @Override
     public ReleveBancaire releveBancaireStatus(Long releveBancaireId) {
         return releveBancairePersistencePort.releveBancaireStatus(releveBancaireId);
+    }
+
+    @Override
+    public ReleveBancaire releveBancaireStatusQualifier(Long releveBancaireId) {
+        return releveBancairePersistencePort.releveBancaireStatusQualifier(releveBancaireId);
     }
 
     @Override
@@ -90,6 +96,11 @@ public class ReleveBancaireServiceAdapter implements ReleveBancaireService {
     @Override
     public List<Acteur> getActeurs() {
         return releveBancairePersistencePort.getActeurs();
+    }
+
+    @Override
+    public List<Produit> getProduits() {
+        return releveBancairePersistencePort.getProduits();
     }
 
     @Override
