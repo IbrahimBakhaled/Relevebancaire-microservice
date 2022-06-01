@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://localhost:4200")
 public class ReleveBancaireControllerImpl implements ReleveBancaireController{
 
     Logger logger = LoggerFactory.getLogger(LoggerFactory.class);

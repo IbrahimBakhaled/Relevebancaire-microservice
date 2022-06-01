@@ -4,23 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15903db3-c60d-48a7-8534-eaf971dc8a00" name="Changes" comment="&quot; edited alot of things for the angular&quot;">
+    <list default="true" id="15903db3-c60d-48a7-8534-eaf971dc8a00" name="Changes" comment="&quot;completed ✔️&quot;">
+      <change afterPath="$PROJECT_DIR$/relevebancaire-keystore.p12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/java/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/META-INF/build-info.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/META-INF/build-info.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/configuration/MyDataRestConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/configuration/MyDataRestConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireController.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/adapter-rest/target/classes/cdg/releve/application/rest/controller/ReleveBancaireControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/src/main/java/cdg/releve/application/service/api/ReleveBancaireService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/adapter/ReleveBancaireServiceAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/application-configuration/target/classes/cdg/releve/application/service/api/ReleveBancaireService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/cdg/releve/domain/spi/ReleveBancairePersistencePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/spi/ReleveBancairePersistencePort.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/cdg/releve/domain/spi/ReleveBancairePersistencePort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/src/main/java/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/classes/cdg/releve/persistence/jpa/adapter/ReleveBancaireSpringJpaAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/adapter-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application-configuration/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/adapter-persistence-spring-data-jpa/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +82,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.14.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.27" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/adapter-rest/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38965517" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -89,12 +92,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nuklearka\Desktop\PFE\relevebancaire-microservice\application\adapter-rest\src\main\resources" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src\assets\js" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src\assets" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src\js" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\front-relevebancaire\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nuklearka\Desktop\PFE\relevebancaire-microservice" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\frontrelevebancaire\src\app\dist" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\frontrelevebancaire\src\app" />
       <recent name="C:\Users\Nuklearka\Desktop\relevebancaire\application\adapter-rest\src\main\resources" />
@@ -188,6 +193,11 @@
       <workItem from="1653260761578" duration="2601000" />
       <workItem from="1653437007009" duration="867000" />
       <workItem from="1653483964531" duration="3959000" />
+      <workItem from="1653613691681" duration="304000" />
+      <workItem from="1653926347479" duration="1585000" />
+      <workItem from="1653943240303" duration="559000" />
+      <workItem from="1653946556923" duration="10918000" />
+      <workItem from="1654022312646" duration="5867000" />
     </task>
     <task id="LOCAL-00001" summary="&quot; added front-end with upload + releve bancaire and ligne releve are saving in database&quot;">
       <created>1650398049139</created>
@@ -224,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653266452500</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;completed ✔️&quot;">
+      <created>1653613990098</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653613990098</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +263,7 @@
     <MESSAGE value="&quot;implemented actviti microservice&quot;" />
     <MESSAGE value="&quot;added spring cloud api &amp; sleuth &amp; zipkin through rabbitmq&quot;" />
     <MESSAGE value="&quot; edited alot of things for the angular&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot; edited alot of things for the angular&quot;" />
+    <MESSAGE value="&quot;completed ✔️&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;completed ✔️&quot;" />
   </component>
 </project>

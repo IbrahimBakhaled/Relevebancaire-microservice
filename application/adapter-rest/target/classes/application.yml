@@ -1,4 +1,6 @@
 spring:
+    zipkin:
+        base-url: http://localhost:9411/
     application:
         name: relevebancaire
     jmx:
@@ -15,7 +17,7 @@ spring:
             maximum-pool-size: 10
             connection-timeout: 5000
             pool-name: pool-relevebancaire
-            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
             username: root
             password: root
 
@@ -28,9 +30,16 @@ spring:
 server:
     address: 127.0.0.1
     port: 8081
+    ssl:
+        enabled: true
+        key-alias: relevebancaire
+        key-store: relevebancaire-keystore.p12
+        key-store-password: secret
+        key-store-type: PKCS12
     servlet:
         context-path: /api/v1
 ribbon:
+
     eureka:
         enabled: true
 eureka:
@@ -38,6 +47,6 @@ eureka:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-            defaultZone: http://localhost:8761/eureka/
+            defaultZone: https://localhost:8761/eureka/
     instance:
         hostname: localhost
