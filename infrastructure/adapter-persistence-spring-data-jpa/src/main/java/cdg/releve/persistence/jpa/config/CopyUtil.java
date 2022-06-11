@@ -1,11 +1,15 @@
 package cdg.releve.persistence.jpa.config;
 
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class CopyUtil {
 
 
@@ -17,7 +21,8 @@ public class CopyUtil {
         try {
             obj = clazz.newInstance();
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+          log.info("e.printStackTrace() returns this :", e);
             return null;
         }
         BeanUtils.copyProperties(source, obj);

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyDataRestConfiguration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">adapter-rest</a> &gt; <a href="index.source.html" class="el_package">cdg.releve.application.rest.configuration</a> &gt; <span class="el_source">MyDataRestConfiguration.java</span></div><h1>MyDataRestConfiguration.java</h1><pre class="source lang-java linenums">package cdg.releve.application.rest.configuration;
+import cdg.releve.persistence.jpa.entity.LigneReleveEntity;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
+import org.springframework.http.HttpMethod;
+
+
+@Configuration
+// this configuration class used to disable/do not expose certain apis like the workflow service
+<span class="nc" id="L11">public class MyDataRestConfiguration implements RepositoryRestConfigurer {</span>
+
+  @Override
+  public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+
+    // Array of unsupported HTTP Endpoints
+    // I commented this out because I tried spring cloud api gateway to send a post to the banckend and it fails
+    //it gaves me 405 not allowed
+//    HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST};
+<span class="nc" id="L20">    HttpMethod[] theUnsupportedActions = {HttpMethod.PUT};</span>
+
+    // desactiver les methods PUT, POST  pour service workflow
+    // here we are making the endpoint of workflows service Read-Only
+    // it will return 405 Not Allowed in Postman
+
+<span class="nc" id="L26">    config.getExposureConfiguration()</span>
+<span class="nc" id="L27">        .forDomainType(LigneReleveEntity.class)</span>
+<span class="nc" id="L28">        .withItemExposure((metdata, httpMethods) -&gt; httpMethods.disable(theUnsupportedActions))</span>
+<span class="nc" id="L29">        .withCollectionExposure((metdata, httpMethods) -&gt; httpMethods.disable(theUnsupportedActions));</span>
+<span class="nc" id="L30">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

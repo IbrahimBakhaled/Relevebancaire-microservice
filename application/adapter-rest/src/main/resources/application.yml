@@ -17,7 +17,7 @@ spring:
             maximum-pool-size: 10
             connection-timeout: 5000
             pool-name: pool-relevebancaire
-            jdbc-url: jdbc:mysql://localhost:3306/releve-bancaire-cdg?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
+            jdbc-url: jdbc:mysql://mysqldb:3306/releve-bancaire-cdg?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
             username: root
             password: root
 
@@ -28,12 +28,11 @@ spring:
         database-platform: org.hibernate.dialect.MySQL8Dialect
 
 server:
-    address: 127.0.0.1
     port: 8081
     ssl:
         enabled: true
-        key-alias: relevebancaire
-        key-store: relevebancaire-keystore.p12
+        key-alias: relevebancaire-docker
+        key-store: file:relevebancaire-docker-keystore.p12
         key-store-password: secret
         key-store-type: PKCS12
     servlet:
