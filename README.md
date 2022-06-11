@@ -20,7 +20,8 @@ Building web project microservices for bank statement based on Hexagonal archite
 
 ## Microservices Architecture
 
-![](Technologies/PFE%20microservices%20architecture.png)
+![](Visual%20Paradigm/relevebancaireprojectdiagram.png)
+
 
 
 ## Organizing information (Urls & Ports)
